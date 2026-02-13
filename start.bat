@@ -1,3 +1,3 @@
 @echo off
-set GOOGLE_TTS_API_KEY=your-api-key-here
+for /f "usebackq tokens=1,* delims==" %%a in (".env") do set "%%a=%%b"
 go run ./cmd/server/

@@ -4,3 +4,4 @@
 *.db-wal
 speakeasy-linux
 tts_cache/
+.env
