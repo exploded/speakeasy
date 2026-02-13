@@ -1,0 +1,281 @@
+{
+  "id": "lesson05",
+  "title": "Food & Drink",
+  "description": "Learn essential food and drink vocabulary for dining out, ordering in restaurants, and understanding Serbian cuisine.",
+  "order": 5,
+  "prerequisite": "lesson04",
+  "illustration": "food.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Food & Drink Essentials",
+      "items": [
+        {
+          "id": "hleb",
+          "english": "Bread",
+          "serbian_cyrillic": "Хлеб",
+          "serbian_latin": "Hleb",
+          "pronunciation_hint": "hlehb",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "This bread is fresh.",
+            "serbian_cyrillic": "Овај хлеб је свеж.",
+            "serbian_latin": "Ovaj hleb je svež."
+          }
+        },
+        {
+          "id": "voda",
+          "english": "Water",
+          "serbian_cyrillic": "Вода",
+          "serbian_latin": "Voda",
+          "pronunciation_hint": "VOH-dah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One water, please.",
+            "serbian_cyrillic": "Једну воду, молим.",
+            "serbian_latin": "Jednu vodu, molim."
+          }
+        },
+        {
+          "id": "kafa",
+          "english": "Coffee",
+          "serbian_cyrillic": "Кафа",
+          "serbian_latin": "Kafa",
+          "pronunciation_hint": "KAH-fah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I would like a coffee.",
+            "serbian_cyrillic": "Ја бих кафу.",
+            "serbian_latin": "Ja bih kafu."
+          }
+        },
+        {
+          "id": "caj",
+          "english": "Tea",
+          "serbian_cyrillic": "Чај",
+          "serbian_latin": "Čaj",
+          "pronunciation_hint": "chy",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Do you have green tea?",
+            "serbian_cyrillic": "Да ли имате зелени чај?",
+            "serbian_latin": "Da li imate zeleni čaj?"
+          }
+        },
+        {
+          "id": "meso",
+          "english": "Meat",
+          "serbian_cyrillic": "Месо",
+          "serbian_latin": "Meso",
+          "pronunciation_hint": "MEH-soh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I don't eat meat.",
+            "serbian_cyrillic": "Не једем месо.",
+            "serbian_latin": "Ne jedem meso."
+          }
+        },
+        {
+          "id": "sir",
+          "english": "Cheese",
+          "serbian_cyrillic": "Сир",
+          "serbian_latin": "Sir",
+          "pronunciation_hint": "seer",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Serbian cheese is delicious.",
+            "serbian_cyrillic": "Српски сир је укусан.",
+            "serbian_latin": "Srpski sir je ukusan."
+          }
+        },
+        {
+          "id": "salata",
+          "english": "Salad",
+          "serbian_cyrillic": "Салата",
+          "serbian_latin": "Salata",
+          "pronunciation_hint": "sah-LAH-tah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I would like a Serbian salad.",
+            "serbian_cyrillic": "Ја бих српску салату.",
+            "serbian_latin": "Ja bih srpsku salatu."
+          }
+        },
+        {
+          "id": "pivo",
+          "english": "Beer",
+          "serbian_cyrillic": "Пиво",
+          "serbian_latin": "Pivo",
+          "pronunciation_hint": "PEE-voh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Two beers, please.",
+            "serbian_cyrillic": "Два пива, молим.",
+            "serbian_latin": "Dva piva, molim."
+          }
+        },
+        {
+          "id": "vino",
+          "english": "Wine",
+          "serbian_cyrillic": "Вино",
+          "serbian_latin": "Vino",
+          "pronunciation_hint": "VEE-noh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One glass of red wine, please.",
+            "serbian_cyrillic": "Једну чашу црвеног вина, молим.",
+            "serbian_latin": "Jednu čašu crvenog vina, molim."
+          }
+        },
+        {
+          "id": "rucak",
+          "english": "Lunch",
+          "serbian_cyrillic": "Ручак",
+          "serbian_latin": "Ručak",
+          "pronunciation_hint": "ROO-chahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Lunch is at two o'clock.",
+            "serbian_cyrillic": "Ручак је у два сата.",
+            "serbian_latin": "Ručak je u dva sata."
+          }
+        },
+        {
+          "id": "dorucak",
+          "english": "Breakfast",
+          "serbian_cyrillic": "Доручак",
+          "serbian_latin": "Doručak",
+          "pronunciation_hint": "DOH-roo-chahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "What is for breakfast?",
+            "serbian_cyrillic": "Шта је за доручак?",
+            "serbian_latin": "Šta je za doručak?"
+          }
+        },
+        {
+          "id": "vecera",
+          "english": "Dinner",
+          "serbian_cyrillic": "Вечера",
+          "serbian_latin": "Večera",
+          "pronunciation_hint": "VEH-cheh-rah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Dinner is ready!",
+            "serbian_cyrillic": "Вечера је спремна!",
+            "serbian_latin": "Večera je spremna!"
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Polite Ordering with 'Ja bih...' & The Accusative Case",
+      "explanation": "To politely order food or drink in Serbian, use the phrase 'Ja bih...' (Ја бих...) meaning 'I would like...'. This is the conditional form of the verb 'biti' (to be/to want) and is the most common polite way to request something. When you use 'Ja bih' followed by a noun, that noun must be in the accusative case, which is the grammatical case for direct objects. For feminine nouns ending in '-a', the accusative changes '-a' to '-u': 'kafa' becomes 'kafu', 'voda' becomes 'vodu', 'salata' becomes 'salatu'. Masculine inanimate nouns stay the same in accusative: 'hleb' stays 'hleb', 'sir' stays 'sir'. Neuter nouns also stay the same: 'pivo' stays 'pivo', 'vino' stays 'vino'. You can also simply say 'Može jedna kafa' (Can I get a coffee) for a more casual approach.",
+      "examples": [
+        {
+          "english": "I would like a coffee.",
+          "serbian_cyrillic": "Ја бих кафу.",
+          "serbian_latin": "Ja bih kafu."
+        },
+        {
+          "english": "I would like water.",
+          "serbian_cyrillic": "Ја бих воду.",
+          "serbian_latin": "Ja bih vodu."
+        },
+        {
+          "english": "I would like bread.",
+          "serbian_cyrillic": "Ја бих хлеб.",
+          "serbian_latin": "Ja bih hleb."
+        },
+        {
+          "english": "I would like a beer.",
+          "serbian_cyrillic": "Ја бих пиво.",
+          "serbian_latin": "Ja bih pivo."
+        },
+        {
+          "english": "Can I get a salad? (casual)",
+          "serbian_cyrillic": "Може једна салата?",
+          "serbian_latin": "Može jedna salata?"
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Serbian Cuisine: Ćevapi, Rakija, and More",
+      "content": "Serbian cuisine is hearty, meat-heavy, and deeply influenced by Ottoman, Austro-Hungarian, and Mediterranean traditions. The most iconic Serbian dish is 'ćevapi' (ћевапи) — small grilled rolls of minced meat (usually a mix of beef and pork, or beef and lamb) served in a flatbread called 'lepinja' with raw onions and kajmak (a creamy dairy spread). Ćevapi are found everywhere from street vendors to sit-down restaurants. Another staple is 'pljeskavica,' a large spiced meat patty often called the Serbian hamburger. No discussion of Serbian food culture is complete without 'rakija' (ракија), a potent fruit brandy that is the national drink. The most popular variety is 'šljivovica' (plum rakija), but you will also find 'kajsijevača' (apricot), 'dunjevača' (quince), and 'lozovača' (grape). Rakija is served as a welcome drink, an aperitif, and even a folk remedy. Toasting with 'Živeli!' (Cheers! / To life!) is customary, and it is considered polite to maintain eye contact while clinking glasses."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What does 'hleb' mean?",
+        "options": ["Cheese", "Meat", "Bread", "Salad"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you politely say 'I would like a coffee' in Serbian?",
+        "options": ["Ja imam kafu", "Ja bih kafu", "Ja hoću kafa", "Ja pijem kafu"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the accusative form of 'voda' (water)?",
+        "options": ["Voda", "Vodu", "Vode", "Vodi"],
+        "correct": 1
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for 'cheese'.",
+        "correct_answers": ["Sir", "sir"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for 'breakfast'.",
+        "correct_answers": ["Doručak", "doručak", "Dorucak", "dorucak"]
+      },
+      {
+        "type": "match_pairs",
+        "pairs": [
+          {"english": "Bread", "serbian": "Hleb"},
+          {"english": "Water", "serbian": "Voda"},
+          {"english": "Coffee", "serbian": "Kafa"},
+          {"english": "Beer", "serbian": "Pivo"},
+          {"english": "Wine", "serbian": "Vino"},
+          {"english": "Dinner", "serbian": "Večera"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "kafa",
+        "options": ["Tea", "Coffee", "Water"],
+        "correct": 1
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "pivo",
+        "options": ["Wine", "Water", "Beer"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is 'ćevapi'?",
+        "options": [
+          "A type of cheese",
+          "Grilled minced meat rolls",
+          "A fruit brandy",
+          "A Serbian salad"
+        ],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does 'Živeli!' mean when toasting?",
+        "options": ["Thank you!", "Goodbye!", "Cheers! / To life!", "Welcome!"],
+        "correct": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{{define "content"}}
+<div class="quiz-container">
+    <div class="card results-card">
+        <h1>Quiz Results</h1>
+        <h2 style="color:var(--gray-500);">{{.Lesson.Title}}</h2>
+
+        <div class="results-score {{if .Passed}}pass{{else}}fail{{end}}">
+            {{.Score}}%
+        </div>
+
+        <p style="margin-bottom:0.5rem;font-size:1.1rem;">
+            {{.Correct}} out of {{.Total}} correct
+        </p>
+
+        <p class="results-message">
+            {{if .Perfect}}
+                Perfect score! You're a natural!
+            {{else if .Excellent}}
+                Excellent work! Almost perfect!
+            {{else if .Passed}}
+                Great job! You've unlocked the next lesson!
+            {{else if .HalfWay}}
+                Good effort! You need 70% to advance. Try again!
+            {{else}}
+                Keep practicing! Review the lesson and try again.
+            {{end}}
+        </p>
+
+        <div class="results-actions">
+            <a href="/lessons/serbian/{{.Lesson.ID}}" class="btn btn-outline">Review Lesson</a>
+            {{if .Passed}}
+                {{if .NextLessonID}}
+                <a href="/lessons/serbian/{{.NextLessonID}}" class="btn btn-primary">Next Lesson</a>
+                {{else}}
+                <a href="/lessons/serbian" class="btn btn-primary">All Lessons</a>
+                {{end}}
+            {{else}}
+                <a href="/lessons/serbian/{{.Lesson.ID}}/quiz" class="btn btn-primary">Try Again</a>
+            {{end}}
+        </div>
+    </div>
+</div>
+{{end}}

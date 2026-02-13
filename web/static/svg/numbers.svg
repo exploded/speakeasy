@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F5F3FF" rx="20" />
+  <!-- Decorative circles -->
+  <circle cx="30" cy="30" r="20" fill="#F59E0B" opacity="0.15" />
+  <circle cx="370" cy="270" r="25" fill="#7C3AED" opacity="0.15" />
+  <circle cx="380" cy="40" r="15" fill="#14B8A6" opacity="0.15" />
+  <circle cx="20" cy="260" r="18" fill="#3B82F6" opacity="0.15" />
+  <!-- Number 1 -->
+  <g transform="translate(55, 80)">
+    <circle cx="0" cy="0" r="38" fill="#7C3AED" opacity="0.15" />
+    <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#7C3AED">1</text>
+  </g>
+  <!-- Number 2 -->
+  <g transform="translate(155, 50)">
+    <circle cx="0" cy="0" r="38" fill="#F59E0B" opacity="0.15" />
+    <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#F59E0B">2</text>
+  </g>
+  <!-- Number 3 -->
+  <g transform="translate(260, 90)">
+    <circle cx="0" cy="0" r="40" fill="#14B8A6" opacity="0.15" />
+    <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#14B8A6">3</text>
+  </g>
+  <!-- Number 4 -->
+  <g transform="translate(130, 190)">
+    <circle cx="0" cy="0" r="38" fill="#3B82F6" opacity="0.15" />
+    <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#3B82F6">4</text>
+  </g>
+  <!-- Number 5 -->
+  <g transform="translate(280, 210)">
+    <circle cx="0" cy="0" r="42" fill="#EF4444" opacity="0.15" />
+    <text x="0" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="bold" fill="#EF4444">5</text>
+  </g>
+  <!-- Sparkles / Stars -->
+  <polygon points="350,100 354,112 366,112 356,120 360,132 350,124 340,132 344,120 334,112 346,112" fill="#F59E0B" />
+  <polygon points="50,180 53,188 61,188 55,193 57,201 50,196 43,201 45,193 39,188 47,188" fill="#7C3AED" />
+  <polygon points="200,140 203,148 211,148 205,153 207,161 200,156 193,161 195,153 189,148 197,148" fill="#14B8A6" />
+  <polygon points="340,180 342,186 348,186 343,190 345,196 340,192 335,196 337,190 332,186 338,186" fill="#3B82F6" />
+  <polygon points="90,40 92,46 98,46 93,50 95,56 90,52 85,56 87,50 82,46 88,46" fill="#EF4444" />
+  <!-- Small dots -->
+  <circle cx="180" cy="270" r="4" fill="#F59E0B" opacity="0.5" />
+  <circle cx="320" cy="50" r="3" fill="#14B8A6" opacity="0.5" />
+  <circle cx="60" cy="130" r="3" fill="#3B82F6" opacity="0.5" />
+  <circle cx="350" cy="240" r="4" fill="#7C3AED" opacity="0.5" />
+  <circle cx="220" cy="30" r="3" fill="#EF4444" opacity="0.5" />
+</svg>

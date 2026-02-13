@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Sky -->
+  <rect width="400" height="300" fill="#EDE9FE" />
+  <!-- Ground / path -->
+  <rect x="0" y="240" width="400" height="60" fill="#D1FAE5" rx="0" />
+  <rect x="170" y="230" width="60" height="70" fill="#9CA3AF" rx="2" /> <!-- road -->
+  <rect x="195" y="240" width="10" height="12" fill="#E5E7EB" rx="1" />
+  <rect x="195" y="262" width="10" height="12" fill="#E5E7EB" rx="1" />
+  <rect x="195" y="284" width="10" height="12" fill="#E5E7EB" rx="1" />
+  <!-- Sign post -->
+  <rect x="295" y="130" width="8" height="115" fill="#78716C" rx="3" />
+  <!-- Sign board -->
+  <rect x="265" y="95" width="80" height="42" rx="8" fill="#3B82F6" />
+  <rect x="275" y="105" width="60" height="5" rx="2" fill="white" opacity="0.7" />
+  <rect x="285" y="118" width="40" height="5" rx="2" fill="white" opacity="0.7" />
+  <!-- Arrow on sign -->
+  <polygon points="340,115 355,115 355,108 370,118 355,128 355,121 340,121" fill="white" opacity="0.5" />
+  <!-- Person -->
+  <circle cx="130" cy="130" r="30" fill="#FBBF24" /> <!-- head -->
+  <circle cx="120" cy="125" r="4.5" fill="#1E1B4B" /> <!-- left eye -->
+  <circle cx="142" cy="125" r="4.5" fill="#1E1B4B" /> <!-- right eye -->
+  <!-- Raised eyebrows (confused) -->
+  <line x1="114" y1="115" x2="126" y2="113" stroke="#1E1B4B" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="136" y1="113" x2="148" y2="115" stroke="#1E1B4B" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Open mouth (surprised/questioning) -->
+  <ellipse cx="131" cy="143" rx="8" ry="6" fill="#1E1B4B" />
+  <!-- Body -->
+  <rect x="112" y="160" width="36" height="55" rx="14" fill="#7C3AED" />
+  <!-- Legs -->
+  <rect x="108" y="215" width="16" height="35" rx="7" fill="#6D28D9" />
+  <rect x="132" y="215" width="16" height="35" rx="7" fill="#6D28D9" />
+  <!-- Arms -->
+  <rect x="96" y="168" width="12" height="38" rx="6" fill="#FBBF24" transform="rotate(15, 100, 168)" />
+  <rect x="148" y="165" width="12" height="38" rx="6" fill="#FBBF24" transform="rotate(-20, 154, 165)" />
+  <!-- Thought bubble -->
+  <ellipse cx="175" cy="60" rx="55" ry="35" fill="white" stroke="#7C3AED" stroke-width="2" />
+  <circle cx="155" cy="100" r="8" fill="white" stroke="#7C3AED" stroke-width="2" />
+  <circle cx="148" cy="115" r="5" fill="white" stroke="#7C3AED" stroke-width="2" />
+  <!-- ?! inside bubble -->
+  <text x="162" y="72" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#F59E0B">?</text>
+  <text x="188" y="72" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#EF4444">!</text>
+  <!-- Decorative bush -->
+  <circle cx="45" cy="235" r="22" fill="#34D399" />
+  <circle cx="30" cy="230" r="18" fill="#10B981" />
+  <circle cx="58" cy="228" r="16" fill="#6EE7B7" />
+  <!-- Another bush -->
+  <circle cx="365" cy="235" r="18" fill="#34D399" />
+  <circle cx="355" cy="230" r="14" fill="#10B981" />
+</svg>

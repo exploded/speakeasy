@@ -1,0 +1,58 @@
+{{define "content"}}
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
+    <div>
+        <h1>Serbian Lessons</h1>
+        <p style="color:var(--gray-500);">Master Serbian step by step</p>
+    </div>
+    <div class="script-toggle">
+        <button onclick="setScript(event, 'latin')" class="active">Latin</button>
+        <button onclick="setScript(event, 'cyrillic')">Cyrillic</button>
+        <button onclick="setScript(event, 'both')">Both</button>
+    </div>
+</div>
+
+<div class="progress-bar-container" style="margin-bottom:2rem;">
+    <div class="progress-bar" style="width:{{.ProgressPercent}}%"></div>
+</div>
+
+<div class="lesson-grid">
+    {{range .Lessons}}
+    {{if eq .Status "locked"}}
+    <div class="lesson-card locked">
+        <div class="lesson-card-illustration">
+            <img src="/static/svg/{{.Illustration}}" alt="{{.Title}}" style="max-height:140px;">
+        </div>
+        <div class="lesson-card-body">
+            <h3>Lesson {{.Order}}: {{.Title}}</h3>
+            <p>{{.Description}}</p>
+            <div class="lesson-card-footer">
+                <span class="badge badge-locked">Locked</span>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <a href="/lessons/serbian/{{.ID}}" class="lesson-card {{.Status}}" style="text-decoration:none;color:inherit;">
+        <div class="lesson-card-illustration">
+            <img src="/static/svg/{{.Illustration}}" alt="{{.Title}}" style="max-height:140px;">
+        </div>
+        <div class="lesson-card-body">
+            <h3>Lesson {{.Order}}: {{.Title}}</h3>
+            <p>{{.Description}}</p>
+            <div class="lesson-card-footer">
+                {{if eq .Status "completed"}}
+                    <span class="badge badge-completed">Completed</span>
+                    <span class="score-display">Best: {{.BestScore}}%</span>
+                {{else if eq .Status "available"}}
+                    <span class="badge badge-available">Available</span>
+                    <span class="btn btn-primary btn-sm">Start Lesson</span>
+                {{else if eq .Status "in_progress"}}
+                    <span class="badge badge-in-progress">In Progress</span>
+                    <span class="btn btn-primary btn-sm">Continue</span>
+                {{end}}
+            </div>
+        </div>
+    </a>
+    {{end}}
+    {{end}}
+</div>
+{{end}}

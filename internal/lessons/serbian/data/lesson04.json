@@ -1,0 +1,281 @@
+{
+  "id": "lesson04",
+  "title": "Family & People",
+  "description": "Learn vocabulary for family members and understand how grammatical gender works in Serbian nouns and adjectives.",
+  "order": 4,
+  "prerequisite": "lesson03",
+  "illustration": "family.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Family Members",
+      "items": [
+        {
+          "id": "majka",
+          "english": "Mother",
+          "serbian_cyrillic": "Мајка / Мама",
+          "serbian_latin": "Majka / Mama",
+          "pronunciation_hint": "MY-kah / MAH-mah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My mother is a doctor.",
+            "serbian_cyrillic": "Моја мајка је лекар.",
+            "serbian_latin": "Moja majka je lekar."
+          }
+        },
+        {
+          "id": "otac",
+          "english": "Father",
+          "serbian_cyrillic": "Отац / Тата",
+          "serbian_latin": "Otac / Tata",
+          "pronunciation_hint": "OH-tahts / TAH-tah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My father works in Belgrade.",
+            "serbian_cyrillic": "Мој отац ради у Београду.",
+            "serbian_latin": "Moj otac radi u Beogradu."
+          }
+        },
+        {
+          "id": "brat",
+          "english": "Brother",
+          "serbian_cyrillic": "Брат",
+          "serbian_latin": "Brat",
+          "pronunciation_hint": "braht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have one brother.",
+            "serbian_cyrillic": "Имам једног брата.",
+            "serbian_latin": "Imam jednog brata."
+          }
+        },
+        {
+          "id": "sestra",
+          "english": "Sister",
+          "serbian_cyrillic": "Сестра",
+          "serbian_latin": "Sestra",
+          "pronunciation_hint": "SEHS-trah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My sister lives in Novi Sad.",
+            "serbian_cyrillic": "Моја сестра живи у Новом Саду.",
+            "serbian_latin": "Moja sestra živi u Novom Sadu."
+          }
+        },
+        {
+          "id": "sin",
+          "english": "Son",
+          "serbian_cyrillic": "Син",
+          "serbian_latin": "Sin",
+          "pronunciation_hint": "seen",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Their son is five years old.",
+            "serbian_cyrillic": "Њихов син има пет година.",
+            "serbian_latin": "Njihov sin ima pet godina."
+          }
+        },
+        {
+          "id": "cerka",
+          "english": "Daughter",
+          "serbian_cyrillic": "Ћерка",
+          "serbian_latin": "Ćerka",
+          "pronunciation_hint": "CHEHR-kah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My daughter goes to school.",
+            "serbian_cyrillic": "Моја ћерка иде у школу.",
+            "serbian_latin": "Moja ćerka ide u školu."
+          }
+        },
+        {
+          "id": "deda",
+          "english": "Grandfather",
+          "serbian_cyrillic": "Деда",
+          "serbian_latin": "Deda",
+          "pronunciation_hint": "DEH-dah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Grandfather tells the best stories.",
+            "serbian_cyrillic": "Деда прича најбоље приче.",
+            "serbian_latin": "Deda priča najbolje priče."
+          }
+        },
+        {
+          "id": "baba",
+          "english": "Grandmother",
+          "serbian_cyrillic": "Баба",
+          "serbian_latin": "Baba",
+          "pronunciation_hint": "BAH-bah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Grandmother makes the best food.",
+            "serbian_cyrillic": "Баба прави најбољу храну.",
+            "serbian_latin": "Baba pravi najbolju hranu."
+          }
+        },
+        {
+          "id": "muz",
+          "english": "Husband",
+          "serbian_cyrillic": "Муж",
+          "serbian_latin": "Muž",
+          "pronunciation_hint": "moozh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Her husband is Serbian.",
+            "serbian_cyrillic": "Њен муж је Србин.",
+            "serbian_latin": "Njen muž je Srbin."
+          }
+        },
+        {
+          "id": "zena",
+          "english": "Wife / Woman",
+          "serbian_cyrillic": "Жена",
+          "serbian_latin": "Žena",
+          "pronunciation_hint": "ZHEH-nah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "His wife speaks three languages.",
+            "serbian_cyrillic": "Његова жена говори три језика.",
+            "serbian_latin": "Njegova žena govori tri jezika."
+          }
+        },
+        {
+          "id": "dete",
+          "english": "Child",
+          "serbian_cyrillic": "Дете",
+          "serbian_latin": "Dete",
+          "pronunciation_hint": "DEH-teh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The child is playing in the park.",
+            "serbian_cyrillic": "Дете се игра у парку.",
+            "serbian_latin": "Dete se igra u parku."
+          }
+        },
+        {
+          "id": "porodica",
+          "english": "Family",
+          "serbian_cyrillic": "Породица",
+          "serbian_latin": "Porodica",
+          "pronunciation_hint": "poh-ROH-dee-tsah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Family is very important in Serbia.",
+            "serbian_cyrillic": "Породица је веома важна у Србији.",
+            "serbian_latin": "Porodica je veoma važna u Srbiji."
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Grammatical Gender in Serbian",
+      "explanation": "Every Serbian noun has one of three grammatical genders: masculine (muški rod), feminine (ženski rod), or neuter (srednji rod). You can usually identify the gender from the word ending. Masculine nouns typically end in a consonant: 'brat' (brother), 'otac' (father), 'muž' (husband). Feminine nouns usually end in '-a': 'sestra' (sister), 'majka' (mother), 'žena' (woman). Neuter nouns usually end in '-o' or '-e': 'dete' (child), 'jutro' (morning). Gender is critical because adjectives, pronouns, and verb past tenses must agree with the noun. The adjective 'veliki' (big) changes form: 'veliki brat' (big brother, masculine), 'velika sestra' (big sister, feminine), 'veliko dete' (big child, neuter).",
+      "examples": [
+        {
+          "english": "Big brother (masculine)",
+          "serbian_cyrillic": "Велики брат",
+          "serbian_latin": "Veliki brat"
+        },
+        {
+          "english": "Big sister (feminine)",
+          "serbian_cyrillic": "Велика сестра",
+          "serbian_latin": "Velika sestra"
+        },
+        {
+          "english": "Big child (neuter)",
+          "serbian_cyrillic": "Велико дете",
+          "serbian_latin": "Veliko dete"
+        },
+        {
+          "english": "My father (masculine possessive)",
+          "serbian_cyrillic": "Мој отац",
+          "serbian_latin": "Moj otac"
+        },
+        {
+          "english": "My mother (feminine possessive)",
+          "serbian_cyrillic": "Моја мајка",
+          "serbian_latin": "Moja majka"
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Serbian Family Values & Slava",
+      "content": "Family is the cornerstone of Serbian society. Extended families remain closely connected, and it is common for multiple generations to live together or very near each other. Sunday family lunches are a widespread tradition. The most distinctive Serbian family tradition is 'Slava' (Слава), the celebration of a family's patron saint day. Each Serbian family inherits its Slava from the father's side, and it is passed down through generations. The celebration involves a special ritual bread called 'slavski kolač,' wheat (žito/koljivo), wine, and a candle. The priest blesses the bread, and guests come throughout the day to celebrate. UNESCO recognized Slava as an Intangible Cultural Heritage of Humanity in 2014. When invited to someone's Slava, it is customary to bring a gift — wine, flowers, or sweets are all appropriate choices."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What does 'sestra' mean?",
+        "options": ["Brother", "Mother", "Sister", "Daughter"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which gender is the word 'dete' (child)?",
+        "options": ["Masculine", "Feminine", "Neuter", "No gender"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the correct feminine form of the adjective 'veliki' (big)?",
+        "options": ["Veliki", "Velika", "Veliko", "Velike"],
+        "correct": 1
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for 'family'.",
+        "correct_answers": ["Porodica", "porodica"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for 'brother'.",
+        "correct_answers": ["Brat", "brat"]
+      },
+      {
+        "type": "match_pairs",
+        "pairs": [
+          {"english": "Mother", "serbian": "Majka"},
+          {"english": "Father", "serbian": "Otac"},
+          {"english": "Son", "serbian": "Sin"},
+          {"english": "Daughter", "serbian": "Ćerka"},
+          {"english": "Grandmother", "serbian": "Baba"},
+          {"english": "Husband", "serbian": "Muž"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "sestra",
+        "options": ["Brother", "Sister", "Mother"],
+        "correct": 1
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "porodica",
+        "options": ["People", "Friend", "Family"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is 'Slava' in Serbian culture?",
+        "options": [
+          "A traditional dance",
+          "A family's patron saint day celebration",
+          "A type of Serbian food",
+          "A New Year tradition"
+        ],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you say 'My mother' in Serbian?",
+        "options": ["Moj majka", "Moja majka", "Moje majka", "Moji majka"],
+        "correct": 1
+      }
+    ]
+  }
+}

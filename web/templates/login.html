@@ -1,0 +1,53 @@
+{{define "content"}}
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>{{if .IsRegister}}Create Account{{else}}Welcome Back{{end}}</h2>
+        <p class="subtitle">{{if .IsRegister}}Start your Serbian learning journey{{else}}Continue your learning journey{{end}}</p>
+
+        {{if .Error}}
+        <div class="alert alert-error">{{.Error}}</div>
+        {{end}}
+
+        {{if .Success}}
+        <div class="alert alert-success">{{.Success}}</div>
+        {{end}}
+
+        <form method="POST" action="{{if .IsRegister}}/register{{else}}/login{{end}}">
+            {{if .IsRegister}}
+            <div class="form-group">
+                <label for="display_name">Display Name</label>
+                <input type="text" id="display_name" name="display_name" required placeholder="How should we call you?">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Choose a username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            {{else}}
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Your username">
+            </div>
+            {{end}}
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="{{if .IsRegister}}Create a password{{else}}Your password{{end}}">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+                {{if .IsRegister}}Create Account{{else}}Login{{end}}
+            </button>
+        </form>
+
+        <p class="auth-switch">
+            {{if .IsRegister}}
+                Already have an account? <a href="/login">Login</a>
+            {{else}}
+                Don't have an account? <a href="/register">Register</a>
+            {{end}}
+        </p>
+    </div>
+</div>
+{{end}}

@@ -1,0 +1,393 @@
+{
+  "id": "lesson02",
+  "title": "Numbers 1-20",
+  "description": "Learn to count from 1 to 20 in Serbian and understand basic number usage in everyday situations.",
+  "order": 2,
+  "prerequisite": "lesson01",
+  "illustration": "numbers.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Numbers 1-10",
+      "items": [
+        {
+          "id": "jedan",
+          "english": "One (1)",
+          "serbian_cyrillic": "Један",
+          "serbian_latin": "Jedan",
+          "pronunciation_hint": "YEH-dahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One coffee, please.",
+            "serbian_cyrillic": "Једну кафу, молим.",
+            "serbian_latin": "Jednu kafu, molim."
+          }
+        },
+        {
+          "id": "dva",
+          "english": "Two (2)",
+          "serbian_cyrillic": "Два",
+          "serbian_latin": "Dva",
+          "pronunciation_hint": "dvah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Two waters, please.",
+            "serbian_cyrillic": "Две воде, молим.",
+            "serbian_latin": "Dve vode, molim."
+          }
+        },
+        {
+          "id": "tri",
+          "english": "Three (3)",
+          "serbian_cyrillic": "Три",
+          "serbian_latin": "Tri",
+          "pronunciation_hint": "tree",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have three brothers.",
+            "serbian_cyrillic": "Имам три брата.",
+            "serbian_latin": "Imam tri brata."
+          }
+        },
+        {
+          "id": "cetiri",
+          "english": "Four (4)",
+          "serbian_cyrillic": "Четири",
+          "serbian_latin": "Četiri",
+          "pronunciation_hint": "CHEH-tee-ree",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "There are four chairs.",
+            "serbian_cyrillic": "Има четири столице.",
+            "serbian_latin": "Ima četiri stolice."
+          }
+        },
+        {
+          "id": "pet",
+          "english": "Five (5)",
+          "serbian_cyrillic": "Пет",
+          "serbian_latin": "Pet",
+          "pronunciation_hint": "peht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Five minutes, please.",
+            "serbian_cyrillic": "Пет минута, молим.",
+            "serbian_latin": "Pet minuta, molim."
+          }
+        },
+        {
+          "id": "sest",
+          "english": "Six (6)",
+          "serbian_cyrillic": "Шест",
+          "serbian_latin": "Šest",
+          "pronunciation_hint": "shehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It is six o'clock.",
+            "serbian_cyrillic": "Шест је сати.",
+            "serbian_latin": "Šest je sati."
+          }
+        },
+        {
+          "id": "sedam",
+          "english": "Seven (7)",
+          "serbian_cyrillic": "Седам",
+          "serbian_latin": "Sedam",
+          "pronunciation_hint": "SEH-dahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Seven days in a week.",
+            "serbian_cyrillic": "Седам дана у недељи.",
+            "serbian_latin": "Sedam dana u nedelji."
+          }
+        },
+        {
+          "id": "osam",
+          "english": "Eight (8)",
+          "serbian_cyrillic": "Осам",
+          "serbian_latin": "Osam",
+          "pronunciation_hint": "OH-sahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I work eight hours.",
+            "serbian_cyrillic": "Радим осам сати.",
+            "serbian_latin": "Radim osam sati."
+          }
+        },
+        {
+          "id": "devet",
+          "english": "Nine (9)",
+          "serbian_cyrillic": "Девет",
+          "serbian_latin": "Devet",
+          "pronunciation_hint": "DEH-veht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Nine students are here.",
+            "serbian_cyrillic": "Девет ученика је овде.",
+            "serbian_latin": "Devet učenika je ovde."
+          }
+        },
+        {
+          "id": "deset",
+          "english": "Ten (10)",
+          "serbian_cyrillic": "Десет",
+          "serbian_latin": "Deset",
+          "pronunciation_hint": "DEH-seht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "That costs ten dinars.",
+            "serbian_cyrillic": "То кошта десет динара.",
+            "serbian_latin": "To košta deset dinara."
+          }
+        }
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Numbers 11-20 & Useful Words",
+      "items": [
+        {
+          "id": "jedanaest",
+          "english": "Eleven (11)",
+          "serbian_cyrillic": "Једанаест",
+          "serbian_latin": "Jedanaest",
+          "pronunciation_hint": "yeh-DAH-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "She is eleven years old.",
+            "serbian_cyrillic": "Она има једанаест година.",
+            "serbian_latin": "Ona ima jedanaest godina."
+          }
+        },
+        {
+          "id": "dvanaest",
+          "english": "Twelve (12)",
+          "serbian_cyrillic": "Дванаест",
+          "serbian_latin": "Dvanaest",
+          "pronunciation_hint": "DVAH-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It is twelve o'clock.",
+            "serbian_cyrillic": "Дванаест је сати.",
+            "serbian_latin": "Dvanaest je sati."
+          }
+        },
+        {
+          "id": "trinaest",
+          "english": "Thirteen (13)",
+          "serbian_cyrillic": "Тринаест",
+          "serbian_latin": "Trinaest",
+          "pronunciation_hint": "TREE-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Thirteen people came.",
+            "serbian_cyrillic": "Тринаест људи је дошло.",
+            "serbian_latin": "Trinaest ljudi je došlo."
+          }
+        },
+        {
+          "id": "cetrnaest",
+          "english": "Fourteen (14)",
+          "serbian_cyrillic": "Четрнаест",
+          "serbian_latin": "Četrnaest",
+          "pronunciation_hint": "cheh-TUR-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The bus comes in fourteen minutes.",
+            "serbian_cyrillic": "Аутобус долази за четрнаест минута.",
+            "serbian_latin": "Autobus dolazi za četrnaest minuta."
+          }
+        },
+        {
+          "id": "petnaest",
+          "english": "Fifteen (15)",
+          "serbian_cyrillic": "Петнаест",
+          "serbian_latin": "Petnaest",
+          "pronunciation_hint": "PEH-tnah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Fifteen dinars, please.",
+            "serbian_cyrillic": "Петнаест динара, молим.",
+            "serbian_latin": "Petnaest dinara, molim."
+          }
+        },
+        {
+          "id": "sesnaest",
+          "english": "Sixteen (16)",
+          "serbian_cyrillic": "Шеснаест",
+          "serbian_latin": "Šesnaest",
+          "pronunciation_hint": "SHEH-snah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "He is sixteen years old.",
+            "serbian_cyrillic": "Он има шеснаест година.",
+            "serbian_latin": "On ima šesnaest godina."
+          }
+        },
+        {
+          "id": "sedamnaest",
+          "english": "Seventeen (17)",
+          "serbian_cyrillic": "Седамнаест",
+          "serbian_latin": "Sedamnaest",
+          "pronunciation_hint": "SEH-dahm-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "There are seventeen students in the class.",
+            "serbian_cyrillic": "Има седамнаест ученика у разреду.",
+            "serbian_latin": "Ima sedamnaest učenika u razredu."
+          }
+        },
+        {
+          "id": "osamnaest",
+          "english": "Eighteen (18)",
+          "serbian_cyrillic": "Осамнаест",
+          "serbian_latin": "Osamnaest",
+          "pronunciation_hint": "OH-sahm-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "She turned eighteen today.",
+            "serbian_cyrillic": "Она је данас напунила осамнаест.",
+            "serbian_latin": "Ona je danas napunila osamnaest."
+          }
+        },
+        {
+          "id": "devetnaest",
+          "english": "Nineteen (19)",
+          "serbian_cyrillic": "Деветнаест",
+          "serbian_latin": "Devetnaest",
+          "pronunciation_hint": "DEH-veht-nah-ehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Nineteen kilometers to Belgrade.",
+            "serbian_cyrillic": "Деветнаест километара до Београда.",
+            "serbian_latin": "Devetnaest kilometara do Beograda."
+          }
+        },
+        {
+          "id": "dvadeset",
+          "english": "Twenty (20)",
+          "serbian_cyrillic": "Двадесет",
+          "serbian_latin": "Dvadeset",
+          "pronunciation_hint": "DVAH-deh-seht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "That costs twenty dinars.",
+            "serbian_cyrillic": "То кошта двадесет динара.",
+            "serbian_latin": "To košta dvadeset dinara."
+          }
+        },
+        {
+          "id": "koliko",
+          "english": "How much / How many?",
+          "serbian_cyrillic": "Колико?",
+          "serbian_latin": "Koliko?",
+          "pronunciation_hint": "KOH-lee-koh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "How much does this cost?",
+            "serbian_cyrillic": "Колико ово кошта?",
+            "serbian_latin": "Koliko ovo košta?"
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Number Agreement Basics",
+      "explanation": "In Serbian, the noun following a number changes form depending on the number. After 'jedan' (1), the noun stays in its basic singular form. After 'dva' (2), 'tri' (3), and 'četiri' (4), nouns take a special plural form (roughly equivalent to the genitive singular for masculine/neuter). After numbers 5 and above, nouns take the genitive plural form. For example: 'jedan dinar' (one dinar), 'dva dinara' (two dinars), 'pet dinara' (five dinars). The number 'dva' also changes based on gender: 'dva' for masculine/neuter and 'dve' (две) for feminine nouns.",
+      "examples": [
+        {
+          "english": "One dinar",
+          "serbian_cyrillic": "Један динар",
+          "serbian_latin": "Jedan dinar"
+        },
+        {
+          "english": "Two dinars",
+          "serbian_cyrillic": "Два динара",
+          "serbian_latin": "Dva dinara"
+        },
+        {
+          "english": "Five dinars",
+          "serbian_cyrillic": "Пет динара",
+          "serbian_latin": "Pet dinara"
+        },
+        {
+          "english": "Two women",
+          "serbian_cyrillic": "Две жене",
+          "serbian_latin": "Dve žene"
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Counting on Fingers the Serbian Way",
+      "content": "Serbians count on their fingers differently than many Western Europeans and Americans. They start counting with the thumb as number one, then add the index finger for two, the middle finger for three, and so on. This means that holding up your index finger alone does not signify 'one' — it would be confusing! If you hold up your thumb, that clearly means 'one' in Serbia and most of the Balkans. This is a small but useful detail when ordering at a busy cafe or market where it might be too noisy to speak. The Serbian currency is the dinar (динар), and you will use numbers constantly when shopping, paying for transport, or tipping."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What is the Serbian word for 'five'?",
+        "options": ["Šest", "Pet", "Tri", "Sedam"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which number is 'Dvanaest'?",
+        "options": ["11", "20", "12", "2"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you say 'How much?' in Serbian?",
+        "options": ["Koliko?", "Kako?", "Gde?", "Kada?"],
+        "correct": 0
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for the number 7.",
+        "correct_answers": ["Sedam", "sedam"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for the number 20.",
+        "correct_answers": ["Dvadeset", "dvadeset"]
+      },
+      {
+        "type": "match_pairs",
+        "pairs": [
+          {"english": "One", "serbian": "Jedan"},
+          {"english": "Three", "serbian": "Tri"},
+          {"english": "Eight", "serbian": "Osam"},
+          {"english": "Ten", "serbian": "Deset"},
+          {"english": "Fifteen", "serbian": "Petnaest"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "pet",
+        "options": ["Three", "Five", "Ten"],
+        "correct": 1
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "deset",
+        "options": ["Nine", "Twelve", "Ten"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "When Serbians count on their fingers, which finger represents 'one'?",
+        "options": ["Index finger", "Pinky finger", "Thumb", "Middle finger"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the correct form for 'two women' in Serbian?",
+        "options": ["Dva žene", "Dve žene", "Dva žena", "Dve žena"],
+        "correct": 1
+      }
+    ]
+  }
+}

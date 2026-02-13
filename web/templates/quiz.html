@@ -1,0 +1,92 @@
+{{define "content"}}
+<div class="quiz-container">
+    <h1 style="margin-bottom:0.5rem;">Quiz: {{.Lesson.Title}}</h1>
+    <p style="color:var(--gray-500);margin-bottom:1.5rem;">Score at least 70% to unlock the next lesson!</p>
+
+    <div class="quiz-progress">
+        <span class="quiz-progress-text">{{len .Lesson.Quiz.Questions}} questions</span>
+        <div class="progress-bar-container">
+            <div class="progress-bar" style="width:0%" id="quiz-progress-bar"></div>
+        </div>
+    </div>
+
+    <form method="POST" action="/lessons/serbian/{{.Lesson.ID}}/quiz" id="quiz-form">
+        {{range $idx, $q := .Lesson.Quiz.Questions}}
+        <div class="question-card" id="question-{{$idx}}">
+            <h3>
+                <span style="color:var(--purple);margin-right:0.5rem;">Q{{add $idx 1}}.</span>
+                {{if eq $q.Type "multiple_choice"}}
+                    {{$q.Question}}
+                {{else if eq $q.Type "type_answer"}}
+                    {{$q.Prompt}}
+                {{else if eq $q.Type "match_pairs"}}
+                    Match the pairs:
+                {{else if eq $q.Type "listen_and_choose"}}
+                    Listen and choose the correct word:
+                {{end}}
+            </h3>
+
+            <input type="hidden" name="type-{{$idx}}" value="{{$q.Type}}">
+
+            {{if eq $q.Type "multiple_choice"}}
+                <div class="quiz-options">
+                    {{range $oi, $opt := $q.Options}}
+                    <label class="quiz-option" data-option="{{$oi}}" onclick="selectOption({{$idx}}, {{$oi}})">
+                        <span class="quiz-option-marker">{{optionLetter $oi}}</span>
+                        <span>{{$opt}}</span>
+                    </label>
+                    {{end}}
+                </div>
+                <input type="hidden" name="answer-{{$idx}}" id="answer-{{$idx}}" value="">
+
+            {{else if eq $q.Type "type_answer"}}
+                <input type="text" name="answer-{{$idx}}" id="answer-{{$idx}}" class="type-answer-input" placeholder="Type your answer..." autocomplete="off">
+
+            {{else if eq $q.Type "match_pairs"}}
+                <div class="match-container">
+                    <div class="match-column">
+                        <div style="font-weight:600;margin-bottom:0.5rem;color:var(--gray-500);">English</div>
+                        {{range $pi, $p := $q.Pairs}}
+                        <div class="match-item" data-match="{{$idx}}-english-{{$pi}}" onclick="selectMatchItem({{$idx}}, 'english', {{$pi}})">
+                            {{$p.English}}
+                        </div>
+                        {{end}}
+                    </div>
+                    <div class="match-column">
+                        <div style="font-weight:600;margin-bottom:0.5rem;color:var(--gray-500);">Serbian</div>
+                        {{range $pi, $p := $q.ShuffledSerbian}}
+                        <div class="match-item" data-match="{{$idx}}-serbian-{{$pi}}" onclick="selectMatchItem({{$idx}}, 'serbian', {{$pi}})">
+                            {{$p}}
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+                <input type="hidden" name="answer-{{$idx}}" id="answer-{{$idx}}" value="">
+
+            {{else if eq $q.Type "listen_and_choose"}}
+                <div style="text-align:center;margin-bottom:1rem;">
+                    <button type="button" class="play-btn" onclick="playAudio(event, '{{$q.AudioText}}', 'sr')" style="width:56px;height:56px;">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;"><polygon points="5,3 19,12 5,21"/></svg>
+                    </button>
+                </div>
+                <div class="quiz-options">
+                    {{range $oi, $opt := $q.Options}}
+                    <label class="quiz-option" data-option="{{$oi}}" onclick="selectOption({{$idx}}, {{$oi}})">
+                        <span class="quiz-option-marker">{{optionLetter $oi}}</span>
+                        <span>{{$opt}}</span>
+                    </label>
+                    {{end}}
+                </div>
+                <input type="hidden" name="answer-{{$idx}}" id="answer-{{$idx}}" value="">
+            {{end}}
+        </div>
+        {{end}}
+
+        <input type="hidden" name="total" value="{{len .Lesson.Quiz.Questions}}">
+
+        <div style="text-align:center;margin:2rem 0;">
+            <button type="submit" class="btn btn-primary btn-lg">Submit Quiz</button>
+        </div>
+    </form>
+</div>
+{{end}}

@@ -1,0 +1,270 @@
+{
+  "id": "lesson01",
+  "title": "Greetings & Basics",
+  "description": "Learn essential Serbian greetings and basic polite expressions to start your first conversations.",
+  "order": 1,
+  "prerequisite": null,
+  "illustration": "greetings.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Essential Greetings",
+      "items": [
+        {
+          "id": "zdravo",
+          "english": "Hello",
+          "serbian_cyrillic": "Здраво",
+          "serbian_latin": "Zdravo",
+          "pronunciation_hint": "ZDRAH-voh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Hello, how are you?",
+            "serbian_cyrillic": "Здраво, како си?",
+            "serbian_latin": "Zdravo, kako si?"
+          }
+        },
+        {
+          "id": "dovidjenja",
+          "english": "Goodbye",
+          "serbian_cyrillic": "Довиђења",
+          "serbian_latin": "Doviđenja",
+          "pronunciation_hint": "doh-vee-JEH-nyah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Goodbye, see you tomorrow!",
+            "serbian_cyrillic": "Довиђења, видимо се сутра!",
+            "serbian_latin": "Doviđenja, vidimo se sutra!"
+          }
+        },
+        {
+          "id": "molim",
+          "english": "Please",
+          "serbian_cyrillic": "Молим",
+          "serbian_latin": "Molim",
+          "pronunciation_hint": "MOH-leem",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Water, please.",
+            "serbian_cyrillic": "Воду, молим.",
+            "serbian_latin": "Vodu, molim."
+          }
+        },
+        {
+          "id": "hvala",
+          "english": "Thank you",
+          "serbian_cyrillic": "Хвала",
+          "serbian_latin": "Hvala",
+          "pronunciation_hint": "HVAH-lah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Thank you very much!",
+            "serbian_cyrillic": "Хвала лепо!",
+            "serbian_latin": "Hvala lepo!"
+          }
+        },
+        {
+          "id": "da",
+          "english": "Yes",
+          "serbian_cyrillic": "Да",
+          "serbian_latin": "Da",
+          "pronunciation_hint": "dah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Yes, I understand.",
+            "serbian_cyrillic": "Да, разумем.",
+            "serbian_latin": "Da, razumem."
+          }
+        },
+        {
+          "id": "ne",
+          "english": "No",
+          "serbian_cyrillic": "Не",
+          "serbian_latin": "Ne",
+          "pronunciation_hint": "neh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "No, thank you.",
+            "serbian_cyrillic": "Не, хвала.",
+            "serbian_latin": "Ne, hvala."
+          }
+        },
+        {
+          "id": "dobro_jutro",
+          "english": "Good morning",
+          "serbian_cyrillic": "Добро јутро",
+          "serbian_latin": "Dobro jutro",
+          "pronunciation_hint": "DOH-broh YOO-troh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good morning, how did you sleep?",
+            "serbian_cyrillic": "Добро јутро, како си спавао?",
+            "serbian_latin": "Dobro jutro, kako si spavao?"
+          }
+        },
+        {
+          "id": "dobro_vece",
+          "english": "Good evening",
+          "serbian_cyrillic": "Добро вече",
+          "serbian_latin": "Dobro veče",
+          "pronunciation_hint": "DOH-broh VEH-cheh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good evening, welcome!",
+            "serbian_cyrillic": "Добро вече, добродошли!",
+            "serbian_latin": "Dobro veče, dobrodošli!"
+          }
+        },
+        {
+          "id": "dobar_dan",
+          "english": "Good day",
+          "serbian_cyrillic": "Добар дан",
+          "serbian_latin": "Dobar dan",
+          "pronunciation_hint": "DOH-bar dahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good day, sir.",
+            "serbian_cyrillic": "Добар дан, господине.",
+            "serbian_latin": "Dobar dan, gospodine."
+          }
+        },
+        {
+          "id": "kako_si",
+          "english": "How are you?",
+          "serbian_cyrillic": "Како си?",
+          "serbian_latin": "Kako si?",
+          "pronunciation_hint": "KAH-koh see",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Hello! How are you?",
+            "serbian_cyrillic": "Здраво! Како си?",
+            "serbian_latin": "Zdravo! Kako si?"
+          }
+        },
+        {
+          "id": "dobro_sam",
+          "english": "I'm fine",
+          "serbian_cyrillic": "Добро сам",
+          "serbian_latin": "Dobro sam",
+          "pronunciation_hint": "DOH-broh sahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I'm fine, thank you.",
+            "serbian_cyrillic": "Добро сам, хвала.",
+            "serbian_latin": "Dobro sam, hvala."
+          }
+        },
+        {
+          "id": "izvini",
+          "english": "Sorry (informal/formal)",
+          "serbian_cyrillic": "Извини / Извините",
+          "serbian_latin": "Izvini / Izvinite",
+          "pronunciation_hint": "eez-VEE-nee / eez-VEE-nee-teh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Sorry, where is the exit?",
+            "serbian_cyrillic": "Извините, где је излаз?",
+            "serbian_latin": "Izvinite, gde je izlaz?"
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Formal vs. Informal Address",
+      "explanation": "Serbian distinguishes between formal and informal ways of addressing people, much like French 'tu' and 'vous'. Use 'ti' (ти) when speaking to friends, family, children, or peers your age. Use 'Vi' (Ви) — always capitalized in writing — when speaking to strangers, elders, authority figures, or in professional settings. Verb endings change accordingly: 'Kako si?' (informal) becomes 'Kako ste?' (formal). Similarly, 'Izvini' (informal sorry) becomes 'Izvinite' (formal sorry). When in doubt, start with the formal form — Serbians will often tell you 'Možemo na ti' (We can use informal), inviting you to switch.",
+      "examples": [
+        {
+          "english": "How are you? (informal)",
+          "serbian_cyrillic": "Како си?",
+          "serbian_latin": "Kako si?"
+        },
+        {
+          "english": "How are you? (formal)",
+          "serbian_cyrillic": "Како сте?",
+          "serbian_latin": "Kako ste?"
+        },
+        {
+          "english": "Excuse me (informal)",
+          "serbian_cyrillic": "Извини",
+          "serbian_latin": "Izvini"
+        },
+        {
+          "english": "Excuse me (formal)",
+          "serbian_cyrillic": "Извините",
+          "serbian_latin": "Izvinite"
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Serbian Greeting Customs: Three Kisses",
+      "content": "When Serbians greet close friends and family, they typically exchange three kisses on alternating cheeks (right-left-right). This tradition is rooted in Orthodox Christian culture, where the number three holds symbolic significance related to the Holy Trinity. A handshake is the norm for more formal or first-time introductions. Men often shake hands firmly while maintaining eye contact. Among close male friends, a handshake combined with a pat on the back or even a hug is common. Note that Serbians may stand closer during conversation than you might be used to — this is a sign of warmth, not intrusion. When entering someone's home, it is customary to remove your shoes, and the host will almost always offer you something to drink."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What does 'Zdravo' mean?",
+        "options": ["Goodbye", "Hello", "Please", "Thank you"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which greeting would you use in the morning?",
+        "options": ["Dobro veče", "Dobar dan", "Dobro jutro", "Doviđenja"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you say 'How are you?' formally in Serbian?",
+        "options": ["Kako si?", "Kako ste?", "Kako sam?", "Kako su?"],
+        "correct": 1
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for 'Thank you'.",
+        "correct_answers": ["Hvala", "hvala"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script word for 'Please'.",
+        "correct_answers": ["Molim", "molim"]
+      },
+      {
+        "type": "match_pairs",
+        "pairs": [
+          {"english": "Hello", "serbian": "Zdravo"},
+          {"english": "Goodbye", "serbian": "Doviđenja"},
+          {"english": "Good morning", "serbian": "Dobro jutro"},
+          {"english": "Good evening", "serbian": "Dobro veče"},
+          {"english": "Thank you", "serbian": "Hvala"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "zdravo",
+        "options": ["Goodbye", "Hello", "Sorry"],
+        "correct": 1
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "hvala",
+        "options": ["Please", "Yes", "Thank you"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How many kisses are traditionally exchanged when greeting in Serbia?",
+        "options": ["One", "Two", "Three", "Four"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the correct response to 'Kako si?'",
+        "options": ["Hvala", "Molim", "Dobro sam", "Doviđenja"],
+        "correct": 2
+      }
+    ]
+  }
+}

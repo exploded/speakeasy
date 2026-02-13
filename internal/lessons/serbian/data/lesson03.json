@@ -1,0 +1,246 @@
+{
+  "id": "lesson03",
+  "title": "Common Phrases",
+  "description": "Master essential everyday phrases for navigating conversations, asking for help, and getting around in Serbia.",
+  "order": 3,
+  "prerequisite": "lesson02",
+  "illustration": "phrases.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Survival Phrases",
+      "items": [
+        {
+          "id": "ne_razumem",
+          "english": "I don't understand",
+          "serbian_cyrillic": "Не разумем",
+          "serbian_latin": "Ne razumem",
+          "pronunciation_hint": "neh RAH-zoo-mehm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Sorry, I don't understand Serbian.",
+            "serbian_cyrillic": "Извините, не разумем српски.",
+            "serbian_latin": "Izvinite, ne razumem srpski."
+          }
+        },
+        {
+          "id": "da_li_govorite_engleski",
+          "english": "Do you speak English?",
+          "serbian_cyrillic": "Да ли говорите енглески?",
+          "serbian_latin": "Da li govorite engleski?",
+          "pronunciation_hint": "dah lee goh-VOH-ree-teh EHN-glehs-kee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Excuse me, do you speak English?",
+            "serbian_cyrillic": "Извините, да ли говорите енглески?",
+            "serbian_latin": "Izvinite, da li govorite engleski?"
+          }
+        },
+        {
+          "id": "zovem_se",
+          "english": "My name is...",
+          "serbian_cyrillic": "Зовем се...",
+          "serbian_latin": "Zovem se...",
+          "pronunciation_hint": "ZOH-vehm seh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My name is Ana. And you?",
+            "serbian_cyrillic": "Зовем се Ана. А ти?",
+            "serbian_latin": "Zovem se Ana. A ti?"
+          }
+        },
+        {
+          "id": "gde_je",
+          "english": "Where is...?",
+          "serbian_cyrillic": "Где је...?",
+          "serbian_latin": "Gde je...?",
+          "pronunciation_hint": "gdeh yeh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the hotel?",
+            "serbian_cyrillic": "Где је хотел?",
+            "serbian_latin": "Gde je hotel?"
+          }
+        },
+        {
+          "id": "govorim_malo_srpski",
+          "english": "I speak a little Serbian",
+          "serbian_cyrillic": "Говорим мало српски",
+          "serbian_latin": "Govorim malo srpski",
+          "pronunciation_hint": "GOH-voh-reem MAH-loh SRP-skee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I speak a little Serbian, but not well.",
+            "serbian_cyrillic": "Говорим мало српски, али не добро.",
+            "serbian_latin": "Govorim malo srpski, ali ne dobro."
+          }
+        },
+        {
+          "id": "pomoc",
+          "english": "Help!",
+          "serbian_cyrillic": "Помоћ!",
+          "serbian_latin": "Pomoć!",
+          "pronunciation_hint": "POH-mohch",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Help! Call the police!",
+            "serbian_cyrillic": "Помоћ! Зовите полицију!",
+            "serbian_latin": "Pomoć! Zovite policiju!"
+          }
+        },
+        {
+          "id": "koliko_kosta",
+          "english": "How much does it cost?",
+          "serbian_cyrillic": "Колико кошта?",
+          "serbian_latin": "Koliko košta?",
+          "pronunciation_hint": "KOH-lee-koh KOHSH-tah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "How much does this bread cost?",
+            "serbian_cyrillic": "Колико кошта овај хлеб?",
+            "serbian_latin": "Koliko košta ovaj hleb?"
+          }
+        },
+        {
+          "id": "moze",
+          "english": "Can / OK / Sure",
+          "serbian_cyrillic": "Може",
+          "serbian_latin": "Može",
+          "pronunciation_hint": "MOH-zheh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Can I get a coffee? — Sure!",
+            "serbian_cyrillic": "Може једна кафа? — Може!",
+            "serbian_latin": "Može jedna kafa? — Može!"
+          }
+        },
+        {
+          "id": "oprostite",
+          "english": "Excuse me (formal)",
+          "serbian_cyrillic": "Опростите",
+          "serbian_latin": "Oprostite",
+          "pronunciation_hint": "oh-PROHS-tee-teh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Excuse me, where is the bus station?",
+            "serbian_cyrillic": "Опростите, где је аутобуска станица?",
+            "serbian_latin": "Oprostite, gde je autobuska stanica?"
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Basic Sentence Structure & Questions with 'Da li'",
+      "explanation": "Serbian generally follows Subject-Verb-Object (SVO) word order, similar to English. However, because Serbian is a highly inflected language with grammatical cases, word order is more flexible than in English — you can rearrange words for emphasis without losing meaning. To form yes/no questions, Serbian uses the particle 'Da li' at the beginning of the sentence. For example, 'Govoriš srpski' (You speak Serbian) becomes 'Da li govoriš srpski?' (Do you speak Serbian?). In casual speech, you can also form questions simply by changing your intonation, just like in English. For 'where' questions, use 'Gde' (Где): 'Gde je banka?' (Where is the bank?).",
+      "examples": [
+        {
+          "english": "You speak Serbian. (statement)",
+          "serbian_cyrillic": "Ти говориш српски.",
+          "serbian_latin": "Ti govoriš srpski."
+        },
+        {
+          "english": "Do you speak Serbian? (question)",
+          "serbian_cyrillic": "Да ли говориш српски?",
+          "serbian_latin": "Da li govoriš srpski?"
+        },
+        {
+          "english": "Where is the bank?",
+          "serbian_cyrillic": "Где је банка?",
+          "serbian_latin": "Gde je banka?"
+        },
+        {
+          "english": "How much does this cost?",
+          "serbian_cyrillic": "Колико ово кошта?",
+          "serbian_latin": "Koliko ovo košta?"
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Serbian Hospitality & Coffee Culture",
+      "content": "Serbians are famous for their hospitality, and one of its most common expressions is the offering of coffee. When you visit a Serbian home, your host will almost certainly ask 'Hoćeš kafu?' (Would you like coffee?). Declining can be seen as impolite, so it is best to accept — even if you just take a few sips. Serbian coffee (srpska kafa / турска кафа) is a strong, unfiltered brew similar to Turkish coffee. It is prepared in a small pot called a 'džezva' and served in small cups. Coffee is not just a drink in Serbia — it is a social ritual. Friends meet for coffee for hours, and the phrase 'idemo na kafu' (let's go for coffee) is essentially an invitation to spend quality time together. In restaurants, do not be surprised if the waiter does not rush you; lingering over coffee is expected and encouraged."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "How do you say 'I don't understand' in Serbian?",
+        "options": ["Ne govorim", "Ne razumem", "Ne znam", "Ne mogu"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What does 'Može' mean?",
+        "options": ["Maybe", "No", "Can / OK / Sure", "Must"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you form a yes/no question in Serbian?",
+        "options": [
+          "Add 'Da li' before the statement",
+          "Add 'Ne' before the statement",
+          "Reverse the subject and verb",
+          "Add 'Kako' at the end"
+        ],
+        "correct": 0
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script phrase for 'Where is...?'",
+        "correct_answers": ["Gde je...?", "Gde je?", "Gde je", "gde je"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Serbian Latin script phrase for 'My name is...'",
+        "correct_answers": ["Zovem se...", "Zovem se", "zovem se"]
+      },
+      {
+        "type": "match_pairs",
+        "pairs": [
+          {"english": "I don't understand", "serbian": "Ne razumem"},
+          {"english": "Help!", "serbian": "Pomoć!"},
+          {"english": "How much does it cost?", "serbian": "Koliko košta?"},
+          {"english": "Excuse me", "serbian": "Oprostite"},
+          {"english": "My name is...", "serbian": "Zovem se..."}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "pomoc",
+        "options": ["Please", "Help!", "Thank you"],
+        "correct": 1
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "moze",
+        "options": ["No", "Maybe", "OK / Sure"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is a 'džezva'?",
+        "options": [
+          "A Serbian greeting",
+          "A small pot for making coffee",
+          "A type of bread",
+          "A formal address"
+        ],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How would you ask 'Do you speak English?' formally in Serbian?",
+        "options": [
+          "Da li govoriš engleski?",
+          "Govoriš engleski?",
+          "Da li govorite engleski?",
+          "Engleski govoriš?"
+        ],
+        "correct": 2
+      }
+    ]
+  }
+}
