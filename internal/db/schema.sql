@@ -1,5 +1,5 @@
 -- Users
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT UNIQUE NOT NULL,
     email TEXT UNIQUE NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE users (
 );
 
 -- Track which lessons a user has completed and their scores
-CREATE TABLE lesson_progress (
+CREATE TABLE IF NOT EXISTS lesson_progress (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL REFERENCES users(id),
     language TEXT NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE lesson_progress (
 );
 
 -- Individual quiz attempt history
-CREATE TABLE quiz_attempts (
+CREATE TABLE IF NOT EXISTS quiz_attempts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL REFERENCES users(id),
     language TEXT NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE quiz_attempts (
 );
 
 -- Track vocabulary mastery per word
-CREATE TABLE vocab_progress (
+CREATE TABLE IF NOT EXISTS vocab_progress (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL REFERENCES users(id),
     language TEXT NOT NULL,
