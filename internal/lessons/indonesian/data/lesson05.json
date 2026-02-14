@@ -1,0 +1,254 @@
+{
+  "id": "lesson05",
+  "title": "Shopping & Money",
+  "description": "Learn essential vocabulary for shopping, bargaining, and handling money in Indonesian markets and stores.",
+  "order": 5,
+  "prerequisite": "lesson04",
+  "illustration": "food.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Shopping & Money Words",
+      "items": [
+        {
+          "id": "berapa_harganya",
+          "english": "How much does it cost?",
+          "target_primary": "Berapa harganya?",
+          "target_alt": "",
+          "pronunciation_hint": "beh-RAH-pah har-GAH-nyah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Excuse me, how much does this cost?",
+            "target_primary": "Permisi, berapa harganya?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "rupiah",
+          "english": "Rupiah (Indonesian currency)",
+          "target_primary": "Rupiah",
+          "target_alt": "",
+          "pronunciation_hint": "roo-PEE-ah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It costs fifty thousand rupiah.",
+            "target_primary": "Harganya lima puluh ribu rupiah.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "mahal",
+          "english": "Expensive",
+          "target_primary": "Mahal",
+          "target_alt": "",
+          "pronunciation_hint": "MAH-hahl",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "That is too expensive!",
+            "target_primary": "Itu terlalu mahal!",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "murah",
+          "english": "Cheap / Inexpensive",
+          "target_primary": "Murah",
+          "target_alt": "",
+          "pronunciation_hint": "MOO-rah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Is there something cheaper?",
+            "target_primary": "Ada yang lebih murah?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "toko",
+          "english": "Shop / Store",
+          "target_primary": "Toko",
+          "target_alt": "",
+          "pronunciation_hint": "TOH-koh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the nearest shop?",
+            "target_primary": "Di mana toko terdekat?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "pasar",
+          "english": "Market",
+          "target_primary": "Pasar",
+          "target_alt": "",
+          "pronunciation_hint": "PAH-sar",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want to go to the market.",
+            "target_primary": "Saya mau ke pasar.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "beli",
+          "english": "To buy",
+          "target_primary": "Beli",
+          "target_alt": "",
+          "pronunciation_hint": "BEH-lee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want to buy this.",
+            "target_primary": "Saya mau beli ini.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "bayar",
+          "english": "To pay",
+          "target_primary": "Bayar",
+          "target_alt": "",
+          "pronunciation_hint": "BAH-yar",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where do I pay?",
+            "target_primary": "Di mana saya bayar?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "uang",
+          "english": "Money",
+          "target_primary": "Uang",
+          "target_alt": "",
+          "pronunciation_hint": "OO-ahng",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I don't have enough money.",
+            "target_primary": "Saya tidak punya cukup uang.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "diskon",
+          "english": "Discount",
+          "target_primary": "Diskon",
+          "target_alt": "",
+          "pronunciation_hint": "DEES-kohn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Can I get a discount?",
+            "target_primary": "Bisa dapat diskon?",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Bargaining Phrases and Comparisons",
+      "explanation": "Bargaining is common in Indonesian markets and small shops. The key phrase is 'Berapa harganya?' (How much is it?). To say something is 'too' expensive, use 'terlalu': 'terlalu mahal' (too expensive). To make comparisons, use 'lebih' (more): 'lebih murah' (cheaper/more cheap). To ask 'Is there...?', use 'Ada...?': 'Ada yang lebih murah?' (Is there something cheaper?). 'Bisa kurang?' literally means 'Can it be less?' and is the classic bargaining phrase. You can also suggest a price: 'Bagaimana kalau...' (How about...) followed by your offer.",
+      "examples": [
+        {
+          "english": "That's too expensive!",
+          "target_primary": "Itu terlalu mahal!",
+          "target_alt": ""
+        },
+        {
+          "english": "Can you lower the price?",
+          "target_primary": "Bisa kurang?",
+          "target_alt": ""
+        },
+        {
+          "english": "How about thirty thousand?",
+          "target_primary": "Bagaimana kalau tiga puluh ribu?",
+          "target_alt": ""
+        },
+        {
+          "english": "I'll take it.",
+          "target_primary": "Saya ambil.",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Bargaining in Indonesian Markets",
+      "content": "Bargaining (tawar-menawar) is an integral part of shopping at traditional markets (pasar) and street vendors in Indonesia. In general, fixed-price stores like malls and supermarkets do not allow bargaining, but at markets, souvenir shops, and with street vendors, it is expected. A common approach is to offer about 50-60% of the asking price and negotiate from there. Always bargain with a smile and a friendly attitude -- it should feel like a pleasant social exchange, not a confrontation. If you say 'Bisa kurang?' with a smile, most sellers will happily negotiate. Key tip: if you name a price and the seller agrees, you are expected to buy the item -- walking away after agreeing on a price is considered rude. Learning to say numbers confidently makes the whole experience much smoother."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Berapa harganya?' mean?",
+        "correct_answer": "How much does it cost?",
+        "options": ["Where is the store?", "How much does it cost?", "Do you have change?", "Can I have a discount?"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What is the Indonesian word for 'expensive'?",
+        "correct_answer": "Mahal",
+        "options": ["Murah", "Mahal", "Besar", "Bagus"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'cheap':",
+        "correct_answer": "Murah",
+        "accept_alternatives": ["murah"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'market':",
+        "correct_answer": "Pasar",
+        "accept_alternatives": ["pasar"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each shopping word with its English meaning:",
+        "pairs": [
+          {"english": "Expensive", "target": "Mahal"},
+          {"english": "Cheap", "target": "Murah"},
+          {"english": "Shop", "target": "Toko"},
+          {"english": "Market", "target": "Pasar"},
+          {"english": "Money", "target": "Uang"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "mahal",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Expensive",
+        "options": ["Cheap", "Expensive", "Discount"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Bisa kurang?' mean when bargaining?",
+        "correct_answer": "Can you lower the price?",
+        "options": ["Can I have more?", "Can you lower the price?", "Is this available?", "Do you accept cards?"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'to buy':",
+        "correct_answer": "Beli",
+        "accept_alternatives": ["beli"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "pasar",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Market",
+        "options": ["Shop", "Market", "Mall"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each word with its English meaning:",
+        "pairs": [
+          {"english": "To buy", "target": "Beli"},
+          {"english": "To pay", "target": "Bayar"},
+          {"english": "Discount", "target": "Diskon"},
+          {"english": "Rupiah", "target": "Rupiah"},
+          {"english": "How much does it cost?", "target": "Berapa harganya?"}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "lesson01",
+  "title": "Greetings & Basics",
+  "description": "Learn essential Indonesian greetings, polite expressions, and basic phrases for everyday interactions.",
+  "order": 1,
+  "prerequisite": null,
+  "illustration": "greetings.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Essential Greetings & Polite Words",
+      "items": [
+        {
+          "id": "selamat_pagi",
+          "english": "Good morning",
+          "target_primary": "Selamat pagi",
+          "target_alt": "",
+          "pronunciation_hint": "seh-LAH-maht PAH-gee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good morning, how are you?",
+            "target_primary": "Selamat pagi, apa kabar?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "selamat_siang",
+          "english": "Good afternoon (midday)",
+          "target_primary": "Selamat siang",
+          "target_alt": "",
+          "pronunciation_hint": "seh-LAH-maht see-AHNG",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good afternoon, sir.",
+            "target_primary": "Selamat siang, Pak.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "selamat_sore",
+          "english": "Good afternoon (late)",
+          "target_primary": "Selamat sore",
+          "target_alt": "",
+          "pronunciation_hint": "seh-LAH-maht SOH-reh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good afternoon, ma'am.",
+            "target_primary": "Selamat sore, Bu.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "selamat_malam",
+          "english": "Good evening / Good night",
+          "target_primary": "Selamat malam",
+          "target_alt": "",
+          "pronunciation_hint": "seh-LAH-maht MAH-lahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good evening, see you tomorrow.",
+            "target_primary": "Selamat malam, sampai jumpa besok.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "apa_kabar",
+          "english": "How are you?",
+          "target_primary": "Apa kabar?",
+          "target_alt": "",
+          "pronunciation_hint": "AH-pah KAH-bar",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Hello! How are you?",
+            "target_primary": "Halo! Apa kabar?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "baik",
+          "english": "Good / Fine",
+          "target_primary": "Baik",
+          "target_alt": "",
+          "pronunciation_hint": "BYE-eek",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I am fine, thank you.",
+            "target_primary": "Saya baik, terima kasih.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "terima_kasih",
+          "english": "Thank you",
+          "target_primary": "Terima kasih",
+          "target_alt": "",
+          "pronunciation_hint": "teh-REE-mah KAH-see",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Thank you very much.",
+            "target_primary": "Terima kasih banyak.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sama_sama",
+          "english": "You're welcome",
+          "target_primary": "Sama-sama",
+          "target_alt": "",
+          "pronunciation_hint": "SAH-mah SAH-mah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "You're welcome, no problem.",
+            "target_primary": "Sama-sama, tidak masalah.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ya",
+          "english": "Yes",
+          "target_primary": "Ya",
+          "target_alt": "",
+          "pronunciation_hint": "yah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Yes, I understand.",
+            "target_primary": "Ya, saya mengerti.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "tidak",
+          "english": "No",
+          "target_primary": "Tidak",
+          "target_alt": "",
+          "pronunciation_hint": "TEE-dahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "No, thank you.",
+            "target_primary": "Tidak, terima kasih.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "permisi",
+          "english": "Excuse me",
+          "target_primary": "Permisi",
+          "target_alt": "",
+          "pronunciation_hint": "per-MEE-see",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Excuse me, where is the bathroom?",
+            "target_primary": "Permisi, di mana kamar kecil?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "maaf",
+          "english": "Sorry",
+          "target_primary": "Maaf",
+          "target_alt": "",
+          "pronunciation_hint": "MAH-ahf",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Sorry, I don't understand.",
+            "target_primary": "Maaf, saya tidak mengerti.",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Basic Sentence Structure",
+      "explanation": "Indonesian follows a Subject-Verb-Object (SVO) word order, similar to English. The pronoun 'saya' means 'I' or 'me', and there is no verb conjugation in Indonesian -- the verb stays the same regardless of the subject. To make a simple statement, just place the subject before the verb: 'Saya mengerti' (I understand). To negate, add 'tidak' before the verb: 'Saya tidak mengerti' (I don't understand).",
+      "examples": [
+        {
+          "english": "I understand.",
+          "target_primary": "Saya mengerti.",
+          "target_alt": ""
+        },
+        {
+          "english": "I don't understand.",
+          "target_primary": "Saya tidak mengerti.",
+          "target_alt": ""
+        },
+        {
+          "english": "I am fine.",
+          "target_primary": "Saya baik.",
+          "target_alt": ""
+        },
+        {
+          "english": "I am sorry.",
+          "target_primary": "Saya minta maaf.",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Time-Based Greetings in Indonesia",
+      "content": "Indonesians use different greetings depending on the time of day. 'Selamat pagi' is used from dawn until about 11 AM, 'Selamat siang' covers roughly 11 AM to 3 PM, 'Selamat sore' is for 3 PM until sunset, and 'Selamat malam' is used after dark. In casual settings, especially among younger people, you'll often hear just 'Pagi!' or 'Malam!' without the 'Selamat'. The word 'Selamat' itself means 'safe' or 'blessed', so these greetings literally wish safety and blessings upon the other person. When addressing someone older or of higher status, it is polite to use 'Pak' (sir/Mr.) or 'Bu' (ma'am/Mrs.)."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Selamat pagi' mean?",
+        "correct_answer": "Good morning",
+        "options": ["Good morning", "Good evening", "Good night", "Goodbye"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'Thank you' in Indonesian?",
+        "correct_answer": "Terima kasih",
+        "options": ["Sama-sama", "Terima kasih", "Permisi", "Maaf"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'Yes':",
+        "correct_answer": "Ya",
+        "accept_alternatives": ["ya"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'No':",
+        "correct_answer": "Tidak",
+        "accept_alternatives": ["tidak"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each Indonesian word with its English meaning:",
+        "pairs": [
+          {"english": "Good morning", "target": "Selamat pagi"},
+          {"english": "Thank you", "target": "Terima kasih"},
+          {"english": "Sorry", "target": "Maaf"},
+          {"english": "Excuse me", "target": "Permisi"},
+          {"english": "You're welcome", "target": "Sama-sama"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "terima_kasih",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Thank you",
+        "options": ["Sorry", "Thank you", "Excuse me"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What is the correct response to 'Terima kasih'?",
+        "correct_answer": "Sama-sama",
+        "options": ["Sama-sama", "Maaf", "Selamat pagi", "Tidak"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian phrase for 'How are you?':",
+        "correct_answer": "Apa kabar?",
+        "accept_alternatives": ["apa kabar", "Apa kabar"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "selamat_malam",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Good evening / Good night",
+        "options": ["Good morning", "Good evening / Good night", "Good afternoon"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each Indonesian expression with its English meaning:",
+        "pairs": [
+          {"english": "Good evening", "target": "Selamat malam"},
+          {"english": "Good afternoon (midday)", "target": "Selamat siang"},
+          {"english": "Good / Fine", "target": "Baik"},
+          {"english": "Yes", "target": "Ya"},
+          {"english": "No", "target": "Tidak"}
+        ]
+      }
+    ]
+  }
+}

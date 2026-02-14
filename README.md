@@ -1,15 +1,15 @@
 # SpeakEasy
 
-A web-based Serbian language tutor for adult English speakers. Learn vocabulary, grammar, and cultural context through 5 progressive lessons with interactive quizzes and text-to-speech audio.
+A web-based language tutor for adult English speakers. Learn vocabulary, grammar, and cultural context through progressive lessons with interactive quizzes and text-to-speech audio. Currently supports **Serbian**, **Croatian**, and **Indonesian**.
 
 **Demo:** [speakeasy.mchugh.au](https://speakeasy.mchugh.au/)
 
 ## Features
 
-- **5 progressive lessons** covering greetings, numbers, common phrases, family, and food
-- **Dual-script support** — toggle between Cyrillic, Latin, or both side-by-side
+- **3 languages** — Serbian (5 lessons), Croatian (5 lessons), Indonesian (6 lessons)
+- **Dual-script support** — toggle between Cyrillic, Latin, or both for Serbian
 - **4 quiz types** — multiple choice, type answer, match pairs, listen & choose
-- **Text-to-speech** — native Serbian pronunciation via Google Cloud TTS with server-side caching
+- **Text-to-speech** — native pronunciation via Google Cloud TTS with server-side caching
 - **Progress tracking** — score 70% or higher to unlock the next lesson, with per-word mastery tracking
 - **User accounts** — registration, login, and per-user progress with bcrypt password hashing and session cookies
 
@@ -39,7 +39,7 @@ internal/
   handlers/                  HTTP handlers (auth, lessons, quiz, progress, TTS)
   middleware/                 Session store and auth middleware
   db/                        sqlc-generated database layer (schema.sql, queries.sql)
-  lessons/serbian/           Lesson data loader with embedded JSON
+  lessons/                   Shared types, registry, and per-language loaders with embedded JSON
   tts/                       Google Cloud TTS client with file-based caching
 web/
   templates/                 Go HTML templates (layout + 6 page templates)
@@ -47,7 +47,7 @@ web/
 deploy/                      systemd service and nginx config for production
 ```
 
-Lesson content is defined as JSON files (`internal/lessons/serbian/data/lesson01-05.json`) containing vocabulary items with Cyrillic and Latin script, pronunciation hints, example sentences, grammar notes, cultural context, and quiz questions. This makes it straightforward to add new lessons or languages without touching Go code.
+Lesson content is defined as JSON files (e.g. `internal/lessons/serbian/data/lesson01-05.json`) containing vocabulary items, pronunciation hints, example sentences, grammar notes, cultural context, and quiz questions. New languages self-register via Go's `init()` pattern — just add a package with a loader and JSON data, import it, and rebuild.
 
 The TTS system uses a layered lookup — pre-recorded audio overrides, then cached API responses, then live Google Cloud TTS calls. Failed API calls are never cached, so transient errors don't permanently break audio for a word.
 
@@ -79,16 +79,111 @@ The app will be available at http://localhost:8080. A SQLite database file (`spe
 
 On Windows, edit `start.bat` with your API key and run it instead.
 
-### Deploy to a Linux server
+### Deploy to a Debian/Ubuntu server
 
-Deployment files for systemd and nginx are in the `deploy/` directory.
+Reference deployment files for systemd and nginx are in the `deploy/` directory.
+
+#### 1. Cross-compile the binary
 
 ```bash
-# Cross-compile from any OS
+# From macOS or Linux
 GOOS=linux GOARCH=amd64 go build -o speakeasy-linux ./cmd/server/
+
+# From Windows (Command Prompt)
+set GOOS=linux&& set GOARCH=amd64&& go build -o speakeasy-linux ./cmd/server/
 ```
 
-Copy the binary and the `web/` directory to your server. Set `GOOGLE_TTS_API_KEY` in the systemd service file. See `deploy/speakeasy.service` and `deploy/speakeasy.conf` for reference configs.
+#### 2. Upload files to the server
+
+Upload `speakeasy-linux` and the `web/` directory to your home directory on the server (e.g. via `scp`, `rsync`, or SFTP):
+
+```bash
+scp speakeasy-linux user@yourserver:~/
+scp -r web/ user@yourserver:~/web/
+```
+
+#### 3. First-time setup (only needed once)
+
+SSH into the server and create the application directory:
+
+```bash
+# Create the app directory and set ownership
+sudo mkdir -p /var/www/speakeasy
+sudo chown www-data:www-data /var/www/speakeasy
+
+# Copy files into place
+sudo cp ~/speakeasy-linux /var/www/speakeasy/
+sudo cp -r ~/web /var/www/speakeasy/
+sudo chown -R www-data:www-data /var/www/speakeasy
+sudo chmod 755 /var/www/speakeasy/speakeasy-linux
+
+# Install the systemd service
+sudo cp deploy/speakeasy.service /etc/systemd/system/
+# Edit the service file to set your Google TTS API key:
+sudo nano /etc/systemd/system/speakeasy.service
+# Change: Environment=GOOGLE_TTS_API_KEY=your-api-key-here
+
+# Enable and start the service
+sudo systemctl daemon-reload
+sudo systemctl enable speakeasy
+sudo systemctl start speakeasy
+
+# Install the nginx config (adjust server_name as needed)
+sudo cp deploy/speakeasy.conf /etc/nginx/conf.d/
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+The app runs on port 8282 behind nginx, which proxies requests from port 80. The SQLite database (`speakeasy.db`) and TTS cache (`tts_cache/`) are created automatically in `/var/www/speakeasy/` on first run.
+
+#### 4. Deploying updates
+
+After building a new binary (and updating `web/` if templates or static files changed):
+
+```bash
+# Upload the new files
+scp speakeasy-linux user@yourserver:~/
+scp -r web/ user@yourserver:~/web/    # only if templates/static changed
+
+# SSH in and deploy
+ssh user@yourserver
+
+# Stop the service, copy files, fix permissions, restart
+sudo systemctl stop speakeasy
+sudo cp ~/speakeasy-linux /var/www/speakeasy/
+sudo cp -r ~/web /var/www/speakeasy/   # only if templates/static changed
+sudo chown -R www-data:www-data /var/www/speakeasy
+sudo chmod 755 /var/www/speakeasy/speakeasy-linux
+sudo systemctl start speakeasy
+
+# Verify it's running
+sudo systemctl status speakeasy
+```
+
+#### 5. Useful commands
+
+```bash
+# Check service status
+sudo systemctl status speakeasy
+
+# View application logs
+sudo journalctl -u speakeasy -f
+
+# Restart after config changes
+sudo systemctl daemon-reload
+sudo systemctl restart speakeasy
+
+# Check nginx config syntax
+sudo nginx -t
+```
+
+#### 6. SSL with Let's Encrypt (optional)
+
+```bash
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d speakeasy.mchugh.au
+```
+
+Certbot will modify the nginx config to handle HTTPS and set up auto-renewal.
 
 ## License
 

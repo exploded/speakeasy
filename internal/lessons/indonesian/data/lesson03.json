@@ -1,0 +1,280 @@
+{
+  "id": "lesson03",
+  "title": "Food & Drink",
+  "description": "Learn essential food and drink vocabulary for ordering meals and navigating Indonesian cuisine.",
+  "order": 3,
+  "prerequisite": "lesson02",
+  "illustration": "food.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Common Foods & Drinks",
+      "items": [
+        {
+          "id": "nasi",
+          "english": "Rice (cooked)",
+          "target_primary": "Nasi",
+          "target_alt": "",
+          "pronunciation_hint": "NAH-see",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want fried rice.",
+            "target_primary": "Saya mau nasi goreng.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "air",
+          "english": "Water",
+          "target_primary": "Air",
+          "target_alt": "",
+          "pronunciation_hint": "AH-eer",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want drinking water, please.",
+            "target_primary": "Saya mau air minum, tolong.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kopi",
+          "english": "Coffee",
+          "target_primary": "Kopi",
+          "target_alt": "",
+          "pronunciation_hint": "KOH-pee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One coffee with sugar, please.",
+            "target_primary": "Satu kopi pakai gula, tolong.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "teh",
+          "english": "Tea",
+          "target_primary": "Teh",
+          "target_alt": "",
+          "pronunciation_hint": "teh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want sweet tea.",
+            "target_primary": "Saya mau teh manis.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ayam",
+          "english": "Chicken",
+          "target_primary": "Ayam",
+          "target_alt": "",
+          "pronunciation_hint": "AH-yahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Fried chicken is delicious.",
+            "target_primary": "Ayam goreng enak.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ikan",
+          "english": "Fish",
+          "target_primary": "Ikan",
+          "target_alt": "",
+          "pronunciation_hint": "EE-kahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I like grilled fish.",
+            "target_primary": "Saya suka ikan bakar.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sayur",
+          "english": "Vegetables",
+          "target_primary": "Sayur",
+          "target_alt": "",
+          "pronunciation_hint": "SAH-yoor",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want vegetables too.",
+            "target_primary": "Saya mau sayur juga.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "makan",
+          "english": "To eat",
+          "target_primary": "Makan",
+          "target_alt": "",
+          "pronunciation_hint": "MAH-kahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Let's eat!",
+            "target_primary": "Ayo makan!",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "minum",
+          "english": "To drink",
+          "target_primary": "Minum",
+          "target_alt": "",
+          "pronunciation_hint": "MEE-noom",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "What do you want to drink?",
+            "target_primary": "Mau minum apa?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "enak",
+          "english": "Delicious",
+          "target_primary": "Enak",
+          "target_alt": "",
+          "pronunciation_hint": "EH-nahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "This food is very delicious!",
+            "target_primary": "Makanan ini sangat enak!",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "pedas",
+          "english": "Spicy",
+          "target_primary": "Pedas",
+          "target_alt": "",
+          "pronunciation_hint": "PEH-dahs",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Not spicy, please.",
+            "target_primary": "Tidak pedas, tolong.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "gula",
+          "english": "Sugar",
+          "target_primary": "Gula",
+          "target_alt": "",
+          "pronunciation_hint": "GOO-lah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Without sugar, please.",
+            "target_primary": "Tanpa gula, tolong.",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Ordering Food: 'Mau' and 'Tolong'",
+      "explanation": "To order food in Indonesian, use 'Saya mau...' (I want...) followed by what you'd like. Adding 'tolong' (please) at the end makes it polite. You can also start with 'Tolong' to say 'Please give me...'. The word 'pakai' (with/using) is useful for additions: 'kopi pakai gula' (coffee with sugar). Use 'tanpa' for without: 'teh tanpa gula' (tea without sugar). To say you like something, use 'Saya suka...' (I like...).",
+      "examples": [
+        {
+          "english": "I want fried rice, please.",
+          "target_primary": "Saya mau nasi goreng, tolong.",
+          "target_alt": ""
+        },
+        {
+          "english": "Coffee with sugar, please.",
+          "target_primary": "Kopi pakai gula, tolong.",
+          "target_alt": ""
+        },
+        {
+          "english": "Tea without sugar.",
+          "target_primary": "Teh tanpa gula.",
+          "target_alt": ""
+        },
+        {
+          "english": "I like fried chicken.",
+          "target_primary": "Saya suka ayam goreng.",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Eating Culture in Indonesia",
+      "content": "Rice (nasi) is the staple of Indonesian cuisine and is eaten at virtually every meal, including breakfast. A common phrase is 'belum makan kalau belum makan nasi' -- you haven't really eaten if you haven't had rice. Indonesian food is known for its bold flavors, and sambal (chili paste) is served alongside almost every dish. When eating at a 'warung' (a small local eatery), you may encounter 'nasi Padang' style service where many small dishes are placed on your table and you pay only for what you eat. Eating with the right hand is traditional, though forks and spoons are commonly used (but not knives -- food is typically pre-cut). The left hand is considered impolite for eating or passing food."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'nasi' mean?",
+        "correct_answer": "Rice",
+        "options": ["Noodles", "Rice", "Bread", "Vegetables"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'delicious' in Indonesian?",
+        "correct_answer": "Enak",
+        "options": ["Pedas", "Manis", "Enak", "Baik"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'water':",
+        "correct_answer": "Air",
+        "accept_alternatives": ["air"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'chicken':",
+        "correct_answer": "Ayam",
+        "accept_alternatives": ["ayam"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each food word with its English meaning:",
+        "pairs": [
+          {"english": "Rice", "target": "Nasi"},
+          {"english": "Coffee", "target": "Kopi"},
+          {"english": "Tea", "target": "Teh"},
+          {"english": "Fish", "target": "Ikan"},
+          {"english": "Vegetables", "target": "Sayur"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "kopi",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Coffee",
+        "options": ["Tea", "Coffee", "Water"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'pedas' mean?",
+        "correct_answer": "Spicy",
+        "options": ["Sweet", "Sour", "Spicy", "Salty"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'to eat':",
+        "correct_answer": "Makan",
+        "accept_alternatives": ["makan"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "enak",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Delicious",
+        "options": ["Spicy", "Delicious", "Sweet"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each word with its English meaning:",
+        "pairs": [
+          {"english": "To eat", "target": "Makan"},
+          {"english": "To drink", "target": "Minum"},
+          {"english": "Sugar", "target": "Gula"},
+          {"english": "Spicy", "target": "Pedas"},
+          {"english": "Chicken", "target": "Ayam"}
+        ]
+      }
+    ]
+  }
+}

@@ -13,157 +13,157 @@
         {
           "id": "zdravo",
           "english": "Hello",
-          "serbian_cyrillic": "Здраво",
-          "serbian_latin": "Zdravo",
+          "target_alt": "Здраво",
+          "target_primary": "Zdravo",
           "pronunciation_hint": "ZDRAH-voh",
           "audio_override": null,
           "example_sentence": {
             "english": "Hello, how are you?",
-            "serbian_cyrillic": "Здраво, како си?",
-            "serbian_latin": "Zdravo, kako si?"
+            "target_alt": "Здраво, како си?",
+            "target_primary": "Zdravo, kako si?"
           }
         },
         {
           "id": "dovidjenja",
           "english": "Goodbye",
-          "serbian_cyrillic": "Довиђења",
-          "serbian_latin": "Doviđenja",
+          "target_alt": "Довиђења",
+          "target_primary": "Doviđenja",
           "pronunciation_hint": "doh-vee-JEH-nyah",
           "audio_override": null,
           "example_sentence": {
             "english": "Goodbye, see you tomorrow!",
-            "serbian_cyrillic": "Довиђења, видимо се сутра!",
-            "serbian_latin": "Doviđenja, vidimo se sutra!"
+            "target_alt": "Довиђења, видимо се сутра!",
+            "target_primary": "Doviđenja, vidimo se sutra!"
           }
         },
         {
           "id": "molim",
           "english": "Please",
-          "serbian_cyrillic": "Молим",
-          "serbian_latin": "Molim",
+          "target_alt": "Молим",
+          "target_primary": "Molim",
           "pronunciation_hint": "MOH-leem",
           "audio_override": null,
           "example_sentence": {
             "english": "Water, please.",
-            "serbian_cyrillic": "Воду, молим.",
-            "serbian_latin": "Vodu, molim."
+            "target_alt": "Воду, молим.",
+            "target_primary": "Vodu, molim."
           }
         },
         {
           "id": "hvala",
           "english": "Thank you",
-          "serbian_cyrillic": "Хвала",
-          "serbian_latin": "Hvala",
+          "target_alt": "Хвала",
+          "target_primary": "Hvala",
           "pronunciation_hint": "HVAH-lah",
           "audio_override": null,
           "example_sentence": {
             "english": "Thank you very much!",
-            "serbian_cyrillic": "Хвала лепо!",
-            "serbian_latin": "Hvala lepo!"
+            "target_alt": "Хвала лепо!",
+            "target_primary": "Hvala lepo!"
           }
         },
         {
           "id": "da",
           "english": "Yes",
-          "serbian_cyrillic": "Да",
-          "serbian_latin": "Da",
+          "target_alt": "Да",
+          "target_primary": "Da",
           "pronunciation_hint": "dah",
           "audio_override": null,
           "example_sentence": {
             "english": "Yes, I understand.",
-            "serbian_cyrillic": "Да, разумем.",
-            "serbian_latin": "Da, razumem."
+            "target_alt": "Да, разумем.",
+            "target_primary": "Da, razumem."
           }
         },
         {
           "id": "ne",
           "english": "No",
-          "serbian_cyrillic": "Не",
-          "serbian_latin": "Ne",
+          "target_alt": "Не",
+          "target_primary": "Ne",
           "pronunciation_hint": "neh",
           "audio_override": null,
           "example_sentence": {
             "english": "No, thank you.",
-            "serbian_cyrillic": "Не, хвала.",
-            "serbian_latin": "Ne, hvala."
+            "target_alt": "Не, хвала.",
+            "target_primary": "Ne, hvala."
           }
         },
         {
           "id": "dobro_jutro",
           "english": "Good morning",
-          "serbian_cyrillic": "Добро јутро",
-          "serbian_latin": "Dobro jutro",
+          "target_alt": "Добро јутро",
+          "target_primary": "Dobro jutro",
           "pronunciation_hint": "DOH-broh YOO-troh",
           "audio_override": null,
           "example_sentence": {
             "english": "Good morning, how did you sleep?",
-            "serbian_cyrillic": "Добро јутро, како си спавао?",
-            "serbian_latin": "Dobro jutro, kako si spavao?"
+            "target_alt": "Добро јутро, како си спавао?",
+            "target_primary": "Dobro jutro, kako si spavao?"
           }
         },
         {
           "id": "dobro_vece",
           "english": "Good evening",
-          "serbian_cyrillic": "Добро вече",
-          "serbian_latin": "Dobro veče",
+          "target_alt": "Добро вече",
+          "target_primary": "Dobro veče",
           "pronunciation_hint": "DOH-broh VEH-cheh",
           "audio_override": null,
           "example_sentence": {
             "english": "Good evening, welcome!",
-            "serbian_cyrillic": "Добро вече, добродошли!",
-            "serbian_latin": "Dobro veče, dobrodošli!"
+            "target_alt": "Добро вече, добродошли!",
+            "target_primary": "Dobro veče, dobrodošli!"
           }
         },
         {
           "id": "dobar_dan",
           "english": "Good day",
-          "serbian_cyrillic": "Добар дан",
-          "serbian_latin": "Dobar dan",
+          "target_alt": "Добар дан",
+          "target_primary": "Dobar dan",
           "pronunciation_hint": "DOH-bar dahn",
           "audio_override": null,
           "example_sentence": {
             "english": "Good day, sir.",
-            "serbian_cyrillic": "Добар дан, господине.",
-            "serbian_latin": "Dobar dan, gospodine."
+            "target_alt": "Добар дан, господине.",
+            "target_primary": "Dobar dan, gospodine."
           }
         },
         {
           "id": "kako_si",
           "english": "How are you?",
-          "serbian_cyrillic": "Како си?",
-          "serbian_latin": "Kako si?",
+          "target_alt": "Како си?",
+          "target_primary": "Kako si?",
           "pronunciation_hint": "KAH-koh see",
           "audio_override": null,
           "example_sentence": {
             "english": "Hello! How are you?",
-            "serbian_cyrillic": "Здраво! Како си?",
-            "serbian_latin": "Zdravo! Kako si?"
+            "target_alt": "Здраво! Како си?",
+            "target_primary": "Zdravo! Kako si?"
           }
         },
         {
           "id": "dobro_sam",
           "english": "I'm fine",
-          "serbian_cyrillic": "Добро сам",
-          "serbian_latin": "Dobro sam",
+          "target_alt": "Добро сам",
+          "target_primary": "Dobro sam",
           "pronunciation_hint": "DOH-broh sahm",
           "audio_override": null,
           "example_sentence": {
             "english": "I'm fine, thank you.",
-            "serbian_cyrillic": "Добро сам, хвала.",
-            "serbian_latin": "Dobro sam, hvala."
+            "target_alt": "Добро сам, хвала.",
+            "target_primary": "Dobro sam, hvala."
           }
         },
         {
           "id": "izvini",
           "english": "Sorry (informal/formal)",
-          "serbian_cyrillic": "Извини / Извините",
-          "serbian_latin": "Izvini / Izvinite",
+          "target_alt": "Извини / Извините",
+          "target_primary": "Izvini / Izvinite",
           "pronunciation_hint": "eez-VEE-nee / eez-VEE-nee-teh",
           "audio_override": null,
           "example_sentence": {
             "english": "Sorry, where is the exit?",
-            "serbian_cyrillic": "Извините, где је излаз?",
-            "serbian_latin": "Izvinite, gde je izlaz?"
+            "target_alt": "Извините, где је излаз?",
+            "target_primary": "Izvinite, gde je izlaz?"
           }
         }
       ]
@@ -175,23 +175,23 @@
       "examples": [
         {
           "english": "How are you? (informal)",
-          "serbian_cyrillic": "Како си?",
-          "serbian_latin": "Kako si?"
+          "target_alt": "Како си?",
+          "target_primary": "Kako si?"
         },
         {
           "english": "How are you? (formal)",
-          "serbian_cyrillic": "Како сте?",
-          "serbian_latin": "Kako ste?"
+          "target_alt": "Како сте?",
+          "target_primary": "Kako ste?"
         },
         {
           "english": "Excuse me (informal)",
-          "serbian_cyrillic": "Извини",
-          "serbian_latin": "Izvini"
+          "target_alt": "Извини",
+          "target_primary": "Izvini"
         },
         {
           "english": "Excuse me (formal)",
-          "serbian_cyrillic": "Извините",
-          "serbian_latin": "Izvinite"
+          "target_alt": "Извините",
+          "target_primary": "Izvinite"
         }
       ]
     },
@@ -234,11 +234,11 @@
       {
         "type": "match_pairs",
         "pairs": [
-          {"english": "Hello", "serbian": "Zdravo"},
-          {"english": "Goodbye", "serbian": "Doviđenja"},
-          {"english": "Good morning", "serbian": "Dobro jutro"},
-          {"english": "Good evening", "serbian": "Dobro veče"},
-          {"english": "Thank you", "serbian": "Hvala"}
+          {"english": "Hello", "target": "Zdravo"},
+          {"english": "Goodbye", "target": "Doviđenja"},
+          {"english": "Good morning", "target": "Dobro jutro"},
+          {"english": "Good evening", "target": "Dobro veče"},
+          {"english": "Thank you", "target": "Hvala"}
         ]
       },
       {

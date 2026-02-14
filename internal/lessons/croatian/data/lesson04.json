@@ -1,0 +1,252 @@
+{
+  "id": "lesson04",
+  "title": "Getting Around",
+  "description": "Learn essential Croatian vocabulary for navigating cities, asking for directions, and using public transportation.",
+  "order": 4,
+  "prerequisite": "lesson03",
+  "illustration": "phrases.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Directions & Transportation",
+      "items": [
+        {
+          "id": "gdje_je",
+          "english": "Where is...?",
+          "target_primary": "Gdje je...?",
+          "target_alt": "",
+          "pronunciation_hint": "gdyeh yeh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the train station?",
+            "target_primary": "Gdje je kolodvor?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "lijevo",
+          "english": "Left",
+          "target_primary": "Lijevo",
+          "target_alt": "",
+          "pronunciation_hint": "lee-YEH-voh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Turn left at the intersection.",
+            "target_primary": "Skrenite lijevo na križanju.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "desno",
+          "english": "Right",
+          "target_primary": "Desno",
+          "target_alt": "",
+          "pronunciation_hint": "DEHS-noh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The hotel is on the right.",
+            "target_primary": "Hotel je desno.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ravno",
+          "english": "Straight ahead",
+          "target_primary": "Ravno",
+          "target_alt": "",
+          "pronunciation_hint": "RAHV-noh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Go straight ahead.",
+            "target_primary": "Idite ravno.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "autobus",
+          "english": "Bus",
+          "target_primary": "Autobus",
+          "target_alt": "",
+          "pronunciation_hint": "OW-toh-boos",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the bus stop?",
+            "target_primary": "Gdje je autobusna stanica?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "vlak",
+          "english": "Train",
+          "target_primary": "Vlak",
+          "target_alt": "",
+          "pronunciation_hint": "vlahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The train to Split departs at ten.",
+            "target_primary": "Vlak za Split polazi u deset.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kolodvor",
+          "english": "Train station",
+          "target_primary": "Kolodvor",
+          "target_alt": "",
+          "pronunciation_hint": "KOH-loh-dvor",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The main train station is in the center.",
+            "target_primary": "Glavni kolodvor je u centru.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "trajekt",
+          "english": "Ferry",
+          "target_primary": "Trajekt",
+          "target_alt": "",
+          "pronunciation_hint": "TRAH-yehkt",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The ferry to Hvar departs at noon.",
+            "target_primary": "Trajekt za Hvar polazi u podne.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "blizu",
+          "english": "Near / Close",
+          "target_primary": "Blizu",
+          "target_alt": "",
+          "pronunciation_hint": "BLEE-zoo",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Is it near here?",
+            "target_primary": "Je li blizu?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "daleko",
+          "english": "Far",
+          "target_primary": "Daleko",
+          "target_alt": "",
+          "pronunciation_hint": "DAH-leh-koh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It's not far from here.",
+            "target_primary": "Nije daleko odavde.",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Asking for Directions",
+      "explanation": "To ask where something is, use 'Gdje je...?' (Where is...?) followed by the place. For asking how to get somewhere, use 'Kako mogu doći do...?' (How can I get to...?). The preposition 'do' (to/until) takes the genitive case. When giving directions, Croatians use imperative forms: 'Idite' (Go - formal), 'Skrenite' (Turn - formal). You can add 'molim Vas' (please, formal) to be extra polite.",
+      "examples": [
+        {
+          "english": "Where is the pharmacy?",
+          "target_primary": "Gdje je ljekarna?",
+          "target_alt": ""
+        },
+        {
+          "english": "How can I get to the beach?",
+          "target_primary": "Kako mogu doći do plaže?",
+          "target_alt": ""
+        },
+        {
+          "english": "Go straight, then turn right.",
+          "target_primary": "Idite ravno, pa skrenite desno.",
+          "target_alt": ""
+        },
+        {
+          "english": "Is it far?",
+          "target_primary": "Je li daleko?",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Getting Around Croatia",
+      "content": "Croatia's coastline is its crown jewel, and ferries (trajekti) operated by Jadrolinija are essential for island-hopping along the Adriatic. The word 'kolodvor' is distinctly Croatian (Serbian uses 'stanica' for train station). Zagreb has an efficient tram (tramvaj) network that has been running since 1891. In Dalmatian coastal cities like Dubrovnik and Split, many old town areas are pedestrian-only, so walking is the primary way to explore. Taxis and ride-sharing apps are available in major cities. When asking locals for directions, many Croatians - especially younger generations - speak good English, but attempting Croatian is always appreciated."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you ask 'Where is...?' in Croatian?",
+        "correct_answer": "Gdje je...?",
+        "options": ["Gdje je...?", "Koliko je...?", "Kako je...?", "Što je...?"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What is the Croatian word for 'train'?",
+        "correct_answer": "Vlak",
+        "options": ["Autobus", "Vlak", "Trajekt", "Kolodvor"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'left'",
+        "correct_answer": "Lijevo",
+        "accept_alternatives": ["lijevo"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'right'",
+        "correct_answer": "Desno",
+        "accept_alternatives": ["desno"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the transportation words",
+        "pairs": [
+          {"english": "Bus", "target": "Autobus"},
+          {"english": "Train", "target": "Vlak"},
+          {"english": "Ferry", "target": "Trajekt"},
+          {"english": "Train station", "target": "Kolodvor"},
+          {"english": "Near", "target": "Blizu"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "vlak",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Vlak", "Autobus", "Trajekt"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Ravno' mean?",
+        "correct_answer": "Straight ahead",
+        "options": ["Left", "Right", "Straight ahead", "Far"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'far'",
+        "correct_answer": "Daleko",
+        "accept_alternatives": ["daleko"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "kolodvor",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Kolodvor", "Daleko", "Ravno"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the direction words",
+        "pairs": [
+          {"english": "Left", "target": "Lijevo"},
+          {"english": "Right", "target": "Desno"},
+          {"english": "Straight ahead", "target": "Ravno"},
+          {"english": "Far", "target": "Daleko"},
+          {"english": "Where is...?", "target": "Gdje je...?"}
+        ]
+      }
+    ]
+  }
+}

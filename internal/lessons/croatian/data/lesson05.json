@@ -1,0 +1,252 @@
+{
+  "id": "lesson05",
+  "title": "Shopping & Money",
+  "description": "Learn essential Croatian vocabulary for shopping, asking prices, and handling money transactions.",
+  "order": 5,
+  "prerequisite": "lesson04",
+  "illustration": "food.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Shopping & Money Vocabulary",
+      "items": [
+        {
+          "id": "koliko_kosta",
+          "english": "How much does it cost?",
+          "target_primary": "Koliko košta?",
+          "target_alt": "",
+          "pronunciation_hint": "KOH-lee-koh KOSH-tah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "How much does this shirt cost?",
+            "target_primary": "Koliko košta ova košulja?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "euro",
+          "english": "Euro",
+          "target_primary": "Euro",
+          "target_alt": "",
+          "pronunciation_hint": "EH-oo-roh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "That costs fifty euros.",
+            "target_primary": "To košta pedeset eura.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "skupo",
+          "english": "Expensive",
+          "target_primary": "Skupo",
+          "target_alt": "",
+          "pronunciation_hint": "SKOO-poh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "This is too expensive.",
+            "target_primary": "Ovo je preskupo.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "jeftino",
+          "english": "Cheap / Inexpensive",
+          "target_primary": "Jeftino",
+          "target_alt": "",
+          "pronunciation_hint": "YEHF-tee-noh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It's very cheap here.",
+            "target_primary": "Ovdje je vrlo jeftino.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "racun_shop",
+          "english": "Receipt / Bill",
+          "target_primary": "Račun",
+          "target_alt": "",
+          "pronunciation_hint": "RAH-choon",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "May I have the receipt?",
+            "target_primary": "Mogu li dobiti račun?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ducan",
+          "english": "Shop / Store",
+          "target_primary": "Dućan",
+          "target_alt": "",
+          "pronunciation_hint": "DOO-chahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the nearest shop?",
+            "target_primary": "Gdje je najbliži dućan?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "trznica",
+          "english": "Market",
+          "target_primary": "Tržnica",
+          "target_alt": "",
+          "pronunciation_hint": "TERZH-nee-tsah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The market is open every morning.",
+            "target_primary": "Tržnica je otvorena svako jutro.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "platiti",
+          "english": "To pay",
+          "target_primary": "Platiti",
+          "target_alt": "",
+          "pronunciation_hint": "PLAH-tee-tee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Can I pay by card?",
+            "target_primary": "Mogu li platiti karticom?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "popust",
+          "english": "Discount",
+          "target_primary": "Popust",
+          "target_alt": "",
+          "pronunciation_hint": "POH-poost",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Is there a discount?",
+            "target_primary": "Ima li popusta?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "velicina",
+          "english": "Size",
+          "target_primary": "Veličina",
+          "target_alt": "",
+          "pronunciation_hint": "veh-LEE-chee-nah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Do you have a larger size?",
+            "target_primary": "Imate li veću veličinu?",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Asking About Prices & Making Purchases",
+      "explanation": "The key phrase for shopping is 'Koliko košta?' (How much does it cost?) for a single item, or 'Koliko koštaju?' for multiple items. To say you want to buy something, use 'Želim kupiti...' (I want to buy...). The verb 'koštati' (to cost) is regular: 'košta' (it costs), 'koštaju' (they cost). For payment, 'Mogu li platiti karticom?' (Can I pay by card?) is essential as Croatia increasingly accepts card payments, though smaller shops and markets may still prefer cash.",
+      "examples": [
+        {
+          "english": "How much does this cost?",
+          "target_primary": "Koliko ovo košta?",
+          "target_alt": ""
+        },
+        {
+          "english": "How much do these cost?",
+          "target_primary": "Koliko ovo koštaju?",
+          "target_alt": ""
+        },
+        {
+          "english": "I want to buy this.",
+          "target_primary": "Želim kupiti ovo.",
+          "target_alt": ""
+        },
+        {
+          "english": "That's too expensive for me.",
+          "target_primary": "To je preskupo za mene.",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Shopping in Croatia",
+      "content": "Croatia's outdoor markets (tržnice) are vibrant and central to daily life. Zagreb's famous Dolac Market, perched above the main square, has been the city's 'belly' since 1930, offering fresh produce, meats, cheeses, and flowers. Bargaining is not common in shops but may be acceptable at flea markets (buvljak). Most Croatian cities have a mix of modern shopping centers and small family-owned shops (dućani). Sunday trading hours are restricted by law - many shops close or have limited hours. Croatia adopted the Euro in 2023, so you no longer need to exchange for kunas. Card payments are widely accepted in cities, but carrying some cash is wise for markets, small cafes, and island visits."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you ask 'How much does it cost?' in Croatian?",
+        "correct_answer": "Koliko košta?",
+        "options": ["Koliko košta?", "Gdje je?", "Što je to?", "Koliko je sati?"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Skupo' mean?",
+        "correct_answer": "Expensive",
+        "options": ["Cheap", "Expensive", "Free", "Large"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'shop' or 'store'",
+        "correct_answer": "Dućan",
+        "accept_alternatives": ["dućan", "Ducan", "ducan"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'market'",
+        "correct_answer": "Tržnica",
+        "accept_alternatives": ["tržnica", "Trznica", "trznica"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the shopping vocabulary",
+        "pairs": [
+          {"english": "Expensive", "target": "Skupo"},
+          {"english": "Cheap", "target": "Jeftino"},
+          {"english": "Shop", "target": "Dućan"},
+          {"english": "Market", "target": "Tržnica"},
+          {"english": "Receipt", "target": "Račun"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "skupo",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Skupo", "Jeftino", "Popust"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Platiti' mean?",
+        "correct_answer": "To pay",
+        "options": ["To buy", "To pay", "To sell", "To cost"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'discount'",
+        "correct_answer": "Popust",
+        "accept_alternatives": ["popust"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "ducan",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Dućan", "Tržnica", "Račun"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the shopping phrases",
+        "pairs": [
+          {"english": "How much does it cost?", "target": "Koliko košta?"},
+          {"english": "To pay", "target": "Platiti"},
+          {"english": "Discount", "target": "Popust"},
+          {"english": "Size", "target": "Veličina"},
+          {"english": "Euro", "target": "Euro"}
+        ]
+      }
+    ]
+  }
+}

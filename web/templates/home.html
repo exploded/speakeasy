@@ -27,46 +27,44 @@
         </div>
     </div>
 
-    <h2 style="margin-bottom:1rem;">Continue Learning Serbian</h2>
-    <div class="progress-bar-container" style="margin-bottom:1.5rem;">
-        <div class="progress-bar" style="width:{{.ProgressPercent}}%"></div>
+    <h2 style="margin:2rem 0 1rem;">Choose a Language</h2>
+    <div class="lesson-grid">
+        {{range .LangSummaries}}
+        <a href="/lessons/{{.Slug}}" class="lesson-card available" style="text-decoration:none;color:inherit;">
+            <div class="lesson-card-body" style="text-align:center;padding:2rem 1.5rem;">
+                <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">{{.DisplayName}}</h3>
+                <p style="color:var(--gray-500);margin-bottom:1rem;">{{.Completed}}/{{.Total}} lessons completed</p>
+                <div class="progress-bar-container" style="margin-bottom:1rem;">
+                    <div class="progress-bar" style="width:{{.Percent}}%"></div>
+                </div>
+                <span class="btn btn-primary btn-sm">{{if .Completed}}Continue{{else}}Start Learning{{end}}</span>
+            </div>
+        </a>
+        {{end}}
     </div>
-
-    {{if .NextLesson}}
-    <a href="/lessons/serbian/{{.NextLesson.ID}}" class="btn btn-primary btn-lg">
-        Continue: {{.NextLesson.Title}}
-    </a>
-    {{else}}
-    <a href="/lessons/serbian" class="btn btn-primary btn-lg">
-        View All Lessons
-    </a>
-    {{end}}
 {{else}}
     <div class="hero">
         <div class="mascot">
             <img src="/static/svg/mascot.svg" alt="Mila the Owl" style="width:120px;height:120px;">
         </div>
-        <h1>Learn Serbian the Fun Way!</h1>
-        <p>Interactive lessons, quizzes, and audio pronunciation to get you speaking Serbian with confidence.</p>
+        <h1>Learn Languages the Fun Way!</h1>
+        <p>Interactive lessons, quizzes, and audio pronunciation to get you speaking with confidence.</p>
         <div style="margin-top:1.5rem;display:flex;gap:1rem;justify-content:center;">
             <a href="/register" class="btn btn-lg" style="background:white;color:var(--purple);font-weight:700;">Get Started Free</a>
             <a href="/login" class="btn btn-lg btn-outline" style="border-color:white;color:white;">Login</a>
         </div>
     </div>
 
-    <div class="stats-grid" style="margin-top:2rem;">
-        <div class="stat-card">
-            <div class="stat-value">5</div>
-            <div class="stat-label">Engaging Lessons</div>
+    <h2 style="text-align:center;margin:2rem 0 1rem;">Available Languages</h2>
+    <div class="lesson-grid">
+        {{range .LangSummaries}}
+        <div class="lesson-card available" style="text-align:center;">
+            <div class="lesson-card-body" style="padding:2rem 1.5rem;">
+                <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">{{.DisplayName}}</h3>
+                <p style="color:var(--gray-500);">{{.Total}} engaging lessons with quizzes</p>
+            </div>
         </div>
-        <div class="stat-card">
-            <div class="stat-value">60+</div>
-            <div class="stat-label">Words & Phrases</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">4</div>
-            <div class="stat-label">Quiz Types</div>
-        </div>
+        {{end}}
     </div>
 {{end}}
 {{end}}

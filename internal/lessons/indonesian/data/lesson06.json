@@ -1,0 +1,280 @@
+{
+  "id": "lesson06",
+  "title": "Family & People",
+  "description": "Learn vocabulary for family members, describe people, and understand how Indonesian handles relationships and social titles.",
+  "order": 6,
+  "prerequisite": "lesson05",
+  "illustration": "family.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Family Members",
+      "items": [
+        {
+          "id": "keluarga",
+          "english": "Family",
+          "target_primary": "Keluarga",
+          "target_alt": "",
+          "pronunciation_hint": "keh-lu-AR-ga",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My family lives in Jakarta.",
+            "target_primary": "Keluarga saya tinggal di Jakarta.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ibu",
+          "english": "Mother",
+          "target_primary": "Ibu",
+          "target_alt": "",
+          "pronunciation_hint": "EE-boo",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My mother is a teacher.",
+            "target_primary": "Ibu saya guru.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ayah",
+          "english": "Father",
+          "target_primary": "Ayah",
+          "target_alt": "",
+          "pronunciation_hint": "AH-yah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My father works at the hospital.",
+            "target_primary": "Ayah saya bekerja di rumah sakit.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kakak",
+          "english": "Older sibling",
+          "target_primary": "Kakak",
+          "target_alt": "",
+          "pronunciation_hint": "KAH-kahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "My older sister is married.",
+            "target_primary": "Kakak perempuan saya sudah menikah.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "adik",
+          "english": "Younger sibling",
+          "target_primary": "Adik",
+          "target_alt": "",
+          "pronunciation_hint": "AH-dik",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have two younger siblings.",
+            "target_primary": "Saya punya dua adik.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "anak",
+          "english": "Child",
+          "target_primary": "Anak",
+          "target_alt": "",
+          "pronunciation_hint": "AH-nahk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The children are playing outside.",
+            "target_primary": "Anak-anak bermain di luar.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "suami",
+          "english": "Husband",
+          "target_primary": "Suami",
+          "target_alt": "",
+          "pronunciation_hint": "su-AH-mee",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Her husband is from Bali.",
+            "target_primary": "Suami dia dari Bali.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "istri",
+          "english": "Wife",
+          "target_primary": "Istri",
+          "target_alt": "",
+          "pronunciation_hint": "IS-tree",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "His wife speaks English.",
+            "target_primary": "Istri dia berbicara bahasa Inggris.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kakek",
+          "english": "Grandfather",
+          "target_primary": "Kakek",
+          "target_alt": "",
+          "pronunciation_hint": "KAH-kehk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Grandfather likes to tell stories.",
+            "target_primary": "Kakek suka bercerita.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "nenek",
+          "english": "Grandmother",
+          "target_primary": "Nenek",
+          "target_alt": "",
+          "pronunciation_hint": "NEH-nehk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Grandmother cooks very well.",
+            "target_primary": "Nenek memasak dengan sangat enak.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "teman",
+          "english": "Friend",
+          "target_primary": "Teman",
+          "target_alt": "",
+          "pronunciation_hint": "teh-MAHN",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "This is my friend from school.",
+            "target_primary": "Ini teman saya dari sekolah.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "nama",
+          "english": "Name",
+          "target_primary": "Nama",
+          "target_alt": "",
+          "pronunciation_hint": "NAH-mah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "What is your name?",
+            "target_primary": "Siapa nama Anda?",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Possession with 'Saya', '-nya', and Reduplication",
+      "explanation": "Indonesian expresses possession by placing the possessor after the noun. 'Ibu saya' means 'my mother' (literally 'mother my'). For third person, you can use 'dia' (he/she) after the noun, or attach the suffix '-nya': 'ibunya' means 'his/her mother'. Indonesian does not distinguish gender in pronouns — 'dia' means both 'he' and 'she'. To form plurals, Indonesian often uses reduplication: 'anak' (child) becomes 'anak-anak' (children), 'teman' becomes 'teman-teman' (friends). This is one of the most distinctive features of Indonesian grammar. Note that reduplication is not always needed when the plural meaning is clear from context, such as after a number: 'dua anak' (two children), not 'dua anak-anak'.",
+      "examples": [
+        {
+          "english": "My mother",
+          "target_primary": "Ibu saya",
+          "target_alt": ""
+        },
+        {
+          "english": "His/her father",
+          "target_primary": "Ayahnya",
+          "target_alt": ""
+        },
+        {
+          "english": "The children (plural)",
+          "target_primary": "Anak-anak",
+          "target_alt": ""
+        },
+        {
+          "english": "My friends",
+          "target_primary": "Teman-teman saya",
+          "target_alt": ""
+        },
+        {
+          "english": "What is your name?",
+          "target_primary": "Siapa nama Anda?",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Bapak, Ibu, and Indonesian Social Titles",
+      "content": "In Indonesian culture, 'Bapak' (Pak) and 'Ibu' (Bu) are not just words for father and mother — they are the most important social titles used every day. You address any adult man as 'Pak' and any adult woman as 'Bu', whether they are strangers, colleagues, teachers, or officials. A taxi driver is 'Pak', your hotel receptionist is 'Bu', and your boss is 'Pak' or 'Bu' followed by their first name (e.g., 'Pak Budi', 'Bu Sari'). Using someone's name without these titles feels disrespectful, especially with anyone older. For younger people or peers, 'Mas' (older brother, Javanese origin) and 'Mbak' (older sister) are commonly used in Java, while 'Kakak' or 'Kak' works everywhere. Family ties are extremely important in Indonesia — children are expected to respect and care for their parents as they age, and extended family gatherings during holidays like Lebaran (Eid al-Fitr) involve 'mudik', the mass homecoming journey that sees millions of Indonesians traveling to their hometowns."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What does 'Ibu' mean?",
+        "options": ["Father", "Mother", "Grandmother", "Wife"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you say 'my father' in Indonesian?",
+        "options": ["Saya ayah", "Ayah saya", "Ayahnya", "Ayah kami"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the difference between 'kakak' and 'adik'?",
+        "options": [
+          "Kakak is brother, adik is sister",
+          "Kakak is older sibling, adik is younger sibling",
+          "Kakak is friend, adik is family",
+          "There is no difference"
+        ],
+        "correct": 1
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'family'.",
+        "correct_answers": ["Keluarga", "keluarga"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'friend'.",
+        "correct_answers": ["Teman", "teman"]
+      },
+      {
+        "type": "match_pairs",
+        "pairs": [
+          {"english": "Mother", "target": "Ibu"},
+          {"english": "Father", "target": "Ayah"},
+          {"english": "Child", "target": "Anak"},
+          {"english": "Husband", "target": "Suami"},
+          {"english": "Grandmother", "target": "Nenek"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "keluarga",
+        "options": ["Friend", "Family", "Name"],
+        "correct": 1
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "anak",
+        "options": ["Mother", "Wife", "Child"],
+        "correct": 2
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How do you form the plural 'children' from 'anak'?",
+        "options": ["Anaks", "Anak-anak", "Banyak anak", "Anak dua"],
+        "correct": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What social title do you use to address an adult woman in Indonesia?",
+        "options": ["Mas", "Kakak", "Ibu / Bu", "Nenek"],
+        "correct": 2
+      }
+    ]
+  }
+}

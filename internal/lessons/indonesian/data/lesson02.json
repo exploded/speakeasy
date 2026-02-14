@@ -1,0 +1,285 @@
+{
+  "id": "lesson02",
+  "title": "Numbers & Counting",
+  "description": "Learn to count from one to twenty in Indonesian, plus useful number-related phrases for daily life.",
+  "order": 2,
+  "prerequisite": "lesson01",
+  "illustration": "numbers.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Numbers 1-20 & Counting Words",
+      "items": [
+        {
+          "id": "satu",
+          "english": "One (1)",
+          "target_primary": "Satu",
+          "target_alt": "",
+          "pronunciation_hint": "SAH-too",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want one coffee.",
+            "target_primary": "Saya mau satu kopi.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dua",
+          "english": "Two (2)",
+          "target_primary": "Dua",
+          "target_alt": "",
+          "pronunciation_hint": "DOO-ah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Two tickets, please.",
+            "target_primary": "Dua tiket, tolong.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "tiga",
+          "english": "Three (3)",
+          "target_primary": "Tiga",
+          "target_alt": "",
+          "pronunciation_hint": "TEE-gah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have three children.",
+            "target_primary": "Saya punya tiga anak.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "empat",
+          "english": "Four (4)",
+          "target_primary": "Empat",
+          "target_alt": "",
+          "pronunciation_hint": "EHM-paht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "There are four chairs.",
+            "target_primary": "Ada empat kursi.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "lima",
+          "english": "Five (5)",
+          "target_primary": "Lima",
+          "target_alt": "",
+          "pronunciation_hint": "LEE-mah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Five minutes, please.",
+            "target_primary": "Lima menit, tolong.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "enam",
+          "english": "Six (6)",
+          "target_primary": "Enam",
+          "target_alt": "",
+          "pronunciation_hint": "EH-nahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I arrived at six o'clock.",
+            "target_primary": "Saya tiba jam enam.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "tujuh",
+          "english": "Seven (7)",
+          "target_primary": "Tujuh",
+          "target_alt": "",
+          "pronunciation_hint": "TOO-jooh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "There are seven days in a week.",
+            "target_primary": "Ada tujuh hari dalam seminggu.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "delapan",
+          "english": "Eight (8)",
+          "target_primary": "Delapan",
+          "target_alt": "",
+          "pronunciation_hint": "deh-LAH-pahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The store opens at eight.",
+            "target_primary": "Toko buka jam delapan.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sembilan",
+          "english": "Nine (9)",
+          "target_primary": "Sembilan",
+          "target_alt": "",
+          "pronunciation_hint": "sem-BEE-lahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have nine books.",
+            "target_primary": "Saya punya sembilan buku.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sepuluh",
+          "english": "Ten (10)",
+          "target_primary": "Sepuluh",
+          "target_alt": "",
+          "pronunciation_hint": "seh-POO-looh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Ten thousand rupiah.",
+            "target_primary": "Sepuluh ribu rupiah.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "berapa",
+          "english": "How many / How much",
+          "target_primary": "Berapa",
+          "target_alt": "",
+          "pronunciation_hint": "beh-RAH-pah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "How many people?",
+            "target_primary": "Berapa orang?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "nol",
+          "english": "Zero (0)",
+          "target_primary": "Nol",
+          "target_alt": "",
+          "pronunciation_hint": "nohl",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The score is zero to zero.",
+            "target_primary": "Skornya nol-nol.",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Forming Numbers 11-20",
+      "explanation": "Indonesian numbers 11-19 are formed by combining the ones digit with 'belas'. For example, 'sebelas' (11) comes from 'se-' (one) + 'belas', 'dua belas' (12) is 'dua' + 'belas', and so on. Twenty is 'dua puluh' (two tens). This pattern continues: 'tiga puluh' (30), 'empat puluh' (40), etc. For numbers like 25, combine the tens and ones: 'dua puluh lima'. There are no irregular forms -- the system is completely regular and predictable.",
+      "examples": [
+        {
+          "english": "Eleven (11)",
+          "target_primary": "Sebelas",
+          "target_alt": ""
+        },
+        {
+          "english": "Twelve (12)",
+          "target_primary": "Dua belas",
+          "target_alt": ""
+        },
+        {
+          "english": "Fifteen (15)",
+          "target_primary": "Lima belas",
+          "target_alt": ""
+        },
+        {
+          "english": "Twenty (20)",
+          "target_primary": "Dua puluh",
+          "target_alt": ""
+        },
+        {
+          "english": "Twenty-five (25)",
+          "target_primary": "Dua puluh lima",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Numbers in Indonesian Daily Life",
+      "content": "Numbers are everywhere in Indonesian daily life, especially when dealing with money. The Indonesian Rupiah (Rp) uses large numbers -- a meal might cost Rp 25.000 (dua puluh lima ribu) and a hotel room Rp 500.000 (lima ratus ribu). Indonesians often shorten large amounts by dropping the thousands, saying 'dua puluh lima' when they mean 25,000 Rupiah. When bargaining at markets (a common practice), knowing your numbers is essential. Also note that Indonesia uses a period as a thousands separator and a comma for decimals, opposite to American English: Rp 1.000.000 means one million Rupiah."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What is the Indonesian word for 'five'?",
+        "correct_answer": "Lima",
+        "options": ["Enam", "Lima", "Empat", "Tiga"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What number is 'delapan'?",
+        "correct_answer": "Eight",
+        "options": ["Six", "Seven", "Eight", "Nine"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'three':",
+        "correct_answer": "Tiga",
+        "accept_alternatives": ["tiga"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'ten':",
+        "correct_answer": "Sepuluh",
+        "accept_alternatives": ["sepuluh"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each number with its Indonesian word:",
+        "pairs": [
+          {"english": "One", "target": "Satu"},
+          {"english": "Two", "target": "Dua"},
+          {"english": "Four", "target": "Empat"},
+          {"english": "Seven", "target": "Tujuh"},
+          {"english": "Nine", "target": "Sembilan"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "lima",
+        "prompt": "Listen and choose the correct number:",
+        "correct_answer": "Five",
+        "options": ["Three", "Five", "Six"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'twelve' in Indonesian?",
+        "correct_answer": "Dua belas",
+        "options": ["Dua puluh", "Dua belas", "Sebelas", "Tiga belas"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'how many':",
+        "correct_answer": "Berapa",
+        "accept_alternatives": ["berapa"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "tujuh",
+        "prompt": "Listen and choose the correct number:",
+        "correct_answer": "Seven",
+        "options": ["Six", "Seven", "Eight"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each number with its Indonesian word:",
+        "pairs": [
+          {"english": "Six", "target": "Enam"},
+          {"english": "Eight", "target": "Delapan"},
+          {"english": "Ten", "target": "Sepuluh"},
+          {"english": "Zero", "target": "Nol"},
+          {"english": "How many", "target": "Berapa"}
+        ]
+      }
+    ]
+  }
+}

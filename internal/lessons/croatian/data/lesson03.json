@@ -1,0 +1,278 @@
+{
+  "id": "lesson03",
+  "title": "Food & Drink",
+  "description": "Learn essential Croatian vocabulary for ordering food and drinks, navigating menus, and dining out.",
+  "order": 3,
+  "prerequisite": "lesson02",
+  "illustration": "food.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Common Food & Drink Words",
+      "items": [
+        {
+          "id": "kruh",
+          "english": "Bread",
+          "target_primary": "Kruh",
+          "target_alt": "",
+          "pronunciation_hint": "krooh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I would like bread, please.",
+            "target_primary": "Želim kruh, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "voda",
+          "english": "Water",
+          "target_primary": "Voda",
+          "target_alt": "",
+          "pronunciation_hint": "VOH-dah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One water, please.",
+            "target_primary": "Jednu vodu, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kava",
+          "english": "Coffee",
+          "target_primary": "Kava",
+          "target_alt": "",
+          "pronunciation_hint": "KAH-vah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I'd like a coffee with milk.",
+            "target_primary": "Želim kavu s mlijekom.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "pivo",
+          "english": "Beer",
+          "target_primary": "Pivo",
+          "target_alt": "",
+          "pronunciation_hint": "PEE-voh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Two beers, please.",
+            "target_primary": "Dva piva, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "vino",
+          "english": "Wine",
+          "target_primary": "Vino",
+          "target_alt": "",
+          "pronunciation_hint": "VEE-noh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "A glass of red wine, please.",
+            "target_primary": "Čašu crnog vina, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "meso",
+          "english": "Meat",
+          "target_primary": "Meso",
+          "target_alt": "",
+          "pronunciation_hint": "MEH-soh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I don't eat meat.",
+            "target_primary": "Ne jedem meso.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "riba",
+          "english": "Fish",
+          "target_primary": "Riba",
+          "target_alt": "",
+          "pronunciation_hint": "REE-bah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The fish is fresh.",
+            "target_primary": "Riba je svježa.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sir",
+          "english": "Cheese",
+          "target_primary": "Sir",
+          "target_alt": "",
+          "pronunciation_hint": "seer",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I'd like cheese from the island of Pag.",
+            "target_primary": "Želim paški sir.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "salata",
+          "english": "Salad",
+          "target_primary": "Salata",
+          "target_alt": "",
+          "pronunciation_hint": "sah-LAH-tah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "A mixed salad, please.",
+            "target_primary": "Miješanu salatu, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "jelovnik",
+          "english": "Menu",
+          "target_primary": "Jelovnik",
+          "target_alt": "",
+          "pronunciation_hint": "YEH-lov-neek",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "May I see the menu?",
+            "target_primary": "Mogu li vidjeti jelovnik?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "racun",
+          "english": "Bill / Check",
+          "target_primary": "Račun",
+          "target_alt": "",
+          "pronunciation_hint": "RAH-choon",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The bill, please.",
+            "target_primary": "Račun, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dobar_tek",
+          "english": "Bon appetit / Enjoy your meal",
+          "target_primary": "Dobar tek",
+          "target_alt": "",
+          "pronunciation_hint": "DOH-bar tehk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "The food is here. Bon appetit!",
+            "target_primary": "Hrana je stigla. Dobar tek!",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Ordering Food - Key Phrases",
+      "explanation": "When ordering in Croatian, you can use 'Želim...' (I would like...) or 'Za mene...' (For me...) followed by the item in the accusative case. Feminine nouns ending in -a change to -u in the accusative: 'kava' becomes 'kavu', 'voda' becomes 'vodu'. Neuter nouns (like 'pivo', 'vino') don't change. You can also simply name the item followed by 'molim' (please).",
+      "examples": [
+        {
+          "english": "I would like a coffee.",
+          "target_primary": "Želim kavu.",
+          "target_alt": ""
+        },
+        {
+          "english": "For me, a beer.",
+          "target_primary": "Za mene, pivo.",
+          "target_alt": ""
+        },
+        {
+          "english": "Water, please.",
+          "target_primary": "Vodu, molim.",
+          "target_alt": ""
+        },
+        {
+          "english": "Do you have fish?",
+          "target_primary": "Imate li ribu?",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Croatian Coffee Culture",
+      "content": "Coffee culture is central to Croatian social life. A 'kava' (coffee) is almost always an espresso-style drink, not filter coffee. Croatians spend hours at cafes in a ritual known as 'kavica' (a diminutive, affectionate term for coffee). Inviting someone for coffee ('Idemo na kavu') is the standard way to socialize. In Zagreb, the Saturday morning coffee stroll along Tkalčićeva street or the main square is a beloved tradition called 'špica' (meaning 'peak' - the peak social hour). Paški sir (Pag cheese) is a famous Croatian delicacy, a hard sheep's cheese from the island of Pag with a distinctive sharp flavor."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What is the Croatian word for 'bread'?",
+        "correct_answer": "Kruh",
+        "options": ["Kruh", "Sir", "Meso", "Riba"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Račun' mean?",
+        "correct_answer": "Bill / Check",
+        "options": ["Menu", "Bill / Check", "Table", "Waiter"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'coffee'",
+        "correct_answer": "Kava",
+        "accept_alternatives": ["kava"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'water'",
+        "correct_answer": "Voda",
+        "accept_alternatives": ["voda"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the food and drink words",
+        "pairs": [
+          {"english": "Bread", "target": "Kruh"},
+          {"english": "Wine", "target": "Vino"},
+          {"english": "Beer", "target": "Pivo"},
+          {"english": "Cheese", "target": "Sir"},
+          {"english": "Fish", "target": "Riba"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "kava",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Kava", "Voda", "Vino"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'Bon appetit' in Croatian?",
+        "correct_answer": "Dobar tek",
+        "options": ["Dobar dan", "Dobar tek", "Dobro jutro", "Dobra večer"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'menu'",
+        "correct_answer": "Jelovnik",
+        "accept_alternatives": ["jelovnik"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "pivo",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Pivo", "Vino", "Meso"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the dining phrases",
+        "pairs": [
+          {"english": "Coffee", "target": "Kava"},
+          {"english": "Water", "target": "Voda"},
+          {"english": "Meat", "target": "Meso"},
+          {"english": "Salad", "target": "Salata"},
+          {"english": "Menu", "target": "Jelovnik"}
+        ]
+      }
+    ]
+  }
+}

@@ -13,131 +13,131 @@
         {
           "id": "jedan",
           "english": "One (1)",
-          "serbian_cyrillic": "Један",
-          "serbian_latin": "Jedan",
+          "target_alt": "Један",
+          "target_primary": "Jedan",
           "pronunciation_hint": "YEH-dahn",
           "audio_override": null,
           "example_sentence": {
             "english": "One coffee, please.",
-            "serbian_cyrillic": "Једну кафу, молим.",
-            "serbian_latin": "Jednu kafu, molim."
+            "target_alt": "Једну кафу, молим.",
+            "target_primary": "Jednu kafu, molim."
           }
         },
         {
           "id": "dva",
           "english": "Two (2)",
-          "serbian_cyrillic": "Два",
-          "serbian_latin": "Dva",
+          "target_alt": "Два",
+          "target_primary": "Dva",
           "pronunciation_hint": "dvah",
           "audio_override": null,
           "example_sentence": {
             "english": "Two waters, please.",
-            "serbian_cyrillic": "Две воде, молим.",
-            "serbian_latin": "Dve vode, molim."
+            "target_alt": "Две воде, молим.",
+            "target_primary": "Dve vode, molim."
           }
         },
         {
           "id": "tri",
           "english": "Three (3)",
-          "serbian_cyrillic": "Три",
-          "serbian_latin": "Tri",
+          "target_alt": "Три",
+          "target_primary": "Tri",
           "pronunciation_hint": "tree",
           "audio_override": null,
           "example_sentence": {
             "english": "I have three brothers.",
-            "serbian_cyrillic": "Имам три брата.",
-            "serbian_latin": "Imam tri brata."
+            "target_alt": "Имам три брата.",
+            "target_primary": "Imam tri brata."
           }
         },
         {
           "id": "cetiri",
           "english": "Four (4)",
-          "serbian_cyrillic": "Четири",
-          "serbian_latin": "Četiri",
+          "target_alt": "Четири",
+          "target_primary": "Četiri",
           "pronunciation_hint": "CHEH-tee-ree",
           "audio_override": null,
           "example_sentence": {
             "english": "There are four chairs.",
-            "serbian_cyrillic": "Има четири столице.",
-            "serbian_latin": "Ima četiri stolice."
+            "target_alt": "Има четири столице.",
+            "target_primary": "Ima četiri stolice."
           }
         },
         {
           "id": "pet",
           "english": "Five (5)",
-          "serbian_cyrillic": "Пет",
-          "serbian_latin": "Pet",
+          "target_alt": "Пет",
+          "target_primary": "Pet",
           "pronunciation_hint": "peht",
           "audio_override": null,
           "example_sentence": {
             "english": "Five minutes, please.",
-            "serbian_cyrillic": "Пет минута, молим.",
-            "serbian_latin": "Pet minuta, molim."
+            "target_alt": "Пет минута, молим.",
+            "target_primary": "Pet minuta, molim."
           }
         },
         {
           "id": "sest",
           "english": "Six (6)",
-          "serbian_cyrillic": "Шест",
-          "serbian_latin": "Šest",
+          "target_alt": "Шест",
+          "target_primary": "Šest",
           "pronunciation_hint": "shehst",
           "audio_override": null,
           "example_sentence": {
             "english": "It is six o'clock.",
-            "serbian_cyrillic": "Шест је сати.",
-            "serbian_latin": "Šest je sati."
+            "target_alt": "Шест је сати.",
+            "target_primary": "Šest je sati."
           }
         },
         {
           "id": "sedam",
           "english": "Seven (7)",
-          "serbian_cyrillic": "Седам",
-          "serbian_latin": "Sedam",
+          "target_alt": "Седам",
+          "target_primary": "Sedam",
           "pronunciation_hint": "SEH-dahm",
           "audio_override": null,
           "example_sentence": {
             "english": "Seven days in a week.",
-            "serbian_cyrillic": "Седам дана у недељи.",
-            "serbian_latin": "Sedam dana u nedelji."
+            "target_alt": "Седам дана у недељи.",
+            "target_primary": "Sedam dana u nedelji."
           }
         },
         {
           "id": "osam",
           "english": "Eight (8)",
-          "serbian_cyrillic": "Осам",
-          "serbian_latin": "Osam",
+          "target_alt": "Осам",
+          "target_primary": "Osam",
           "pronunciation_hint": "OH-sahm",
           "audio_override": null,
           "example_sentence": {
             "english": "I work eight hours.",
-            "serbian_cyrillic": "Радим осам сати.",
-            "serbian_latin": "Radim osam sati."
+            "target_alt": "Радим осам сати.",
+            "target_primary": "Radim osam sati."
           }
         },
         {
           "id": "devet",
           "english": "Nine (9)",
-          "serbian_cyrillic": "Девет",
-          "serbian_latin": "Devet",
+          "target_alt": "Девет",
+          "target_primary": "Devet",
           "pronunciation_hint": "DEH-veht",
           "audio_override": null,
           "example_sentence": {
             "english": "Nine students are here.",
-            "serbian_cyrillic": "Девет ученика је овде.",
-            "serbian_latin": "Devet učenika je ovde."
+            "target_alt": "Девет ученика је овде.",
+            "target_primary": "Devet učenika je ovde."
           }
         },
         {
           "id": "deset",
           "english": "Ten (10)",
-          "serbian_cyrillic": "Десет",
-          "serbian_latin": "Deset",
+          "target_alt": "Десет",
+          "target_primary": "Deset",
           "pronunciation_hint": "DEH-seht",
           "audio_override": null,
           "example_sentence": {
             "english": "That costs ten dinars.",
-            "serbian_cyrillic": "То кошта десет динара.",
-            "serbian_latin": "To košta deset dinara."
+            "target_alt": "То кошта десет динара.",
+            "target_primary": "To košta deset dinara."
           }
         }
       ]
@@ -149,144 +149,144 @@
         {
           "id": "jedanaest",
           "english": "Eleven (11)",
-          "serbian_cyrillic": "Једанаест",
-          "serbian_latin": "Jedanaest",
+          "target_alt": "Једанаест",
+          "target_primary": "Jedanaest",
           "pronunciation_hint": "yeh-DAH-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "She is eleven years old.",
-            "serbian_cyrillic": "Она има једанаест година.",
-            "serbian_latin": "Ona ima jedanaest godina."
+            "target_alt": "Она има једанаест година.",
+            "target_primary": "Ona ima jedanaest godina."
           }
         },
         {
           "id": "dvanaest",
           "english": "Twelve (12)",
-          "serbian_cyrillic": "Дванаест",
-          "serbian_latin": "Dvanaest",
+          "target_alt": "Дванаест",
+          "target_primary": "Dvanaest",
           "pronunciation_hint": "DVAH-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "It is twelve o'clock.",
-            "serbian_cyrillic": "Дванаест је сати.",
-            "serbian_latin": "Dvanaest je sati."
+            "target_alt": "Дванаест је сати.",
+            "target_primary": "Dvanaest je sati."
           }
         },
         {
           "id": "trinaest",
           "english": "Thirteen (13)",
-          "serbian_cyrillic": "Тринаест",
-          "serbian_latin": "Trinaest",
+          "target_alt": "Тринаест",
+          "target_primary": "Trinaest",
           "pronunciation_hint": "TREE-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "Thirteen people came.",
-            "serbian_cyrillic": "Тринаест људи је дошло.",
-            "serbian_latin": "Trinaest ljudi je došlo."
+            "target_alt": "Тринаест људи је дошло.",
+            "target_primary": "Trinaest ljudi je došlo."
           }
         },
         {
           "id": "cetrnaest",
           "english": "Fourteen (14)",
-          "serbian_cyrillic": "Четрнаест",
-          "serbian_latin": "Četrnaest",
+          "target_alt": "Четрнаест",
+          "target_primary": "Četrnaest",
           "pronunciation_hint": "cheh-TUR-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "The bus comes in fourteen minutes.",
-            "serbian_cyrillic": "Аутобус долази за четрнаест минута.",
-            "serbian_latin": "Autobus dolazi za četrnaest minuta."
+            "target_alt": "Аутобус долази за четрнаест минута.",
+            "target_primary": "Autobus dolazi za četrnaest minuta."
           }
         },
         {
           "id": "petnaest",
           "english": "Fifteen (15)",
-          "serbian_cyrillic": "Петнаест",
-          "serbian_latin": "Petnaest",
+          "target_alt": "Петнаест",
+          "target_primary": "Petnaest",
           "pronunciation_hint": "PEH-tnah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "Fifteen dinars, please.",
-            "serbian_cyrillic": "Петнаест динара, молим.",
-            "serbian_latin": "Petnaest dinara, molim."
+            "target_alt": "Петнаест динара, молим.",
+            "target_primary": "Petnaest dinara, molim."
           }
         },
         {
           "id": "sesnaest",
           "english": "Sixteen (16)",
-          "serbian_cyrillic": "Шеснаест",
-          "serbian_latin": "Šesnaest",
+          "target_alt": "Шеснаест",
+          "target_primary": "Šesnaest",
           "pronunciation_hint": "SHEH-snah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "He is sixteen years old.",
-            "serbian_cyrillic": "Он има шеснаест година.",
-            "serbian_latin": "On ima šesnaest godina."
+            "target_alt": "Он има шеснаест година.",
+            "target_primary": "On ima šesnaest godina."
           }
         },
         {
           "id": "sedamnaest",
           "english": "Seventeen (17)",
-          "serbian_cyrillic": "Седамнаест",
-          "serbian_latin": "Sedamnaest",
+          "target_alt": "Седамнаест",
+          "target_primary": "Sedamnaest",
           "pronunciation_hint": "SEH-dahm-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "There are seventeen students in the class.",
-            "serbian_cyrillic": "Има седамнаест ученика у разреду.",
-            "serbian_latin": "Ima sedamnaest učenika u razredu."
+            "target_alt": "Има седамнаест ученика у разреду.",
+            "target_primary": "Ima sedamnaest učenika u razredu."
           }
         },
         {
           "id": "osamnaest",
           "english": "Eighteen (18)",
-          "serbian_cyrillic": "Осамнаест",
-          "serbian_latin": "Osamnaest",
+          "target_alt": "Осамнаест",
+          "target_primary": "Osamnaest",
           "pronunciation_hint": "OH-sahm-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "She turned eighteen today.",
-            "serbian_cyrillic": "Она је данас напунила осамнаест.",
-            "serbian_latin": "Ona je danas napunila osamnaest."
+            "target_alt": "Она је данас напунила осамнаест.",
+            "target_primary": "Ona je danas napunila osamnaest."
           }
         },
         {
           "id": "devetnaest",
           "english": "Nineteen (19)",
-          "serbian_cyrillic": "Деветнаест",
-          "serbian_latin": "Devetnaest",
+          "target_alt": "Деветнаест",
+          "target_primary": "Devetnaest",
           "pronunciation_hint": "DEH-veht-nah-ehst",
           "audio_override": null,
           "example_sentence": {
             "english": "Nineteen kilometers to Belgrade.",
-            "serbian_cyrillic": "Деветнаест километара до Београда.",
-            "serbian_latin": "Devetnaest kilometara do Beograda."
+            "target_alt": "Деветнаест километара до Београда.",
+            "target_primary": "Devetnaest kilometara do Beograda."
           }
         },
         {
           "id": "dvadeset",
           "english": "Twenty (20)",
-          "serbian_cyrillic": "Двадесет",
-          "serbian_latin": "Dvadeset",
+          "target_alt": "Двадесет",
+          "target_primary": "Dvadeset",
           "pronunciation_hint": "DVAH-deh-seht",
           "audio_override": null,
           "example_sentence": {
             "english": "That costs twenty dinars.",
-            "serbian_cyrillic": "То кошта двадесет динара.",
-            "serbian_latin": "To košta dvadeset dinara."
+            "target_alt": "То кошта двадесет динара.",
+            "target_primary": "To košta dvadeset dinara."
           }
         },
         {
           "id": "koliko",
           "english": "How much / How many?",
-          "serbian_cyrillic": "Колико?",
-          "serbian_latin": "Koliko?",
+          "target_alt": "Колико?",
+          "target_primary": "Koliko?",
           "pronunciation_hint": "KOH-lee-koh",
           "audio_override": null,
           "example_sentence": {
             "english": "How much does this cost?",
-            "serbian_cyrillic": "Колико ово кошта?",
-            "serbian_latin": "Koliko ovo košta?"
+            "target_alt": "Колико ово кошта?",
+            "target_primary": "Koliko ovo košta?"
           }
         }
       ]
@@ -298,23 +298,23 @@
       "examples": [
         {
           "english": "One dinar",
-          "serbian_cyrillic": "Један динар",
-          "serbian_latin": "Jedan dinar"
+          "target_alt": "Један динар",
+          "target_primary": "Jedan dinar"
         },
         {
           "english": "Two dinars",
-          "serbian_cyrillic": "Два динара",
-          "serbian_latin": "Dva dinara"
+          "target_alt": "Два динара",
+          "target_primary": "Dva dinara"
         },
         {
           "english": "Five dinars",
-          "serbian_cyrillic": "Пет динара",
-          "serbian_latin": "Pet dinara"
+          "target_alt": "Пет динара",
+          "target_primary": "Pet dinara"
         },
         {
           "english": "Two women",
-          "serbian_cyrillic": "Две жене",
-          "serbian_latin": "Dve žene"
+          "target_alt": "Две жене",
+          "target_primary": "Dve žene"
         }
       ]
     },
@@ -357,11 +357,11 @@
       {
         "type": "match_pairs",
         "pairs": [
-          {"english": "One", "serbian": "Jedan"},
-          {"english": "Three", "serbian": "Tri"},
-          {"english": "Eight", "serbian": "Osam"},
-          {"english": "Ten", "serbian": "Deset"},
-          {"english": "Fifteen", "serbian": "Petnaest"}
+          {"english": "One", "target": "Jedan"},
+          {"english": "Three", "target": "Tri"},
+          {"english": "Eight", "target": "Osam"},
+          {"english": "Ten", "target": "Deset"},
+          {"english": "Fifteen", "target": "Petnaest"}
         ]
       },
       {

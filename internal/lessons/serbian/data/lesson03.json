@@ -13,118 +13,118 @@
         {
           "id": "ne_razumem",
           "english": "I don't understand",
-          "serbian_cyrillic": "Не разумем",
-          "serbian_latin": "Ne razumem",
+          "target_alt": "Не разумем",
+          "target_primary": "Ne razumem",
           "pronunciation_hint": "neh RAH-zoo-mehm",
           "audio_override": null,
           "example_sentence": {
             "english": "Sorry, I don't understand Serbian.",
-            "serbian_cyrillic": "Извините, не разумем српски.",
-            "serbian_latin": "Izvinite, ne razumem srpski."
+            "target_alt": "Извините, не разумем српски.",
+            "target_primary": "Izvinite, ne razumem srpski."
           }
         },
         {
           "id": "da_li_govorite_engleski",
           "english": "Do you speak English?",
-          "serbian_cyrillic": "Да ли говорите енглески?",
-          "serbian_latin": "Da li govorite engleski?",
+          "target_alt": "Да ли говорите енглески?",
+          "target_primary": "Da li govorite engleski?",
           "pronunciation_hint": "dah lee goh-VOH-ree-teh EHN-glehs-kee",
           "audio_override": null,
           "example_sentence": {
             "english": "Excuse me, do you speak English?",
-            "serbian_cyrillic": "Извините, да ли говорите енглески?",
-            "serbian_latin": "Izvinite, da li govorite engleski?"
+            "target_alt": "Извините, да ли говорите енглески?",
+            "target_primary": "Izvinite, da li govorite engleski?"
           }
         },
         {
           "id": "zovem_se",
           "english": "My name is...",
-          "serbian_cyrillic": "Зовем се...",
-          "serbian_latin": "Zovem se...",
+          "target_alt": "Зовем се...",
+          "target_primary": "Zovem se...",
           "pronunciation_hint": "ZOH-vehm seh",
           "audio_override": null,
           "example_sentence": {
             "english": "My name is Ana. And you?",
-            "serbian_cyrillic": "Зовем се Ана. А ти?",
-            "serbian_latin": "Zovem se Ana. A ti?"
+            "target_alt": "Зовем се Ана. А ти?",
+            "target_primary": "Zovem se Ana. A ti?"
           }
         },
         {
           "id": "gde_je",
           "english": "Where is...?",
-          "serbian_cyrillic": "Где је...?",
-          "serbian_latin": "Gde je...?",
+          "target_alt": "Где је...?",
+          "target_primary": "Gde je...?",
           "pronunciation_hint": "gdeh yeh",
           "audio_override": null,
           "example_sentence": {
             "english": "Where is the hotel?",
-            "serbian_cyrillic": "Где је хотел?",
-            "serbian_latin": "Gde je hotel?"
+            "target_alt": "Где је хотел?",
+            "target_primary": "Gde je hotel?"
           }
         },
         {
           "id": "govorim_malo_srpski",
           "english": "I speak a little Serbian",
-          "serbian_cyrillic": "Говорим мало српски",
-          "serbian_latin": "Govorim malo srpski",
+          "target_alt": "Говорим мало српски",
+          "target_primary": "Govorim malo srpski",
           "pronunciation_hint": "GOH-voh-reem MAH-loh SRP-skee",
           "audio_override": null,
           "example_sentence": {
             "english": "I speak a little Serbian, but not well.",
-            "serbian_cyrillic": "Говорим мало српски, али не добро.",
-            "serbian_latin": "Govorim malo srpski, ali ne dobro."
+            "target_alt": "Говорим мало српски, али не добро.",
+            "target_primary": "Govorim malo srpski, ali ne dobro."
           }
         },
         {
           "id": "pomoc",
           "english": "Help!",
-          "serbian_cyrillic": "Помоћ!",
-          "serbian_latin": "Pomoć!",
+          "target_alt": "Помоћ!",
+          "target_primary": "Pomoć!",
           "pronunciation_hint": "POH-mohch",
           "audio_override": null,
           "example_sentence": {
             "english": "Help! Call the police!",
-            "serbian_cyrillic": "Помоћ! Зовите полицију!",
-            "serbian_latin": "Pomoć! Zovite policiju!"
+            "target_alt": "Помоћ! Зовите полицију!",
+            "target_primary": "Pomoć! Zovite policiju!"
           }
         },
         {
           "id": "koliko_kosta",
           "english": "How much does it cost?",
-          "serbian_cyrillic": "Колико кошта?",
-          "serbian_latin": "Koliko košta?",
+          "target_alt": "Колико кошта?",
+          "target_primary": "Koliko košta?",
           "pronunciation_hint": "KOH-lee-koh KOHSH-tah",
           "audio_override": null,
           "example_sentence": {
             "english": "How much does this bread cost?",
-            "serbian_cyrillic": "Колико кошта овај хлеб?",
-            "serbian_latin": "Koliko košta ovaj hleb?"
+            "target_alt": "Колико кошта овај хлеб?",
+            "target_primary": "Koliko košta ovaj hleb?"
           }
         },
         {
           "id": "moze",
           "english": "Can / OK / Sure",
-          "serbian_cyrillic": "Може",
-          "serbian_latin": "Može",
+          "target_alt": "Може",
+          "target_primary": "Može",
           "pronunciation_hint": "MOH-zheh",
           "audio_override": null,
           "example_sentence": {
             "english": "Can I get a coffee? — Sure!",
-            "serbian_cyrillic": "Може једна кафа? — Може!",
-            "serbian_latin": "Može jedna kafa? — Može!"
+            "target_alt": "Може једна кафа? — Може!",
+            "target_primary": "Može jedna kafa? — Može!"
           }
         },
         {
           "id": "oprostite",
           "english": "Excuse me (formal)",
-          "serbian_cyrillic": "Опростите",
-          "serbian_latin": "Oprostite",
+          "target_alt": "Опростите",
+          "target_primary": "Oprostite",
           "pronunciation_hint": "oh-PROHS-tee-teh",
           "audio_override": null,
           "example_sentence": {
             "english": "Excuse me, where is the bus station?",
-            "serbian_cyrillic": "Опростите, где је аутобуска станица?",
-            "serbian_latin": "Oprostite, gde je autobuska stanica?"
+            "target_alt": "Опростите, где је аутобуска станица?",
+            "target_primary": "Oprostite, gde je autobuska stanica?"
           }
         }
       ]
@@ -136,23 +136,23 @@
       "examples": [
         {
           "english": "You speak Serbian. (statement)",
-          "serbian_cyrillic": "Ти говориш српски.",
-          "serbian_latin": "Ti govoriš srpski."
+          "target_alt": "Ти говориш српски.",
+          "target_primary": "Ti govoriš srpski."
         },
         {
           "english": "Do you speak Serbian? (question)",
-          "serbian_cyrillic": "Да ли говориш српски?",
-          "serbian_latin": "Da li govoriš srpski?"
+          "target_alt": "Да ли говориш српски?",
+          "target_primary": "Da li govoriš srpski?"
         },
         {
           "english": "Where is the bank?",
-          "serbian_cyrillic": "Где је банка?",
-          "serbian_latin": "Gde je banka?"
+          "target_alt": "Где је банка?",
+          "target_primary": "Gde je banka?"
         },
         {
           "english": "How much does this cost?",
-          "serbian_cyrillic": "Колико ово кошта?",
-          "serbian_latin": "Koliko ovo košta?"
+          "target_alt": "Колико ово кошта?",
+          "target_primary": "Koliko ovo košta?"
         }
       ]
     },
@@ -200,11 +200,11 @@
       {
         "type": "match_pairs",
         "pairs": [
-          {"english": "I don't understand", "serbian": "Ne razumem"},
-          {"english": "Help!", "serbian": "Pomoć!"},
-          {"english": "How much does it cost?", "serbian": "Koliko košta?"},
-          {"english": "Excuse me", "serbian": "Oprostite"},
-          {"english": "My name is...", "serbian": "Zovem se..."}
+          {"english": "I don't understand", "target": "Ne razumem"},
+          {"english": "Help!", "target": "Pomoć!"},
+          {"english": "How much does it cost?", "target": "Koliko košta?"},
+          {"english": "Excuse me", "target": "Oprostite"},
+          {"english": "My name is...", "target": "Zovem se..."}
         ]
       },
       {

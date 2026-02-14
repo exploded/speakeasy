@@ -1,0 +1,273 @@
+{
+  "id": "lesson01",
+  "title": "Greetings & Basics",
+  "description": "Learn essential Croatian greetings, polite expressions, and basic phrases to start your first conversations.",
+  "order": 1,
+  "prerequisite": null,
+  "illustration": "greetings.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Essential Greetings & Polite Words",
+      "items": [
+        {
+          "id": "bok",
+          "english": "Hi / Bye (informal)",
+          "target_primary": "Bok",
+          "target_alt": "",
+          "pronunciation_hint": "bohk",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Hi, how are you?",
+            "target_primary": "Bok, kako si?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dobar_dan",
+          "english": "Good day",
+          "target_primary": "Dobar dan",
+          "target_alt": "",
+          "pronunciation_hint": "DOH-bar dahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good day, sir.",
+            "target_primary": "Dobar dan, gospodine.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dobro_jutro",
+          "english": "Good morning",
+          "target_primary": "Dobro jutro",
+          "target_alt": "",
+          "pronunciation_hint": "DOH-broh YOO-troh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good morning, how did you sleep?",
+            "target_primary": "Dobro jutro, kako si spavao?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dobra_vecer",
+          "english": "Good evening",
+          "target_primary": "Dobra večer",
+          "target_alt": "",
+          "pronunciation_hint": "DOH-brah VEH-cher",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good evening, welcome!",
+            "target_primary": "Dobra večer, dobrodošli!",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dovidenja",
+          "english": "Goodbye",
+          "target_primary": "Doviđenja",
+          "target_alt": "",
+          "pronunciation_hint": "doh-vee-JEH-nyah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Goodbye, see you tomorrow!",
+            "target_primary": "Doviđenja, vidimo se sutra!",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "hvala",
+          "english": "Thank you",
+          "target_primary": "Hvala",
+          "target_alt": "",
+          "pronunciation_hint": "HVAH-lah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Thank you very much!",
+            "target_primary": "Hvala lijepa!",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "molim",
+          "english": "Please / You're welcome",
+          "target_primary": "Molim",
+          "target_alt": "",
+          "pronunciation_hint": "MOH-leem",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One coffee, please.",
+            "target_primary": "Jednu kavu, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "da",
+          "english": "Yes",
+          "target_primary": "Da",
+          "target_alt": "",
+          "pronunciation_hint": "dah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Yes, I understand.",
+            "target_primary": "Da, razumijem.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "ne",
+          "english": "No",
+          "target_primary": "Ne",
+          "target_alt": "",
+          "pronunciation_hint": "neh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "No, thank you.",
+            "target_primary": "Ne, hvala.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "oprostite",
+          "english": "Excuse me / Sorry (formal)",
+          "target_primary": "Oprostite",
+          "target_alt": "",
+          "pronunciation_hint": "oh-PROH-stee-teh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Excuse me, where is the station?",
+            "target_primary": "Oprostite, gdje je kolodvor?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kako_ste",
+          "english": "How are you? (formal)",
+          "target_primary": "Kako ste?",
+          "target_alt": "",
+          "pronunciation_hint": "KAH-koh steh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Good day, how are you?",
+            "target_primary": "Dobar dan, kako ste?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dobro_sam",
+          "english": "I'm fine / I'm well",
+          "target_primary": "Dobro sam",
+          "target_alt": "",
+          "pronunciation_hint": "DOH-broh sahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I'm fine, thank you.",
+            "target_primary": "Dobro sam, hvala.",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Formal vs. Informal Address",
+      "explanation": "Croatian distinguishes between formal and informal speech. Use 'ti' (you, informal) with friends and young people, and 'Vi' (you, formal) with strangers, elders, and in professional settings. Verbs change accordingly: 'Kako si?' (informal) vs. 'Kako ste?' (formal). When in doubt, use the formal form - Croatians appreciate politeness from foreigners.",
+      "examples": [
+        {
+          "english": "How are you? (informal)",
+          "target_primary": "Kako si?",
+          "target_alt": ""
+        },
+        {
+          "english": "How are you? (formal)",
+          "target_primary": "Kako ste?",
+          "target_alt": ""
+        },
+        {
+          "english": "Thank you (more polite/emphatic)",
+          "target_primary": "Hvala lijepa",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Croatian Greetings Culture",
+      "content": "Croatians greet each other warmly. 'Bok' is the most common informal greeting in Zagreb and northern Croatia, used for both hello and goodbye - similar to Italian 'ciao'. In Dalmatia (the coast), you may hear 'Bog' instead. When meeting someone for the first time, a firm handshake is standard. Close friends and family often greet with kisses on both cheeks. Croatians generally use formal address ('Vi') until invited to switch to informal ('ti'), a transition called 'tikanje' which signals a closer relationship."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'Thank you' in Croatian?",
+        "correct_answer": "Hvala",
+        "options": ["Molim", "Hvala", "Bok", "Oprostite"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Dobar dan' mean?",
+        "correct_answer": "Good day",
+        "options": ["Good morning", "Good evening", "Good day", "Goodbye"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'Yes'",
+        "correct_answer": "Da",
+        "accept_alternatives": ["da"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'No'",
+        "correct_answer": "Ne",
+        "accept_alternatives": ["ne"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the Croatian words with their English meanings",
+        "pairs": [
+          {"english": "Hi / Bye", "target": "Bok"},
+          {"english": "Thank you", "target": "Hvala"},
+          {"english": "Please", "target": "Molim"},
+          {"english": "Goodbye", "target": "Doviđenja"},
+          {"english": "Excuse me", "target": "Oprostite"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "hvala",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Hvala", "Molim", "Bok"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "Which phrase is the FORMAL way to ask 'How are you?'",
+        "correct_answer": "Kako ste?",
+        "options": ["Kako si?", "Kako ste?", "Dobro sam", "Bok"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian greeting for 'Good morning'",
+        "correct_answer": "Dobro jutro",
+        "accept_alternatives": ["dobro jutro"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "dovidenja",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Doviđenja", "Dobro jutro", "Dobar dan"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the greetings with their meanings",
+        "pairs": [
+          {"english": "Good morning", "target": "Dobro jutro"},
+          {"english": "Good evening", "target": "Dobra večer"},
+          {"english": "Good day", "target": "Dobar dan"},
+          {"english": "I'm fine", "target": "Dobro sam"},
+          {"english": "How are you? (formal)", "target": "Kako ste?"}
+        ]
+      }
+    ]
+  }
+}

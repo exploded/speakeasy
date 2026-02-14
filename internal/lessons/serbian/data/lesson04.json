@@ -13,157 +13,157 @@
         {
           "id": "majka",
           "english": "Mother",
-          "serbian_cyrillic": "Мајка / Мама",
-          "serbian_latin": "Majka / Mama",
+          "target_alt": "Мајка / Мама",
+          "target_primary": "Majka / Mama",
           "pronunciation_hint": "MY-kah / MAH-mah",
           "audio_override": null,
           "example_sentence": {
             "english": "My mother is a doctor.",
-            "serbian_cyrillic": "Моја мајка је лекар.",
-            "serbian_latin": "Moja majka je lekar."
+            "target_alt": "Моја мајка је лекар.",
+            "target_primary": "Moja majka je lekar."
           }
         },
         {
           "id": "otac",
           "english": "Father",
-          "serbian_cyrillic": "Отац / Тата",
-          "serbian_latin": "Otac / Tata",
+          "target_alt": "Отац / Тата",
+          "target_primary": "Otac / Tata",
           "pronunciation_hint": "OH-tahts / TAH-tah",
           "audio_override": null,
           "example_sentence": {
             "english": "My father works in Belgrade.",
-            "serbian_cyrillic": "Мој отац ради у Београду.",
-            "serbian_latin": "Moj otac radi u Beogradu."
+            "target_alt": "Мој отац ради у Београду.",
+            "target_primary": "Moj otac radi u Beogradu."
           }
         },
         {
           "id": "brat",
           "english": "Brother",
-          "serbian_cyrillic": "Брат",
-          "serbian_latin": "Brat",
+          "target_alt": "Брат",
+          "target_primary": "Brat",
           "pronunciation_hint": "braht",
           "audio_override": null,
           "example_sentence": {
             "english": "I have one brother.",
-            "serbian_cyrillic": "Имам једног брата.",
-            "serbian_latin": "Imam jednog brata."
+            "target_alt": "Имам једног брата.",
+            "target_primary": "Imam jednog brata."
           }
         },
         {
           "id": "sestra",
           "english": "Sister",
-          "serbian_cyrillic": "Сестра",
-          "serbian_latin": "Sestra",
+          "target_alt": "Сестра",
+          "target_primary": "Sestra",
           "pronunciation_hint": "SEHS-trah",
           "audio_override": null,
           "example_sentence": {
             "english": "My sister lives in Novi Sad.",
-            "serbian_cyrillic": "Моја сестра живи у Новом Саду.",
-            "serbian_latin": "Moja sestra živi u Novom Sadu."
+            "target_alt": "Моја сестра живи у Новом Саду.",
+            "target_primary": "Moja sestra živi u Novom Sadu."
           }
         },
         {
           "id": "sin",
           "english": "Son",
-          "serbian_cyrillic": "Син",
-          "serbian_latin": "Sin",
+          "target_alt": "Син",
+          "target_primary": "Sin",
           "pronunciation_hint": "seen",
           "audio_override": null,
           "example_sentence": {
             "english": "Their son is five years old.",
-            "serbian_cyrillic": "Њихов син има пет година.",
-            "serbian_latin": "Njihov sin ima pet godina."
+            "target_alt": "Њихов син има пет година.",
+            "target_primary": "Njihov sin ima pet godina."
           }
         },
         {
           "id": "cerka",
           "english": "Daughter",
-          "serbian_cyrillic": "Ћерка",
-          "serbian_latin": "Ćerka",
+          "target_alt": "Ћерка",
+          "target_primary": "Ćerka",
           "pronunciation_hint": "CHEHR-kah",
           "audio_override": null,
           "example_sentence": {
             "english": "My daughter goes to school.",
-            "serbian_cyrillic": "Моја ћерка иде у школу.",
-            "serbian_latin": "Moja ćerka ide u školu."
+            "target_alt": "Моја ћерка иде у школу.",
+            "target_primary": "Moja ćerka ide u školu."
           }
         },
         {
           "id": "deda",
           "english": "Grandfather",
-          "serbian_cyrillic": "Деда",
-          "serbian_latin": "Deda",
+          "target_alt": "Деда",
+          "target_primary": "Deda",
           "pronunciation_hint": "DEH-dah",
           "audio_override": null,
           "example_sentence": {
             "english": "Grandfather tells the best stories.",
-            "serbian_cyrillic": "Деда прича најбоље приче.",
-            "serbian_latin": "Deda priča najbolje priče."
+            "target_alt": "Деда прича најбоље приче.",
+            "target_primary": "Deda priča najbolje priče."
           }
         },
         {
           "id": "baba",
           "english": "Grandmother",
-          "serbian_cyrillic": "Баба",
-          "serbian_latin": "Baba",
+          "target_alt": "Баба",
+          "target_primary": "Baba",
           "pronunciation_hint": "BAH-bah",
           "audio_override": null,
           "example_sentence": {
             "english": "Grandmother makes the best food.",
-            "serbian_cyrillic": "Баба прави најбољу храну.",
-            "serbian_latin": "Baba pravi najbolju hranu."
+            "target_alt": "Баба прави најбољу храну.",
+            "target_primary": "Baba pravi najbolju hranu."
           }
         },
         {
           "id": "muz",
           "english": "Husband",
-          "serbian_cyrillic": "Муж",
-          "serbian_latin": "Muž",
+          "target_alt": "Муж",
+          "target_primary": "Muž",
           "pronunciation_hint": "moozh",
           "audio_override": null,
           "example_sentence": {
             "english": "Her husband is Serbian.",
-            "serbian_cyrillic": "Њен муж је Србин.",
-            "serbian_latin": "Njen muž je Srbin."
+            "target_alt": "Њен муж је Србин.",
+            "target_primary": "Njen muž je Srbin."
           }
         },
         {
           "id": "zena",
           "english": "Wife / Woman",
-          "serbian_cyrillic": "Жена",
-          "serbian_latin": "Žena",
+          "target_alt": "Жена",
+          "target_primary": "Žena",
           "pronunciation_hint": "ZHEH-nah",
           "audio_override": null,
           "example_sentence": {
             "english": "His wife speaks three languages.",
-            "serbian_cyrillic": "Његова жена говори три језика.",
-            "serbian_latin": "Njegova žena govori tri jezika."
+            "target_alt": "Његова жена говори три језика.",
+            "target_primary": "Njegova žena govori tri jezika."
           }
         },
         {
           "id": "dete",
           "english": "Child",
-          "serbian_cyrillic": "Дете",
-          "serbian_latin": "Dete",
+          "target_alt": "Дете",
+          "target_primary": "Dete",
           "pronunciation_hint": "DEH-teh",
           "audio_override": null,
           "example_sentence": {
             "english": "The child is playing in the park.",
-            "serbian_cyrillic": "Дете се игра у парку.",
-            "serbian_latin": "Dete se igra u parku."
+            "target_alt": "Дете се игра у парку.",
+            "target_primary": "Dete se igra u parku."
           }
         },
         {
           "id": "porodica",
           "english": "Family",
-          "serbian_cyrillic": "Породица",
-          "serbian_latin": "Porodica",
+          "target_alt": "Породица",
+          "target_primary": "Porodica",
           "pronunciation_hint": "poh-ROH-dee-tsah",
           "audio_override": null,
           "example_sentence": {
             "english": "Family is very important in Serbia.",
-            "serbian_cyrillic": "Породица је веома важна у Србији.",
-            "serbian_latin": "Porodica je veoma važna u Srbiji."
+            "target_alt": "Породица је веома важна у Србији.",
+            "target_primary": "Porodica je veoma važna u Srbiji."
           }
         }
       ]
@@ -175,28 +175,28 @@
       "examples": [
         {
           "english": "Big brother (masculine)",
-          "serbian_cyrillic": "Велики брат",
-          "serbian_latin": "Veliki brat"
+          "target_alt": "Велики брат",
+          "target_primary": "Veliki brat"
         },
         {
           "english": "Big sister (feminine)",
-          "serbian_cyrillic": "Велика сестра",
-          "serbian_latin": "Velika sestra"
+          "target_alt": "Велика сестра",
+          "target_primary": "Velika sestra"
         },
         {
           "english": "Big child (neuter)",
-          "serbian_cyrillic": "Велико дете",
-          "serbian_latin": "Veliko dete"
+          "target_alt": "Велико дете",
+          "target_primary": "Veliko dete"
         },
         {
           "english": "My father (masculine possessive)",
-          "serbian_cyrillic": "Мој отац",
-          "serbian_latin": "Moj otac"
+          "target_alt": "Мој отац",
+          "target_primary": "Moj otac"
         },
         {
           "english": "My mother (feminine possessive)",
-          "serbian_cyrillic": "Моја мајка",
-          "serbian_latin": "Moja majka"
+          "target_alt": "Моја мајка",
+          "target_primary": "Moja majka"
         }
       ]
     },
@@ -239,12 +239,12 @@
       {
         "type": "match_pairs",
         "pairs": [
-          {"english": "Mother", "serbian": "Majka"},
-          {"english": "Father", "serbian": "Otac"},
-          {"english": "Son", "serbian": "Sin"},
-          {"english": "Daughter", "serbian": "Ćerka"},
-          {"english": "Grandmother", "serbian": "Baba"},
-          {"english": "Husband", "serbian": "Muž"}
+          {"english": "Mother", "target": "Majka"},
+          {"english": "Father", "target": "Otac"},
+          {"english": "Son", "target": "Sin"},
+          {"english": "Daughter", "target": "Ćerka"},
+          {"english": "Grandmother", "target": "Baba"},
+          {"english": "Husband", "target": "Muž"}
         ]
       },
       {

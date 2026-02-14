@@ -6,11 +6,13 @@
     <div class="lesson-header-info">
         <h1>Lesson {{.Lesson.Order}}: {{.Lesson.Title}}</h1>
         <p>{{.Lesson.Description}}</p>
+        {{if .LanguageConfig.HasDualScript}}
         <div class="script-toggle">
-            <button onclick="setScript(event, 'latin')" class="active">Latin</button>
-            <button onclick="setScript(event, 'cyrillic')">Cyrillic</button>
+            <button onclick="setScript(event, 'latin')" class="active">{{.LanguageConfig.ScriptLabel}}</button>
+            <button onclick="setScript(event, 'cyrillic')">{{.LanguageConfig.AltScriptLabel}}</button>
             <button onclick="setScript(event, 'both')">Both</button>
         </div>
+        {{end}}
     </div>
 </div>
 
@@ -26,20 +28,24 @@
                         <div>
                             <div class="vocab-english">{{.English}}</div>
                             <div class="vocab-serbian">
-                                <span class="script-latin">{{.SerbianLatin}}</span>
-                                <span class="script-cyrillic">{{.SerbianCyrillic}}</span>
+                                <span class="script-latin">{{.TargetPrimary}}</span>
+                                {{if $.LanguageConfig.HasDualScript}}
+                                <span class="script-cyrillic">{{.TargetAlt}}</span>
+                                {{end}}
                             </div>
                             <div class="vocab-hint">{{.PronunciationHint}}</div>
                         </div>
-                        <button class="play-btn" onclick="playAudio(event, '{{.SerbianLatin}}', 'sr')" title="Listen">
+                        <button class="play-btn" onclick="playAudio(event, '{{.TargetPrimary}}', '{{$.LanguageConfig.TTSCode}}')" title="Listen">
                             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
                         </button>
                     </div>
                     {{if .ExampleSentence}}
                     <div class="vocab-example">
                         <div>
-                            <span class="script-latin">{{.ExampleSentence.SerbianLatin}}</span>
-                            <span class="script-cyrillic">{{.ExampleSentence.SerbianCyrillic}}</span>
+                            <span class="script-latin">{{.ExampleSentence.TargetPrimary}}</span>
+                            {{if $.LanguageConfig.HasDualScript}}
+                            <span class="script-cyrillic">{{.ExampleSentence.TargetAlt}}</span>
+                            {{end}}
                         </div>
                         <div style="color:var(--gray-500);">{{.ExampleSentence.English}}</div>
                     </div>
@@ -58,9 +64,11 @@
             {{range .Examples}}
             <div class="grammar-example">
                 <div class="serbian">
-                    <span class="script-latin">{{.SerbianLatin}}</span>
-                    <span class="script-cyrillic">{{.SerbianCyrillic}}</span>
-                    <button class="play-btn" onclick="playAudio(event, '{{.SerbianLatin}}', 'sr')" title="Listen" style="margin-left:0.5rem;">
+                    <span class="script-latin">{{.TargetPrimary}}</span>
+                    {{if $.LanguageConfig.HasDualScript}}
+                    <span class="script-cyrillic">{{.TargetAlt}}</span>
+                    {{end}}
+                    <button class="play-btn" onclick="playAudio(event, '{{.TargetPrimary}}', '{{$.LanguageConfig.TTSCode}}')" title="Listen" style="margin-left:0.5rem;">
                         <svg viewBox="0 0 24 24" fill="currentColor" style="width:10px;height:10px;"><polygon points="5,3 19,12 5,21"/></svg>
                     </button>
                 </div>
@@ -81,7 +89,7 @@
 {{end}}
 
 <div style="text-align:center;margin:2rem 0;">
-    <a href="/lessons/serbian/{{.Lesson.ID}}/quiz" class="btn btn-success btn-lg">
+    <a href="/lessons/{{.LanguageSlug}}/{{.Lesson.ID}}/quiz" class="btn btn-success btn-lg">
         Take the Quiz
     </a>
 </div>

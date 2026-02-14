@@ -27,15 +27,15 @@
         </p>
 
         <div class="results-actions">
-            <a href="/lessons/serbian/{{.Lesson.ID}}" class="btn btn-outline">Review Lesson</a>
+            <a href="/lessons/{{.LanguageSlug}}/{{.Lesson.ID}}" class="btn btn-outline">Review Lesson</a>
             {{if .Passed}}
                 {{if .NextLessonID}}
-                <a href="/lessons/serbian/{{.NextLessonID}}" class="btn btn-primary">Next Lesson</a>
+                <a href="/lessons/{{.LanguageSlug}}/{{.NextLessonID}}" class="btn btn-primary">Next Lesson</a>
                 {{else}}
-                <a href="/lessons/serbian" class="btn btn-primary">All Lessons</a>
+                <a href="/lessons/{{.LanguageSlug}}" class="btn btn-primary">All Lessons</a>
                 {{end}}
             {{else}}
-                <a href="/lessons/serbian/{{.Lesson.ID}}/quiz" class="btn btn-primary">Try Again</a>
+                <a href="/lessons/{{.LanguageSlug}}/{{.Lesson.ID}}/quiz" class="btn btn-primary">Try Again</a>
             {{end}}
         </div>
     </div>

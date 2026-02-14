@@ -1,0 +1,254 @@
+{
+  "id": "lesson04",
+  "title": "Getting Around",
+  "description": "Learn essential vocabulary for transportation and directions to navigate Indonesian cities and towns.",
+  "order": 4,
+  "prerequisite": "lesson03",
+  "illustration": "phrases.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Directions & Transportation",
+      "items": [
+        {
+          "id": "di_mana",
+          "english": "Where",
+          "target_primary": "Di mana",
+          "target_alt": "",
+          "pronunciation_hint": "dee MAH-nah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the hotel?",
+            "target_primary": "Di mana hotelnya?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kiri",
+          "english": "Left",
+          "target_primary": "Kiri",
+          "target_alt": "",
+          "pronunciation_hint": "KEE-ree",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Turn left here.",
+            "target_primary": "Belok kiri di sini.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kanan",
+          "english": "Right",
+          "target_primary": "Kanan",
+          "target_alt": "",
+          "pronunciation_hint": "KAH-nahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Turn right at the intersection.",
+            "target_primary": "Belok kanan di perempatan.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "lurus",
+          "english": "Straight",
+          "target_primary": "Lurus",
+          "target_alt": "",
+          "pronunciation_hint": "LOO-roos",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Go straight ahead.",
+            "target_primary": "Jalan lurus terus.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "bus",
+          "english": "Bus",
+          "target_primary": "Bus",
+          "target_alt": "",
+          "pronunciation_hint": "boos",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Where is the bus stop?",
+            "target_primary": "Di mana halte bus?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "kereta",
+          "english": "Train",
+          "target_primary": "Kereta",
+          "target_alt": "",
+          "pronunciation_hint": "keh-REH-tah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I want to go by train.",
+            "target_primary": "Saya mau naik kereta.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "bandara",
+          "english": "Airport",
+          "target_primary": "Bandara",
+          "target_alt": "",
+          "pronunciation_hint": "bahn-DAH-rah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "How far is the airport?",
+            "target_primary": "Berapa jauh bandara?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "taksi",
+          "english": "Taxi",
+          "target_primary": "Taksi",
+          "target_alt": "",
+          "pronunciation_hint": "TAHK-see",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I need a taxi.",
+            "target_primary": "Saya perlu taksi.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dekat",
+          "english": "Near / Close",
+          "target_primary": "Dekat",
+          "target_alt": "",
+          "pronunciation_hint": "DEH-kaht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Is the station near here?",
+            "target_primary": "Apakah stasiun dekat sini?",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "jauh",
+          "english": "Far",
+          "target_primary": "Jauh",
+          "target_alt": "",
+          "pronunciation_hint": "jow (rhymes with cow)",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It is very far.",
+            "target_primary": "Sangat jauh.",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Asking for Directions with 'Di mana' and 'Ke mana'",
+      "explanation": "In Indonesian, 'di mana' means 'where (at)' and is used to ask about a location: 'Di mana stasiun?' (Where is the station?). 'Ke mana' means 'where (to)' and is used for destinations: 'Mau ke mana?' (Where do you want to go?). Adding '-nya' to a noun is like adding 'the': 'hotelnya' (the hotel). To give directions, use 'belok' (turn) with 'kiri' (left) or 'kanan' (right), and 'jalan lurus' (go straight). The word 'naik' (ride/take) is used with vehicles: 'naik bus' (take a bus), 'naik taksi' (take a taxi).",
+      "examples": [
+        {
+          "english": "Where is the train station?",
+          "target_primary": "Di mana stasiunnya?",
+          "target_alt": ""
+        },
+        {
+          "english": "Where do you want to go?",
+          "target_primary": "Mau ke mana?",
+          "target_alt": ""
+        },
+        {
+          "english": "I want to go to the airport.",
+          "target_primary": "Saya mau ke bandara.",
+          "target_alt": ""
+        },
+        {
+          "english": "Take a taxi to the hotel.",
+          "target_primary": "Naik taksi ke hotel.",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Getting Around in Indonesia",
+      "content": "Indonesia offers a wide variety of transportation options. In Jakarta, the TransJakarta bus rapid transit system and the MRT (Mass Rapid Transit) are modern and efficient. Ride-hailing apps like Gojek and Grab are extremely popular throughout the country -- you can book cars, motorbike taxis ('ojek'), and even food delivery. In smaller towns, the 'angkot' (short for 'angkutan kota', or city transport) is a common minibus with fixed routes but no fixed stops -- just shout 'Kiri!' (Left!) when you want to get off, and the driver will pull over. Becak (pedicabs) are still found in some cities. Always agree on a fare before getting into an unmetered vehicle, and using apps gives you price transparency."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'di mana' mean?",
+        "correct_answer": "Where",
+        "options": ["When", "Where", "Why", "How"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'left' in Indonesian?",
+        "correct_answer": "Kiri",
+        "options": ["Kanan", "Lurus", "Kiri", "Dekat"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'right' (direction):",
+        "correct_answer": "Kanan",
+        "accept_alternatives": ["kanan"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'airport':",
+        "correct_answer": "Bandara",
+        "accept_alternatives": ["bandara"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each direction word with its English meaning:",
+        "pairs": [
+          {"english": "Left", "target": "Kiri"},
+          {"english": "Right", "target": "Kanan"},
+          {"english": "Straight", "target": "Lurus"},
+          {"english": "Near", "target": "Dekat"},
+          {"english": "Far", "target": "Jauh"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "bandara",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Airport",
+        "options": ["Bus stop", "Airport", "Train station"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'naik kereta' mean?",
+        "correct_answer": "Take a train",
+        "options": ["Take a bus", "Take a taxi", "Take a train", "Take a plane"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Indonesian word for 'taxi':",
+        "correct_answer": "Taksi",
+        "accept_alternatives": ["taksi"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "kiri",
+        "prompt": "Listen and choose the correct meaning:",
+        "correct_answer": "Left",
+        "options": ["Left", "Right", "Straight"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match each transport word with its English meaning:",
+        "pairs": [
+          {"english": "Bus", "target": "Bus"},
+          {"english": "Train", "target": "Kereta"},
+          {"english": "Taxi", "target": "Taksi"},
+          {"english": "Airport", "target": "Bandara"},
+          {"english": "Where", "target": "Di mana"}
+        ]
+      }
+    ]
+  }
+}

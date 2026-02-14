@@ -85,9 +85,9 @@ function selectOption(questionIdx, optionIdx) {
             var prevEl = document.querySelector('[data-match="' + questionIdx + '-' + state.selected.side + '-' + state.selected.index + '"]');
 
             var englishIdx = side === 'english' ? index : state.selected.index;
-            var serbianIdx = side === 'serbian' ? index : state.selected.index;
+            var targetIdx = side === 'target' ? index : state.selected.index;
 
-            state.matched.push({ english: englishIdx, serbian: serbianIdx });
+            state.matched.push({ english: englishIdx, target: targetIdx });
 
             var input = document.getElementById('answer-' + questionIdx);
             if (input) {

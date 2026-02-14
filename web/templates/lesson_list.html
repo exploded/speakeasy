@@ -1,14 +1,16 @@
 {{define "content"}}
 <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
     <div>
-        <h1>Serbian Lessons</h1>
-        <p style="color:var(--gray-500);">Master Serbian step by step</p>
+        <h1>{{.LanguageName}} Lessons</h1>
+        <p style="color:var(--gray-500);">Master {{.LanguageName}} step by step</p>
     </div>
+    {{if .LanguageConfig.HasDualScript}}
     <div class="script-toggle">
-        <button onclick="setScript(event, 'latin')" class="active">Latin</button>
-        <button onclick="setScript(event, 'cyrillic')">Cyrillic</button>
+        <button onclick="setScript(event, 'latin')" class="active">{{.LanguageConfig.ScriptLabel}}</button>
+        <button onclick="setScript(event, 'cyrillic')">{{.LanguageConfig.AltScriptLabel}}</button>
         <button onclick="setScript(event, 'both')">Both</button>
     </div>
+    {{end}}
 </div>
 
 <div class="progress-bar-container" style="margin-bottom:2rem;">
@@ -31,7 +33,7 @@
         </div>
     </div>
     {{else}}
-    <a href="/lessons/serbian/{{.ID}}" class="lesson-card {{.Status}}" style="text-decoration:none;color:inherit;">
+    <a href="/lessons/{{$.LanguageSlug}}/{{.ID}}" class="lesson-card {{.Status}}" style="text-decoration:none;color:inherit;">
         <div class="lesson-card-illustration">
             <img src="/static/svg/{{.Illustration}}" alt="{{.Title}}" style="max-height:140px;">
         </div>

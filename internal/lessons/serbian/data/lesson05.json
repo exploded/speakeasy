@@ -13,157 +13,157 @@
         {
           "id": "hleb",
           "english": "Bread",
-          "serbian_cyrillic": "Хлеб",
-          "serbian_latin": "Hleb",
+          "target_alt": "Хлеб",
+          "target_primary": "Hleb",
           "pronunciation_hint": "hlehb",
           "audio_override": null,
           "example_sentence": {
             "english": "This bread is fresh.",
-            "serbian_cyrillic": "Овај хлеб је свеж.",
-            "serbian_latin": "Ovaj hleb je svež."
+            "target_alt": "Овај хлеб је свеж.",
+            "target_primary": "Ovaj hleb je svež."
           }
         },
         {
           "id": "voda",
           "english": "Water",
-          "serbian_cyrillic": "Вода",
-          "serbian_latin": "Voda",
+          "target_alt": "Вода",
+          "target_primary": "Voda",
           "pronunciation_hint": "VOH-dah",
           "audio_override": null,
           "example_sentence": {
             "english": "One water, please.",
-            "serbian_cyrillic": "Једну воду, молим.",
-            "serbian_latin": "Jednu vodu, molim."
+            "target_alt": "Једну воду, молим.",
+            "target_primary": "Jednu vodu, molim."
           }
         },
         {
           "id": "kafa",
           "english": "Coffee",
-          "serbian_cyrillic": "Кафа",
-          "serbian_latin": "Kafa",
+          "target_alt": "Кафа",
+          "target_primary": "Kafa",
           "pronunciation_hint": "KAH-fah",
           "audio_override": null,
           "example_sentence": {
             "english": "I would like a coffee.",
-            "serbian_cyrillic": "Ја бих кафу.",
-            "serbian_latin": "Ja bih kafu."
+            "target_alt": "Ја бих кафу.",
+            "target_primary": "Ja bih kafu."
           }
         },
         {
           "id": "caj",
           "english": "Tea",
-          "serbian_cyrillic": "Чај",
-          "serbian_latin": "Čaj",
+          "target_alt": "Чај",
+          "target_primary": "Čaj",
           "pronunciation_hint": "chy",
           "audio_override": null,
           "example_sentence": {
             "english": "Do you have green tea?",
-            "serbian_cyrillic": "Да ли имате зелени чај?",
-            "serbian_latin": "Da li imate zeleni čaj?"
+            "target_alt": "Да ли имате зелени чај?",
+            "target_primary": "Da li imate zeleni čaj?"
           }
         },
         {
           "id": "meso",
           "english": "Meat",
-          "serbian_cyrillic": "Месо",
-          "serbian_latin": "Meso",
+          "target_alt": "Месо",
+          "target_primary": "Meso",
           "pronunciation_hint": "MEH-soh",
           "audio_override": null,
           "example_sentence": {
             "english": "I don't eat meat.",
-            "serbian_cyrillic": "Не једем месо.",
-            "serbian_latin": "Ne jedem meso."
+            "target_alt": "Не једем месо.",
+            "target_primary": "Ne jedem meso."
           }
         },
         {
           "id": "sir",
           "english": "Cheese",
-          "serbian_cyrillic": "Сир",
-          "serbian_latin": "Sir",
+          "target_alt": "Сир",
+          "target_primary": "Sir",
           "pronunciation_hint": "seer",
           "audio_override": null,
           "example_sentence": {
             "english": "Serbian cheese is delicious.",
-            "serbian_cyrillic": "Српски сир је укусан.",
-            "serbian_latin": "Srpski sir je ukusan."
+            "target_alt": "Српски сир је укусан.",
+            "target_primary": "Srpski sir je ukusan."
           }
         },
         {
           "id": "salata",
           "english": "Salad",
-          "serbian_cyrillic": "Салата",
-          "serbian_latin": "Salata",
+          "target_alt": "Салата",
+          "target_primary": "Salata",
           "pronunciation_hint": "sah-LAH-tah",
           "audio_override": null,
           "example_sentence": {
             "english": "I would like a Serbian salad.",
-            "serbian_cyrillic": "Ја бих српску салату.",
-            "serbian_latin": "Ja bih srpsku salatu."
+            "target_alt": "Ја бих српску салату.",
+            "target_primary": "Ja bih srpsku salatu."
           }
         },
         {
           "id": "pivo",
           "english": "Beer",
-          "serbian_cyrillic": "Пиво",
-          "serbian_latin": "Pivo",
+          "target_alt": "Пиво",
+          "target_primary": "Pivo",
           "pronunciation_hint": "PEE-voh",
           "audio_override": null,
           "example_sentence": {
             "english": "Two beers, please.",
-            "serbian_cyrillic": "Два пива, молим.",
-            "serbian_latin": "Dva piva, molim."
+            "target_alt": "Два пива, молим.",
+            "target_primary": "Dva piva, molim."
           }
         },
         {
           "id": "vino",
           "english": "Wine",
-          "serbian_cyrillic": "Вино",
-          "serbian_latin": "Vino",
+          "target_alt": "Вино",
+          "target_primary": "Vino",
           "pronunciation_hint": "VEE-noh",
           "audio_override": null,
           "example_sentence": {
             "english": "One glass of red wine, please.",
-            "serbian_cyrillic": "Једну чашу црвеног вина, молим.",
-            "serbian_latin": "Jednu čašu crvenog vina, molim."
+            "target_alt": "Једну чашу црвеног вина, молим.",
+            "target_primary": "Jednu čašu crvenog vina, molim."
           }
         },
         {
           "id": "rucak",
           "english": "Lunch",
-          "serbian_cyrillic": "Ручак",
-          "serbian_latin": "Ručak",
+          "target_alt": "Ручак",
+          "target_primary": "Ručak",
           "pronunciation_hint": "ROO-chahk",
           "audio_override": null,
           "example_sentence": {
             "english": "Lunch is at two o'clock.",
-            "serbian_cyrillic": "Ручак је у два сата.",
-            "serbian_latin": "Ručak je u dva sata."
+            "target_alt": "Ручак је у два сата.",
+            "target_primary": "Ručak je u dva sata."
           }
         },
         {
           "id": "dorucak",
           "english": "Breakfast",
-          "serbian_cyrillic": "Доручак",
-          "serbian_latin": "Doručak",
+          "target_alt": "Доручак",
+          "target_primary": "Doručak",
           "pronunciation_hint": "DOH-roo-chahk",
           "audio_override": null,
           "example_sentence": {
             "english": "What is for breakfast?",
-            "serbian_cyrillic": "Шта је за доручак?",
-            "serbian_latin": "Šta je za doručak?"
+            "target_alt": "Шта је за доручак?",
+            "target_primary": "Šta je za doručak?"
           }
         },
         {
           "id": "vecera",
           "english": "Dinner",
-          "serbian_cyrillic": "Вечера",
-          "serbian_latin": "Večera",
+          "target_alt": "Вечера",
+          "target_primary": "Večera",
           "pronunciation_hint": "VEH-cheh-rah",
           "audio_override": null,
           "example_sentence": {
             "english": "Dinner is ready!",
-            "serbian_cyrillic": "Вечера је спремна!",
-            "serbian_latin": "Večera je spremna!"
+            "target_alt": "Вечера је спремна!",
+            "target_primary": "Večera je spremna!"
           }
         }
       ]
@@ -175,28 +175,28 @@
       "examples": [
         {
           "english": "I would like a coffee.",
-          "serbian_cyrillic": "Ја бих кафу.",
-          "serbian_latin": "Ja bih kafu."
+          "target_alt": "Ја бих кафу.",
+          "target_primary": "Ja bih kafu."
         },
         {
           "english": "I would like water.",
-          "serbian_cyrillic": "Ја бих воду.",
-          "serbian_latin": "Ja bih vodu."
+          "target_alt": "Ја бих воду.",
+          "target_primary": "Ja bih vodu."
         },
         {
           "english": "I would like bread.",
-          "serbian_cyrillic": "Ја бих хлеб.",
-          "serbian_latin": "Ja bih hleb."
+          "target_alt": "Ја бих хлеб.",
+          "target_primary": "Ja bih hleb."
         },
         {
           "english": "I would like a beer.",
-          "serbian_cyrillic": "Ја бих пиво.",
-          "serbian_latin": "Ja bih pivo."
+          "target_alt": "Ја бих пиво.",
+          "target_primary": "Ja bih pivo."
         },
         {
           "english": "Can I get a salad? (casual)",
-          "serbian_cyrillic": "Може једна салата?",
-          "serbian_latin": "Može jedna salata?"
+          "target_alt": "Може једна салата?",
+          "target_primary": "Može jedna salata?"
         }
       ]
     },
@@ -239,12 +239,12 @@
       {
         "type": "match_pairs",
         "pairs": [
-          {"english": "Bread", "serbian": "Hleb"},
-          {"english": "Water", "serbian": "Voda"},
-          {"english": "Coffee", "serbian": "Kafa"},
-          {"english": "Beer", "serbian": "Pivo"},
-          {"english": "Wine", "serbian": "Vino"},
-          {"english": "Dinner", "serbian": "Večera"}
+          {"english": "Bread", "target": "Hleb"},
+          {"english": "Water", "target": "Voda"},
+          {"english": "Coffee", "target": "Kafa"},
+          {"english": "Beer", "target": "Pivo"},
+          {"english": "Wine", "target": "Vino"},
+          {"english": "Dinner", "target": "Večera"}
         ]
       },
       {

@@ -1,0 +1,283 @@
+{
+  "id": "lesson02",
+  "title": "Numbers & Counting",
+  "description": "Learn to count from 1 to 20 in Croatian, ask about quantities, and use numbers in everyday situations.",
+  "order": 2,
+  "prerequisite": "lesson01",
+  "illustration": "numbers.svg",
+  "sections": [
+    {
+      "type": "vocab",
+      "title": "Numbers 1-20 & Useful Quantity Words",
+      "items": [
+        {
+          "id": "jedan",
+          "english": "One (1)",
+          "target_primary": "Jedan",
+          "target_alt": "",
+          "pronunciation_hint": "YEH-dahn",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "One coffee, please.",
+            "target_primary": "Jednu kavu, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dva",
+          "english": "Two (2)",
+          "target_primary": "Dva",
+          "target_alt": "",
+          "pronunciation_hint": "dvah",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Two beers, please.",
+            "target_primary": "Dva piva, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "tri",
+          "english": "Three (3)",
+          "target_primary": "Tri",
+          "target_alt": "",
+          "pronunciation_hint": "tree",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have three children.",
+            "target_primary": "Imam troje djece.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "cetiri",
+          "english": "Four (4)",
+          "target_primary": "Četiri",
+          "target_alt": "",
+          "pronunciation_hint": "CHEH-tee-ree",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Four people are here.",
+            "target_primary": "Četiri osobe su ovdje.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "pet",
+          "english": "Five (5)",
+          "target_primary": "Pet",
+          "target_alt": "",
+          "pronunciation_hint": "peht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Five minutes, please.",
+            "target_primary": "Pet minuta, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sest",
+          "english": "Six (6)",
+          "target_primary": "Šest",
+          "target_alt": "",
+          "pronunciation_hint": "shehst",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "It's six o'clock.",
+            "target_primary": "Šest je sati.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "sedam",
+          "english": "Seven (7)",
+          "target_primary": "Sedam",
+          "target_alt": "",
+          "pronunciation_hint": "SEH-dahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Seven days in a week.",
+            "target_primary": "Sedam dana u tjednu.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "osam",
+          "english": "Eight (8)",
+          "target_primary": "Osam",
+          "target_alt": "",
+          "pronunciation_hint": "OH-sahm",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I work eight hours.",
+            "target_primary": "Radim osam sati.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "devet",
+          "english": "Nine (9)",
+          "target_primary": "Devet",
+          "target_alt": "",
+          "pronunciation_hint": "DEH-veht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "Nine euros, please.",
+            "target_primary": "Devet eura, molim.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "deset",
+          "english": "Ten (10)",
+          "target_primary": "Deset",
+          "target_alt": "",
+          "pronunciation_hint": "DEH-seht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "I have ten kunas.",
+            "target_primary": "Imam deset eura.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "dvadeset",
+          "english": "Twenty (20)",
+          "target_primary": "Dvadeset",
+          "target_alt": "",
+          "pronunciation_hint": "DVAH-deh-seht",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "That costs twenty euros.",
+            "target_primary": "To košta dvadeset eura.",
+            "target_alt": ""
+          }
+        },
+        {
+          "id": "koliko",
+          "english": "How much / How many",
+          "target_primary": "Koliko",
+          "target_alt": "",
+          "pronunciation_hint": "KOH-lee-koh",
+          "audio_override": null,
+          "example_sentence": {
+            "english": "How much does this cost?",
+            "target_primary": "Koliko ovo košta?",
+            "target_alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "Numbers 11-19 & Noun Agreement",
+      "explanation": "Numbers 11-19 are formed by combining the unit with 'naest' (short for 'na deset' - on ten): jedanaest (11), dvanaest (12), trinaest (13), četrnaest (14), petnaest (15), šesnaest (16), sedamnaest (17), osamnaest (18), devetnaest (19). In Croatian, the number 'one' (jedan/jedna/jedno) changes to match the gender of the noun it modifies, while numbers 2-4 require a special plural form and numbers 5+ use the genitive plural.",
+      "examples": [
+        {
+          "english": "Eleven",
+          "target_primary": "Jedanaest",
+          "target_alt": ""
+        },
+        {
+          "english": "Fifteen",
+          "target_primary": "Petnaest",
+          "target_alt": ""
+        },
+        {
+          "english": "One man (masculine)",
+          "target_primary": "Jedan čovjek",
+          "target_alt": ""
+        },
+        {
+          "english": "One woman (feminine)",
+          "target_primary": "Jedna žena",
+          "target_alt": ""
+        },
+        {
+          "english": "Five people",
+          "target_primary": "Pet ljudi",
+          "target_alt": ""
+        }
+      ]
+    },
+    {
+      "type": "cultural_note",
+      "title": "Currency in Croatia",
+      "content": "As of January 1, 2023, Croatia adopted the Euro as its official currency, replacing the Croatian Kuna (HRK) which had been in use since 1994. You may still hear older Croatians refer to prices in kunas out of habit. Croatia also joined the Schengen Area on the same date, making border crossings with neighboring EU countries seamless. When discussing prices, Croatians commonly say 'eura' (genitive plural) after numbers 5 and above, e.g., 'deset eura' (ten euros)."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "prompt": "What is the Croatian word for 'five'?",
+        "correct_answer": "Pet",
+        "options": ["Pet", "Šest", "Četiri", "Tri"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How do you say 'twenty' in Croatian?",
+        "correct_answer": "Dvadeset",
+        "options": ["Deset", "Dvanaest", "Dvadeset", "Devetnaest"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'three'",
+        "correct_answer": "Tri",
+        "accept_alternatives": ["tri"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'ten'",
+        "correct_answer": "Deset",
+        "accept_alternatives": ["deset"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the numbers with their Croatian equivalents",
+        "pairs": [
+          {"english": "One", "target": "Jedan"},
+          {"english": "Two", "target": "Dva"},
+          {"english": "Seven", "target": "Sedam"},
+          {"english": "Nine", "target": "Devet"},
+          {"english": "Ten", "target": "Deset"}
+        ]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "pet",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Pet", "Deset", "Šest"]
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What does 'Koliko' mean?",
+        "correct_answer": "How much / How many",
+        "options": ["How much / How many", "When", "Where", "Why"]
+      },
+      {
+        "type": "type_answer",
+        "prompt": "Type the Croatian word for 'eight'",
+        "correct_answer": "Osam",
+        "accept_alternatives": ["osam"]
+      },
+      {
+        "type": "listen_and_choose",
+        "word_id": "sedam",
+        "prompt": "Listen and choose the correct word",
+        "options": ["Sedam", "Osam", "Devet"]
+      },
+      {
+        "type": "match_pairs",
+        "prompt": "Match the numbers with their Croatian equivalents",
+        "pairs": [
+          {"english": "Four", "target": "Četiri"},
+          {"english": "Five", "target": "Pet"},
+          {"english": "Six", "target": "Šest"},
+          {"english": "Eight", "target": "Osam"},
+          {"english": "Twenty", "target": "Dvadeset"}
+        ]
+      }
+    ]
+  }
+}

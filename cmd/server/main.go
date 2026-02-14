@@ -7,11 +7,17 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"speakeasy/internal/db"
 	"speakeasy/internal/handlers"
 	"speakeasy/internal/middleware"
 	"speakeasy/internal/tts"
+
+	// Register language packages
+	_ "speakeasy/internal/lessons/croatian"
+	_ "speakeasy/internal/lessons/indonesian"
+	_ "speakeasy/internal/lessons/serbian"
 
 	_ "modernc.org/sqlite"
 )
@@ -93,11 +99,27 @@ func main() {
 	})
 	mux.HandleFunc("/logout", authHandler.Logout)
 
-	// Protected routes
-	mux.HandleFunc("/lessons/serbian", middleware.RequireAuth(lessonHandler.LessonList))
-	mux.HandleFunc("/lessons/serbian/", middleware.RequireAuth(func(w http.ResponseWriter, r *http.Request) {
-		// Route to quiz or lesson view
-		if pathEndsWithQuiz(r.URL.Path) {
+	// Protected lesson routes — dynamic language pattern
+	// Matches /lessons/{language} for lesson list
+	// Matches /lessons/{language}/{lessonID} and /lessons/{language}/{lessonID}/quiz
+	mux.HandleFunc("/lessons/", middleware.RequireAuth(func(w http.ResponseWriter, r *http.Request) {
+		path := filepath.ToSlash(r.URL.Path)
+		parts := splitPath(path)
+		// parts[0] = "lessons", parts[1] = language, parts[2] = lessonID, parts[3] = "quiz"
+
+		if len(parts) < 2 {
+			http.NotFound(w, r)
+			return
+		}
+
+		if len(parts) == 2 {
+			// /lessons/{language} — lesson list
+			lessonHandler.LessonList(w, r)
+			return
+		}
+
+		// /lessons/{language}/{lessonID} or /lessons/{language}/{lessonID}/quiz
+		if len(parts) >= 4 && parts[3] == "quiz" {
 			if r.Method == http.MethodPost {
 				quizHandler.SubmitQuiz(w, r)
 			} else {
@@ -124,13 +146,15 @@ func main() {
 	log.Fatal(http.ListenAndServe(":"+port, handler))
 }
 
-func pathEndsWithQuiz(path string) bool {
-	// Check if path ends with /quiz
-	clean := filepath.ToSlash(path)
-	if len(clean) > 0 && clean[len(clean)-1] == '/' {
-		clean = clean[:len(clean)-1]
+// splitPath splits a URL path into non-empty segments.
+func splitPath(path string) []string {
+	var parts []string
+	for _, p := range strings.Split(path, "/") {
+		if p != "" {
+			parts = append(parts, p)
+		}
 	}
-	return len(clean) > 5 && clean[len(clean)-5:] == "/quiz"
+	return parts
 }
 
 func initSchema(database *sql.DB) error {

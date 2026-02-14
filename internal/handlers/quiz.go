@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"speakeasy/internal/db"
-	"speakeasy/internal/lessons/serbian"
+	"speakeasy/internal/lessons"
 	"speakeasy/internal/middleware"
 )
 
@@ -24,26 +24,43 @@ func NewQuizHandler(q *db.Queries, t *TemplateRenderer) *QuizHandler {
 
 func (h *QuizHandler) QuizPage(w http.ResponseWriter, r *http.Request) {
 	userID := middleware.GetUserID(r.Context())
+	langSlug := extractLanguage(r.URL.Path)
 	lessonID := extractLessonID(r.URL.Path)
 
-	lesson := serbian.GetLesson(lessonID)
+	langConfig := lessons.GetLanguage(langSlug)
+	if langConfig == nil {
+		http.NotFound(w, r)
+		return
+	}
+
+	lesson := lessons.GetLesson(langSlug, lessonID)
 	if lesson == nil {
 		http.NotFound(w, r)
 		return
 	}
 
 	h.tmpl.Render(w, "quiz.html", map[string]interface{}{
-		"Title":  "Quiz: " + lesson.Title,
-		"Lesson": lesson,
-		"User":   getUser(r.Context(), h.queries, userID),
+		"Title":          "Quiz: " + lesson.Title,
+		"Lesson":         lesson,
+		"User":           getUser(r.Context(), h.queries, userID),
+		"LanguageSlug":   langSlug,
+		"LanguageName":   langConfig.DisplayName,
+		"LanguageConfig": langConfig,
 	})
 }
 
 func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 	userID := middleware.GetUserID(r.Context())
+	langSlug := extractLanguage(r.URL.Path)
 	lessonID := extractLessonID(r.URL.Path)
 
-	lesson := serbian.GetLesson(lessonID)
+	langConfig := lessons.GetLanguage(langSlug)
+	if langConfig == nil {
+		http.NotFound(w, r)
+		return
+	}
+
+	lesson := lessons.GetLesson(langSlug, lessonID)
 	if lesson == nil {
 		http.NotFound(w, r)
 		return
@@ -70,9 +87,9 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 			idx, err := strconv.Atoi(answer)
 			if err == nil && idx == q.Correct {
 				correct++
-				updateVocabCorrect(r, h.queries, userID, q, true)
+				updateVocabCorrect(r, h.queries, userID, langSlug, q, true)
 			} else {
-				updateVocabCorrect(r, h.queries, userID, q, false)
+				updateVocabCorrect(r, h.queries, userID, langSlug, q, false)
 			}
 
 		case "type_answer":
@@ -85,7 +102,7 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 			}
 
 		case "match_pairs":
-			if isMatchCorrect(answer, q.Pairs, q.ShuffledSerbian) {
+			if isMatchCorrect(answer, q.Pairs, q.ShuffledTarget) {
 				correct++
 			}
 		}
@@ -100,7 +117,7 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 	now := sql.NullTime{Time: time.Now(), Valid: true}
 	h.queries.CreateQuizAttempt(r.Context(), db.CreateQuizAttemptParams{
 		UserID:         userID,
-		Language:       "serbian",
+		Language:       langSlug,
 		LessonID:       lessonID,
 		Score:          int64(score),
 		TotalQuestions: int64(total),
@@ -115,18 +132,17 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 		completedAt = now
 
 		// Unlock next lesson
-		nextID := serbian.GetNextLessonID(lessonID)
+		nextID := lessons.GetNextLessonID(langSlug, lessonID)
 		if nextID != "" {
-			// Check if next lesson is locked
 			progress, err := h.queries.GetLessonProgress(r.Context(), db.GetLessonProgressParams{
 				UserID:   userID,
-				Language: "serbian",
+				Language: langSlug,
 				LessonID: nextID,
 			})
 			if err != nil || progress.Status == "locked" {
 				h.queries.UpsertLessonProgress(r.Context(), db.UpsertLessonProgressParams{
 					UserID:   userID,
-					Language: "serbian",
+					Language: langSlug,
 					LessonID: nextID,
 					Status:   "available",
 				})
@@ -137,7 +153,7 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 	// Get current attempts count
 	existing, _ := h.queries.GetLessonProgress(r.Context(), db.GetLessonProgressParams{
 		UserID:   userID,
-		Language: "serbian",
+		Language: langSlug,
 		LessonID: lessonID,
 	})
 	attempts := int64(1)
@@ -147,7 +163,7 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 
 	h.queries.UpsertLessonProgress(r.Context(), db.UpsertLessonProgressParams{
 		UserID:       userID,
-		Language:     "serbian",
+		Language:     langSlug,
 		LessonID:     lessonID,
 		Status:       status,
 		BestScore:    sql.NullInt64{Int64: int64(score), Valid: true},
@@ -158,35 +174,51 @@ func (h *QuizHandler) SubmitQuiz(w http.ResponseWriter, r *http.Request) {
 
 	nextLessonID := ""
 	if score >= 70 {
-		nextLessonID = serbian.GetNextLessonID(lessonID)
+		nextLessonID = lessons.GetNextLessonID(langSlug, lessonID)
 	}
 
 	h.tmpl.Render(w, "results.html", map[string]interface{}{
-		"Title":        "Quiz Results",
-		"Lesson":       lesson,
-		"Score":        score,
-		"Correct":      correct,
-		"Total":        total,
-		"Passed":       score >= 70,
-		"Perfect":      score >= 100,
-		"Excellent":    score >= 90,
-		"HalfWay":      score >= 50,
-		"NextLessonID": nextLessonID,
-		"User":         getUser(r.Context(), h.queries, userID),
+		"Title":          "Quiz Results",
+		"Lesson":         lesson,
+		"Score":          score,
+		"Correct":        correct,
+		"Total":          total,
+		"Passed":         score >= 70,
+		"Perfect":        score >= 100,
+		"Excellent":      score >= 90,
+		"HalfWay":        score >= 50,
+		"NextLessonID":   nextLessonID,
+		"User":           getUser(r.Context(), h.queries, userID),
+		"LanguageSlug":   langSlug,
+		"LanguageName":   langConfig.DisplayName,
+		"LanguageConfig": langConfig,
 	})
 }
 
-func isMatchCorrect(answer string, pairs []serbian.Pair, shuffled []string) bool {
+func isMatchCorrect(answer string, pairs []lessons.Pair, shuffled []string) bool {
 	if answer == "" {
 		return false
 	}
 
 	var matched []struct {
 		English int `json:"english"`
-		Serbian int `json:"serbian"`
+		Target  int `json:"target"`
 	}
 	if err := json.Unmarshal([]byte(answer), &matched); err != nil {
-		return false
+		// Try legacy format with "serbian" key
+		var legacy []struct {
+			English int `json:"english"`
+			Serbian int `json:"serbian"`
+		}
+		if err2 := json.Unmarshal([]byte(answer), &legacy); err2 != nil {
+			return false
+		}
+		for _, m := range legacy {
+			matched = append(matched, struct {
+				English int `json:"english"`
+				Target  int `json:"target"`
+			}{English: m.English, Target: m.Serbian})
+		}
 	}
 
 	if len(matched) != len(pairs) {
@@ -194,11 +226,11 @@ func isMatchCorrect(answer string, pairs []serbian.Pair, shuffled []string) bool
 	}
 
 	for _, m := range matched {
-		if m.English < 0 || m.English >= len(pairs) || m.Serbian < 0 || m.Serbian >= len(shuffled) {
+		if m.English < 0 || m.English >= len(pairs) || m.Target < 0 || m.Target >= len(shuffled) {
 			return false
 		}
-		expected := pairs[m.English].Serbian
-		actual := shuffled[m.Serbian]
+		expected := pairs[m.English].Target
+		actual := shuffled[m.Target]
 		if expected != actual {
 			return false
 		}
@@ -207,7 +239,7 @@ func isMatchCorrect(answer string, pairs []serbian.Pair, shuffled []string) bool
 	return true
 }
 
-func updateVocabCorrect(r *http.Request, q *db.Queries, userID int64, question serbian.Question, isCorrect bool) {
+func updateVocabCorrect(r *http.Request, q *db.Queries, userID int64, langSlug string, question lessons.Question, isCorrect bool) {
 	wordID := question.WordID
 	if wordID == "" {
 		return
@@ -215,7 +247,7 @@ func updateVocabCorrect(r *http.Request, q *db.Queries, userID int64, question s
 
 	existing, err := q.GetVocabProgressByWord(r.Context(), db.GetVocabProgressByWordParams{
 		UserID:   userID,
-		Language: "serbian",
+		Language: langSlug,
 		WordID:   wordID,
 	})
 
@@ -255,7 +287,7 @@ func updateVocabCorrect(r *http.Request, q *db.Queries, userID int64, question s
 
 	q.UpsertVocabProgress(r.Context(), db.UpsertVocabProgressParams{
 		UserID:         userID,
-		Language:       "serbian",
+		Language:       langSlug,
 		WordID:         wordID,
 		TimesCorrect:   sql.NullInt64{Int64: timesCorrect, Valid: true},
 		TimesIncorrect: sql.NullInt64{Int64: timesIncorrect, Valid: true},

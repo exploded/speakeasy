@@ -1,4 +1,4 @@
-package serbian
+package croatian
 
 import (
 	"embed"
@@ -17,17 +17,16 @@ var allLessons []*lessons.Lesson
 func init() {
 	loaded, err := loadLessons()
 	if err != nil {
-		panic(fmt.Sprintf("failed to load serbian lessons: %v", err))
+		panic(fmt.Sprintf("failed to load croatian lessons: %v", err))
 	}
 	allLessons = loaded
 
 	lessons.Register(lessons.Language{
-		Slug:           "serbian",
-		DisplayName:    "Serbian",
-		TTSCode:        "sr",
-		HasDualScript:  true,
-		ScriptLabel:    "Latin",
-		AltScriptLabel: "Cyrillic",
+		Slug:          "croatian",
+		DisplayName:   "Croatian",
+		TTSCode:       "hr",
+		HasDualScript: false,
+		ScriptLabel:   "Latin",
 	}, allLessons)
 }
 
@@ -52,7 +51,6 @@ func loadLessons() ([]*lessons.Lesson, error) {
 			return nil, fmt.Errorf("parse %s: %w", entry.Name(), err)
 		}
 
-		// Compute audio text for listen_and_choose questions
 		for i := range lesson.Quiz.Questions {
 			q := &lesson.Quiz.Questions[i]
 			if q.Type == "listen_and_choose" && q.WordID != "" {

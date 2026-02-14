@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <form method="POST" action="/lessons/serbian/{{.Lesson.ID}}/quiz" id="quiz-form">
+    <form method="POST" action="/lessons/{{.LanguageSlug}}/{{.Lesson.ID}}/quiz" id="quiz-form">
         {{range $idx, $q := .Lesson.Quiz.Questions}}
         <div class="question-card" id="question-{{$idx}}">
             <h3>
@@ -53,9 +53,9 @@
                         {{end}}
                     </div>
                     <div class="match-column">
-                        <div style="font-weight:600;margin-bottom:0.5rem;color:var(--gray-500);">Serbian</div>
-                        {{range $pi, $p := $q.ShuffledSerbian}}
-                        <div class="match-item" data-match="{{$idx}}-serbian-{{$pi}}" onclick="selectMatchItem({{$idx}}, 'serbian', {{$pi}})">
+                        <div style="font-weight:600;margin-bottom:0.5rem;color:var(--gray-500);">{{$.LanguageName}}</div>
+                        {{range $pi, $p := $q.ShuffledTarget}}
+                        <div class="match-item" data-match="{{$idx}}-target-{{$pi}}" onclick="selectMatchItem({{$idx}}, 'target', {{$pi}})">
                             {{$p}}
                         </div>
                         {{end}}
@@ -65,7 +65,7 @@
 
             {{else if eq $q.Type "listen_and_choose"}}
                 <div style="text-align:center;margin-bottom:1rem;">
-                    <button type="button" class="play-btn" onclick="playAudio(event, '{{$q.AudioText}}', 'sr')" style="width:56px;height:56px;">
+                    <button type="button" class="play-btn" onclick="playAudio(event, '{{$q.AudioText}}', '{{$.LanguageConfig.TTSCode}}')" style="width:56px;height:56px;">
                         <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;"><polygon points="5,3 19,12 5,21"/></svg>
                     </button>
                 </div>

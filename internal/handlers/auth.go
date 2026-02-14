@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"speakeasy/internal/db"
+	"speakeasy/internal/lessons"
 	"speakeasy/internal/middleware"
 
 	"golang.org/x/crypto/bcrypt"
@@ -112,8 +113,10 @@ func (h *AuthHandler) Register(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Initialize lesson progress - first lesson available, rest locked
-	initLessonProgress(r.Context(), h.queries, user.ID)
+	// Initialize lesson progress for all languages
+	for _, lang := range lessons.GetLanguages() {
+		initLessonProgress(r.Context(), h.queries, user.ID, lang.Slug)
+	}
 
 	token, err := h.sessions.Create(user.ID)
 	if err != nil {
