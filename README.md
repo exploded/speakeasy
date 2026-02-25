@@ -75,7 +75,7 @@ export GOOGLE_TTS_API_KEY=your-api-key-here
 go run ./cmd/server/
 ```
 
-The app will be available at http://localhost:8080. A SQLite database file (`speakeasy.db`) is created automatically on first run.
+The app will be available at http://localhost:8282. A SQLite database file (`speakeasy.db`) is created automatically on first run.
 
 On Windows, edit `start.bat` with your API key and run it instead.
 
@@ -149,8 +149,8 @@ ssh user@yourserver
 
 # Stop the service, copy files, fix permissions, restart
 sudo systemctl stop speakeasy
-sudo cp ~/speakeasy-linux /var/www/speakeasy/
-sudo cp -r ~/web /var/www/speakeasy/   # only if templates/static changed
+sudo cp speakeasy-linux /var/www/speakeasy/
+sudo cp -r web /var/www/speakeasy/   # only if templates/static changed
 sudo chown -R www-data:www-data /var/www/speakeasy
 sudo chmod 755 /var/www/speakeasy/speakeasy-linux
 sudo systemctl start speakeasy

@@ -1,7 +1,9 @@
 *.exe
+speakeasy
+speakeasy-linux
 *.db
 *.db-shm
 *.db-wal
-speakeasy-linux
 tts_cache/
 .env
+.vscode/

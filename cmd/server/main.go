@@ -139,7 +139,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "8282"
 	}
 
 	fmt.Printf("SpeakEasy server starting on http://localhost:%s\n", port)
