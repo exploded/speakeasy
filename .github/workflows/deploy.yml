@@ -1,0 +1,49 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Build Linux binary
+        run: GOOS=linux GOARCH=amd64 go build -o speakeasy-linux ./cmd/server/
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+
+      - name: Copy binary to server
+        run: scp -o StrictHostKeyChecking=no speakeasy-linux ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/speakeasy-linux
+
+      - name: Copy web assets to server
+        run: scp -r -o StrictHostKeyChecking=no web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/web
+
+      - name: Deploy on server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} '
+            sudo systemctl stop speakeasy
+            sudo rm -f /var/www/speakeasy/speakeasy-linux
+            sudo cp ~/speakeasy-linux /var/www/speakeasy/speakeasy-linux
+            sudo rm -rf /var/www/speakeasy/web
+            sudo cp -r ~/web /var/www/speakeasy/web
+            sudo chown -R www-data:www-data /var/www/speakeasy
+            sudo chmod 755 /var/www/speakeasy/speakeasy-linux
+            sudo systemctl start speakeasy
+            rm -f ~/speakeasy-linux
+            rm -rf ~/web
+          '

@@ -43,21 +43,37 @@
                 <input type="text" name="answer-{{$idx}}" id="answer-{{$idx}}" class="type-answer-input" placeholder="Type your answer..." autocomplete="off">
 
             {{else if eq $q.Type "match_pairs"}}
-                <div class="match-container">
-                    <div class="match-column">
-                        <div style="font-weight:600;margin-bottom:0.5rem;color:var(--gray-500);">English</div>
+                <p style="color:var(--gray-500);font-size:0.875rem;margin-bottom:0.75rem;">Drag a word from the bank into the box next to its English meaning. Tap a word then tap a box on mobile.</p>
+                <div class="drag-match-container">
+                    <div class="drag-match-pairs">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.1rem;padding:0 0 0.1rem;">
+                            <div style="font-size:0.8rem;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.05em;">English</div>
+                            <div style="font-size:0.8rem;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.05em;">{{$.LanguageName}}</div>
+                        </div>
                         {{range $pi, $p := $q.Pairs}}
-                        <div class="match-item" data-match="{{$idx}}-english-{{$pi}}" onclick="selectMatchItem({{$idx}}, 'english', {{$pi}})">
-                            {{$p.English}}
+                        <div class="drag-pair-row">
+                            <div class="drag-english-label">{{$p.English}}</div>
+                            <div class="drag-drop-zone"
+                                 data-q="{{$idx}}" data-english="{{$pi}}"
+                                 ondragover="allowDrop(event)"
+                                 ondragleave="handleDragLeave(event)"
+                                 ondrop="handleDrop(event)"
+                                 onclick="clickDropZone({{$idx}}, {{$pi}})">
+                                <span class="drop-hint">Drop here</span>
+                            </div>
                         </div>
                         {{end}}
                     </div>
-                    <div class="match-column">
-                        <div style="font-weight:600;margin-bottom:0.5rem;color:var(--gray-500);">{{$.LanguageName}}</div>
+                    <div class="drag-word-bank" id="match-bank-{{$idx}}">
+                        <div class="drag-word-bank-label">Word Bank — drag or tap to match</div>
                         {{range $pi, $p := $q.ShuffledTarget}}
-                        <div class="match-item" data-match="{{$idx}}-target-{{$pi}}" onclick="selectMatchItem({{$idx}}, 'target', {{$pi}})">
-                            {{$p}}
-                        </div>
+                        <div class="drag-chip"
+                             draggable="true"
+                             data-q="{{$idx}}"
+                             data-ti="{{$pi}}"
+                             data-label="{{$p}}"
+                             ondragstart="handleDragStart(event)"
+                             onclick="clickChip({{$idx}}, {{$pi}})">{{$p}}</div>
                         {{end}}
                     </div>
                 </div>

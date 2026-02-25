@@ -640,44 +640,148 @@ body {
     border-color: var(--purple);
 }
 
-/* Match pairs */
-.match-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+/* Drag-and-drop match pairs */
+.drag-match-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
-.match-column {
+.drag-match-pairs {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.match-item {
+.drag-pair-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.drag-english-label {
     padding: 0.75rem 1rem;
     background: var(--gray-50);
     border: 2px solid var(--gray-200);
     border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.drag-drop-zone {
+    padding: 0.6rem 1rem;
+    background: white;
+    border: 2px dashed var(--gray-300);
+    border-radius: 8px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.2s;
-    user-select: none;
+    cursor: pointer;
 }
 
-.match-item:hover {
-    border-color: var(--purple-light);
-}
-
-.match-item.selected {
+.drag-drop-zone.drag-over {
     border-color: var(--purple);
-    background: rgba(124, 58, 237, 0.1);
+    background: rgba(124, 58, 237, 0.06);
 }
 
-.match-item.matched {
+.drag-drop-zone.filled {
+    border-style: solid;
     border-color: var(--green);
-    background: rgba(16, 185, 129, 0.1);
+    background: rgba(16, 185, 129, 0.07);
+    cursor: default;
+}
+
+.drop-hint {
+    color: var(--gray-300);
+    font-size: 0.85rem;
+    font-style: italic;
     pointer-events: none;
+}
+
+.drag-word-bank {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.875rem 1rem;
+    background: var(--gray-50);
+    border: 2px solid var(--gray-200);
+    border-radius: 10px;
+    min-height: 60px;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.drag-word-bank-label {
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.1rem;
+}
+
+.drag-chip {
+    padding: 0.45rem 0.9rem;
+    background: white;
+    border: 2px solid var(--purple-light);
+    border-radius: 20px;
+    font-weight: 600;
+    color: var(--purple-dark);
+    cursor: grab;
+    user-select: none;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+}
+
+.drag-chip:hover {
+    border-color: var(--purple);
+    background: rgba(124, 58, 237, 0.05);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+.drag-chip.chip-selected {
+    border-color: var(--purple);
+    background: rgba(124, 58, 237, 0.12);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+.drag-chip:active { cursor: grabbing; }
+
+.placed-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--purple-dark);
+    font-size: 0.95rem;
+}
+
+.remove-chip-btn {
+    background: none;
+    border: none;
+    color: var(--gray-400);
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.15s;
+    flex-shrink: 0;
+}
+
+.remove-chip-btn:hover {
+    color: var(--red);
+    background: rgba(239, 68, 68, 0.1);
 }
 
 /* Results page */
@@ -852,7 +956,7 @@ body {
     .lesson-header-illustration { width: 150px; }
     .lesson-grid { grid-template-columns: 1fr; }
     .vocab-grid { grid-template-columns: 1fr; }
-    .match-container { grid-template-columns: 1fr; }
+    .drag-pair-row { grid-template-columns: 1fr 1fr; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
