@@ -85,8 +85,16 @@ func (c *Client) GetAudio(text, lang string) ([]byte, string, error) {
 func (c *Client) callGoogleTTS(text, lang, apiKey string) ([]byte, error) {
 	url := "https://texttospeech.googleapis.com/v1/text:synthesize?key=" + apiKey
 
+	// Map short TTS codes to full BCP-47 language codes required by Google TTS
+	bcp47 := map[string]string{
+		"sr": "sr-RS",
+		"hr": "hr-HR",
+		"id": "id-ID",
+	}
 	langCode := "sr-RS"
-	if lang != "" && lang != "sr" {
+	if full, ok := bcp47[lang]; ok {
+		langCode = full
+	} else if lang != "" {
 		langCode = lang
 	}
 
