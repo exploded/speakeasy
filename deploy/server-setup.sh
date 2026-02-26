@@ -1,0 +1,77 @@
+#!/bin/bash
+# Run as root on the Linode server: sudo bash server-setup.sh
+set -e
+
+echo "=== SpeakEasy Server Setup ==="
+
+# 1. Create deploy user if it doesn't exist
+if ! id "deploy" &>/dev/null; then
+    useradd -m -s /bin/bash deploy
+    echo "Created deploy user"
+else
+    echo "deploy user already exists"
+fi
+
+# 2. Generate SSH key pair for GitHub Actions
+KEY_FILE="/home/deploy/.ssh/github_actions"
+mkdir -p /home/deploy/.ssh
+chmod 700 /home/deploy/.ssh
+
+if [ ! -f "$KEY_FILE" ]; then
+    ssh-keygen -t ed25519 -C "speakeasy-github-actions" -f "$KEY_FILE" -N ""
+    echo "Generated new SSH key pair"
+else
+    echo "SSH key already exists, reusing it"
+fi
+
+# 3. Authorise the key for the deploy user
+cat "$KEY_FILE.pub" >> /home/deploy/.ssh/authorized_keys
+sort -u /home/deploy/.ssh/authorized_keys -o /home/deploy/.ssh/authorized_keys
+chmod 600 /home/deploy/.ssh/authorized_keys
+chown -R deploy:deploy /home/deploy/.ssh
+echo "Public key added to authorized_keys"
+
+# 4. Create app directory
+mkdir -p /var/www/speakeasy
+chown -R www-data:www-data /var/www/speakeasy
+echo "Created /var/www/speakeasy"
+
+# 5. Sudoers — allow deploy user to manage the speakeasy service and files
+SUDOERS_FILE="/etc/sudoers.d/speakeasy-deploy"
+cat > "$SUDOERS_FILE" <<'EOF'
+deploy ALL=(ALL) NOPASSWD: /usr/bin/systemctl stop speakeasy
+deploy ALL=(ALL) NOPASSWD: /usr/bin/systemctl start speakeasy
+deploy ALL=(ALL) NOPASSWD: /usr/bin/rm -f /var/www/speakeasy/speakeasy-linux
+deploy ALL=(ALL) NOPASSWD: /usr/bin/cp /home/deploy/speakeasy-linux /var/www/speakeasy/speakeasy-linux
+deploy ALL=(ALL) NOPASSWD: /usr/bin/rm -rf /var/www/speakeasy/web
+deploy ALL=(ALL) NOPASSWD: /usr/bin/cp -r /home/deploy/web /var/www/speakeasy/web
+deploy ALL=(ALL) NOPASSWD: /usr/bin/chown -R www-data:www-data /var/www/speakeasy
+deploy ALL=(ALL) NOPASSWD: /usr/bin/chmod 755 /var/www/speakeasy/speakeasy-linux
+EOF
+chmod 440 "$SUDOERS_FILE"
+echo "Sudoers configured"
+
+# 6. Print the GitHub Secrets
+HOSTNAME=$(hostname -f 2>/dev/null || hostname)
+echo ""
+echo "============================================================"
+echo "  PASTE THESE INTO GITHUB SECRETS"
+echo "  https://github.com/exploded/speakeasy/settings/secrets/actions"
+echo "============================================================"
+echo ""
+echo "--- Secret name: SSH_PRIVATE_KEY ---"
+cat "$KEY_FILE"
+echo ""
+echo "--- Secret name: SSH_KNOWN_HOSTS ---"
+ssh-keyscan -H "$HOSTNAME" 2>/dev/null
+ssh-keyscan -H "$(hostname -I | awk '{print $1}')" 2>/dev/null
+echo ""
+echo "--- Secret name: DEPLOY_USER ---"
+echo "deploy"
+echo ""
+echo "--- Secret name: DEPLOY_HOST ---"
+echo "speakeasy.mchugh.au"
+echo ""
+echo "============================================================"
+echo "Done! Copy each value above into the matching GitHub Secret."
+echo "============================================================"
