@@ -41,11 +41,16 @@
                     </div>
                     {{if .ExampleSentence}}
                     <div class="vocab-example">
-                        <div>
-                            <span class="script-latin">{{.ExampleSentence.TargetPrimary}}</span>
-                            {{if $.LanguageConfig.HasDualScript}}
-                            <span class="script-cyrillic">{{.ExampleSentence.TargetAlt}}</span>
-                            {{end}}
+                        <div style="display:flex;align-items:center;gap:0.5rem;">
+                            <div>
+                                <span class="script-latin">{{.ExampleSentence.TargetPrimary}}</span>
+                                {{if $.LanguageConfig.HasDualScript}}
+                                <span class="script-cyrillic">{{.ExampleSentence.TargetAlt}}</span>
+                                {{end}}
+                            </div>
+                            <button class="play-btn" onclick="playAudio(event, '{{.ExampleSentence.TargetPrimary}}', '{{$.LanguageConfig.TTSCode}}')" title="Listen to example" style="width:24px;height:24px;flex-shrink:0;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" style="width:10px;height:10px;"><polygon points="5,3 19,12 5,21"/></svg>
+                            </button>
                         </div>
                         <div style="color:var(--gray-500);">{{.ExampleSentence.English}}</div>
                     </div>
