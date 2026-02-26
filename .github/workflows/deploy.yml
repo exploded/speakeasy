@@ -19,7 +19,7 @@ jobs:
           go-version-file: go.mod
 
       - name: Build Linux binary
-        run: GOOS=linux GOARCH=amd64 go build -o speakeasy-linux ./cmd/server/
+        run: GOOS=linux GOARCH=amd64 go build -o speakeasy ./cmd/server/
 
       - name: Set up SSH
         run: |
@@ -29,25 +29,25 @@ jobs:
           ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
 
       - name: Copy binary to server
-        run: scp -i ~/.ssh/deploy_key speakeasy-linux ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/speakeasy-linux
+        run: scp -i ~/.ssh/deploy_key speakeasy ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/speakeasy
 
       - name: Copy web assets to server
-        run: scp -i ~/.ssh/deploy_key -r web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/web
+        run: scp -i ~/.ssh/deploy_key -r web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/web
 
       - name: Deploy on server
         run: |
           ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} bash << 'ENDSSH'
             set -e
             sudo systemctl stop speakeasy
-            sudo rm -f /var/www/speakeasy/speakeasy-linux
-            sudo cp /home/deploy/speakeasy-linux /var/www/speakeasy/speakeasy-linux
+            sudo rm -f /var/www/speakeasy/speakeasy
+            sudo cp /home/deploy/speakeasy /var/www/speakeasy/speakeasy
             sudo rm -rf /var/www/speakeasy/web
             sudo cp -r /home/deploy/web /var/www/speakeasy/web
-            sudo chown -R www-data:www-data /var/www/speakeasy
-            sudo chmod 755 /var/www/speakeasy/speakeasy-linux
+            sudo chown -R www-data /var/www/speakeasy
+            sudo chmod 755 /var/www/speakeasy/speakeasy
             sudo systemctl start speakeasy
             sleep 2
             sudo systemctl is-active --quiet speakeasy && echo "Service started OK" || (sudo journalctl -u speakeasy -n 20 --no-pager && exit 1)
-            rm -f /home/deploy/speakeasy-linux
+            rm -f /home/deploy/speakeasy
             rm -rf /home/deploy/web
           ENDSSH

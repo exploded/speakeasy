@@ -33,25 +33,34 @@ echo "Public key added to authorized_keys"
 
 # 4. Create app directory
 mkdir -p /var/www/speakeasy
-chown -R www-data:www-data /var/www/speakeasy
+chown -R www-data /var/www/speakeasy
 echo "Created /var/www/speakeasy"
 
 # 5. Sudoers — allow deploy user to manage the speakeasy service and files
+# Note: avoid colons in sudoers rules (causes syntax errors); use chown without group
 SUDOERS_FILE="/etc/sudoers.d/speakeasy-deploy"
 cat > "$SUDOERS_FILE" <<'EOF'
 deploy ALL=(ALL) NOPASSWD: /usr/bin/systemctl stop speakeasy
 deploy ALL=(ALL) NOPASSWD: /usr/bin/systemctl start speakeasy
-deploy ALL=(ALL) NOPASSWD: /usr/bin/rm -f /var/www/speakeasy/speakeasy-linux
-deploy ALL=(ALL) NOPASSWD: /usr/bin/cp /home/deploy/speakeasy-linux /var/www/speakeasy/speakeasy-linux
+deploy ALL=(ALL) NOPASSWD: /usr/bin/systemctl is-active speakeasy
+deploy ALL=(ALL) NOPASSWD: /usr/bin/journalctl -u speakeasy *
+deploy ALL=(ALL) NOPASSWD: /usr/bin/rm -f /var/www/speakeasy/speakeasy
+deploy ALL=(ALL) NOPASSWD: /usr/bin/cp /home/deploy/speakeasy /var/www/speakeasy/speakeasy
 deploy ALL=(ALL) NOPASSWD: /usr/bin/rm -rf /var/www/speakeasy/web
 deploy ALL=(ALL) NOPASSWD: /usr/bin/cp -r /home/deploy/web /var/www/speakeasy/web
-deploy ALL=(ALL) NOPASSWD: /usr/bin/chown -R www-data:www-data /var/www/speakeasy
-deploy ALL=(ALL) NOPASSWD: /usr/bin/chmod 755 /var/www/speakeasy/speakeasy-linux
+deploy ALL=(ALL) NOPASSWD: /usr/bin/chown -R www-data /var/www/speakeasy
+deploy ALL=(ALL) NOPASSWD: /usr/bin/chmod 755 /var/www/speakeasy/speakeasy
 EOF
 chmod 440 "$SUDOERS_FILE"
-echo "Sudoers configured"
+# Validate the sudoers file
+visudo -cf "$SUDOERS_FILE" && echo "Sudoers configured OK" || (rm -f "$SUDOERS_FILE" && echo "ERROR: sudoers syntax check failed" && exit 1)
 
-# 6. Print the GitHub Secrets
+# 6. Fix existing broken sudoers file if present
+if [ -f /etc/sudoers.d/speakeasy-deploy ]; then
+    visudo -cf /etc/sudoers.d/speakeasy-deploy 2>/dev/null || rm -f /etc/sudoers.d/speakeasy-deploy
+fi
+
+# 7. Print the GitHub Secrets
 HOSTNAME=$(hostname -f 2>/dev/null || hostname)
 echo ""
 echo "============================================================"
@@ -61,10 +70,6 @@ echo "============================================================"
 echo ""
 echo "--- Secret name: SSH_PRIVATE_KEY ---"
 cat "$KEY_FILE"
-echo ""
-echo "--- Secret name: SSH_KNOWN_HOSTS ---"
-ssh-keyscan -H "$HOSTNAME" 2>/dev/null
-ssh-keyscan -H "$(hostname -I | awk '{print $1}')" 2>/dev/null
 echo ""
 echo "--- Secret name: DEPLOY_USER ---"
 echo "deploy"
