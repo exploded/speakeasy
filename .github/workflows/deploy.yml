@@ -19,7 +19,7 @@ jobs:
           go-version-file: go.mod
 
       - name: Build Linux binary
-        run: GOOS=linux GOARCH=amd64 go build -o speakeasy ./cmd/server/
+        run: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o speakeasy ./cmd/server/
 
       - name: Set up SSH
         run: |
