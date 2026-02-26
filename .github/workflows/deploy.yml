@@ -36,15 +36,18 @@ jobs:
 
       - name: Deploy on server
         run: |
-          ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} '
+          ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} bash << 'ENDSSH'
+            set -e
             sudo systemctl stop speakeasy
             sudo rm -f /var/www/speakeasy/speakeasy-linux
-            sudo cp ~/speakeasy-linux /var/www/speakeasy/speakeasy-linux
+            sudo cp /home/deploy/speakeasy-linux /var/www/speakeasy/speakeasy-linux
             sudo rm -rf /var/www/speakeasy/web
-            sudo cp -r ~/web /var/www/speakeasy/web
+            sudo cp -r /home/deploy/web /var/www/speakeasy/web
             sudo chown -R www-data:www-data /var/www/speakeasy
             sudo chmod 755 /var/www/speakeasy/speakeasy-linux
             sudo systemctl start speakeasy
-            rm -f ~/speakeasy-linux
-            rm -rf ~/web
-          '
+            sleep 2
+            sudo systemctl is-active --quiet speakeasy && echo "Service started OK" || (sudo journalctl -u speakeasy -n 20 --no-pager && exit 1)
+            rm -f /home/deploy/speakeasy-linux
+            rm -rf /home/deploy/web
+          ENDSSH
