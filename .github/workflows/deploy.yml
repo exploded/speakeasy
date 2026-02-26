@@ -34,10 +34,25 @@ jobs:
       - name: Copy web assets to server
         run: scp -i ~/.ssh/deploy_key -r web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/web
 
+      - name: Copy service file to server
+        run: scp -i ~/.ssh/deploy_key deploy/speakeasy.service ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/speakeasy.service
+
       - name: Deploy on server
+        env:
+          TTS_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
         run: |
-          ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} bash << 'ENDSSH'
+          ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} bash << ENDSSH
             set -e
+            # Write env file with API key
+            echo "GOOGLE_TTS_API_KEY=$TTS_KEY" | sudo tee /var/www/speakeasy/.env > /dev/null
+            sudo chmod 600 /var/www/speakeasy/.env
+            sudo chown www-data /var/www/speakeasy/.env
+
+            # Install updated service file
+            sudo cp /home/deploy/speakeasy.service /lib/systemd/system/speakeasy.service
+            sudo systemctl daemon-reload
+
+            # Deploy binary and web assets
             sudo systemctl stop speakeasy
             sudo rm -f /var/www/speakeasy/speakeasy
             sudo cp /home/deploy/speakeasy /var/www/speakeasy/speakeasy
@@ -48,6 +63,8 @@ jobs:
             sudo systemctl start speakeasy
             sleep 2
             sudo systemctl is-active --quiet speakeasy && echo "Service started OK" || (sudo journalctl -u speakeasy -n 20 --no-pager && exit 1)
-            rm -f /home/deploy/speakeasy
+
+            # Cleanup
+            rm -f /home/deploy/speakeasy /home/deploy/speakeasy.service
             rm -rf /home/deploy/web
           ENDSSH

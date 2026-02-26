@@ -1,5 +1,5 @@
 [Unit]
-Description=SpeakEasy Serbian Language Tutor
+Description=SpeakEasy Language Tutor
 After=network.target
 
 [Service]
@@ -7,13 +7,13 @@ Type=simple
 User=www-data
 Group=www-data
 WorkingDirectory=/var/www/speakeasy
-ExecStart=/var/www/speakeasy/speakeasy-linux
+ExecStart=/var/www/speakeasy/speakeasy
 Restart=on-failure
 RestartSec=5
 
 Environment=PORT=8282
 Environment=SPEAKEASY_DATA_DIR=/var/www/speakeasy
-Environment=GOOGLE_TTS_API_KEY=your-api-key-here
+EnvironmentFile=-/var/www/speakeasy/.env
 
 [Install]
 WantedBy=multi-user.target
