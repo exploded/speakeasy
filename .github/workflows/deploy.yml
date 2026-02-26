@@ -21,21 +21,22 @@ jobs:
       - name: Build Linux binary
         run: GOOS=linux GOARCH=amd64 go build -o speakeasy-linux ./cmd/server/
 
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
 
       - name: Copy binary to server
-        run: scp -o StrictHostKeyChecking=no speakeasy-linux ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/speakeasy-linux
+        run: scp -i ~/.ssh/deploy_key speakeasy-linux ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/speakeasy-linux
 
       - name: Copy web assets to server
-        run: scp -r -o StrictHostKeyChecking=no web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/web
+        run: scp -i ~/.ssh/deploy_key -r web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/web
 
       - name: Deploy on server
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} '
+          ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} '
             sudo systemctl stop speakeasy
             sudo rm -f /var/www/speakeasy/speakeasy-linux
             sudo cp ~/speakeasy-linux /var/www/speakeasy/speakeasy-linux
