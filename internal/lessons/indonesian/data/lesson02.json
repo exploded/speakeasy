@@ -210,74 +210,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What is the Indonesian word for 'five'?",
-        "correct_answer": "Lima",
-        "options": ["Enam", "Lima", "Empat", "Tiga"]
+        "options": [
+          "Enam",
+          "Lima",
+          "Empat",
+          "Tiga"
+        ],
+        "question": "What is the Indonesian word for 'five'?",
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What number is 'delapan'?",
-        "correct_answer": "Eight",
-        "options": ["Six", "Seven", "Eight", "Nine"]
+        "options": [
+          "Six",
+          "Seven",
+          "Eight",
+          "Nine"
+        ],
+        "question": "What number is 'delapan'?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'three':",
-        "correct_answer": "Tiga",
-        "accept_alternatives": ["tiga"]
+        "correct_answers": [
+          "Tiga",
+          "tiga"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'ten':",
-        "correct_answer": "Sepuluh",
-        "accept_alternatives": ["sepuluh"]
+        "correct_answers": [
+          "Sepuluh",
+          "sepuluh"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each number with its Indonesian word:",
         "pairs": [
-          {"english": "One", "target": "Satu"},
-          {"english": "Two", "target": "Dua"},
-          {"english": "Four", "target": "Empat"},
-          {"english": "Seven", "target": "Tujuh"},
-          {"english": "Nine", "target": "Sembilan"}
+          {
+            "english": "One",
+            "target": "Satu"
+          },
+          {
+            "english": "Two",
+            "target": "Dua"
+          },
+          {
+            "english": "Four",
+            "target": "Empat"
+          },
+          {
+            "english": "Seven",
+            "target": "Tujuh"
+          },
+          {
+            "english": "Nine",
+            "target": "Sembilan"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "lima",
-        "prompt": "Listen and choose the correct number:",
-        "correct_answer": "Five",
-        "options": ["Three", "Five", "Six"]
+        "options": [
+          "Three",
+          "Five",
+          "Six"
+        ],
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'twelve' in Indonesian?",
-        "correct_answer": "Dua belas",
-        "options": ["Dua puluh", "Dua belas", "Sebelas", "Tiga belas"]
+        "options": [
+          "Dua puluh",
+          "Dua belas",
+          "Sebelas",
+          "Tiga belas"
+        ],
+        "question": "How do you say 'twelve' in Indonesian?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'how many':",
-        "correct_answer": "Berapa",
-        "accept_alternatives": ["berapa"]
+        "correct_answers": [
+          "Berapa",
+          "berapa"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "tujuh",
-        "prompt": "Listen and choose the correct number:",
-        "correct_answer": "Seven",
-        "options": ["Six", "Seven", "Eight"]
+        "options": [
+          "Six",
+          "Seven",
+          "Eight"
+        ],
+        "correct": 1
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each number with its Indonesian word:",
         "pairs": [
-          {"english": "Six", "target": "Enam"},
-          {"english": "Eight", "target": "Delapan"},
-          {"english": "Ten", "target": "Sepuluh"},
-          {"english": "Zero", "target": "Nol"},
-          {"english": "How many", "target": "Berapa"}
+          {
+            "english": "Six",
+            "target": "Enam"
+          },
+          {
+            "english": "Eight",
+            "target": "Delapan"
+          },
+          {
+            "english": "Ten",
+            "target": "Sepuluh"
+          },
+          {
+            "english": "Zero",
+            "target": "Nol"
+          },
+          {
+            "english": "How many",
+            "target": "Berapa"
+          }
         ]
       }
     ]

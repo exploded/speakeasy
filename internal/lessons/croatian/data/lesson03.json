@@ -205,72 +205,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What is the Croatian word for 'bread'?",
-        "correct_answer": "Kruh",
-        "options": ["Kruh", "Sir", "Meso", "Riba"]
+        "options": [
+          "Kruh",
+          "Sir",
+          "Meso",
+          "Riba"
+        ],
+        "question": "What is the Croatian word for 'bread'?",
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Račun' mean?",
-        "correct_answer": "Bill / Check",
-        "options": ["Menu", "Bill / Check", "Table", "Waiter"]
+        "options": [
+          "Menu",
+          "Bill / Check",
+          "Table",
+          "Waiter"
+        ],
+        "question": "What does 'Račun' mean?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'coffee'",
-        "correct_answer": "Kava",
-        "accept_alternatives": ["kava"]
+        "correct_answers": [
+          "Kava",
+          "kava"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'water'",
-        "correct_answer": "Voda",
-        "accept_alternatives": ["voda"]
+        "correct_answers": [
+          "Voda",
+          "voda"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the food and drink words",
         "pairs": [
-          {"english": "Bread", "target": "Kruh"},
-          {"english": "Wine", "target": "Vino"},
-          {"english": "Beer", "target": "Pivo"},
-          {"english": "Cheese", "target": "Sir"},
-          {"english": "Fish", "target": "Riba"}
+          {
+            "english": "Bread",
+            "target": "Kruh"
+          },
+          {
+            "english": "Wine",
+            "target": "Vino"
+          },
+          {
+            "english": "Beer",
+            "target": "Pivo"
+          },
+          {
+            "english": "Cheese",
+            "target": "Sir"
+          },
+          {
+            "english": "Fish",
+            "target": "Riba"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "kava",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Kava", "Voda", "Vino"]
+        "options": [
+          "Kava",
+          "Voda",
+          "Vino"
+        ],
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'Bon appetit' in Croatian?",
-        "correct_answer": "Dobar tek",
-        "options": ["Dobar dan", "Dobar tek", "Dobro jutro", "Dobra večer"]
+        "options": [
+          "Dobar dan",
+          "Dobar tek",
+          "Dobro jutro",
+          "Dobra večer"
+        ],
+        "question": "How do you say 'Bon appetit' in Croatian?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'menu'",
-        "correct_answer": "Jelovnik",
-        "accept_alternatives": ["jelovnik"]
+        "correct_answers": [
+          "Jelovnik",
+          "jelovnik"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "pivo",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Pivo", "Vino", "Meso"]
+        "options": [
+          "Pivo",
+          "Vino",
+          "Meso"
+        ],
+        "correct": 0
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the dining phrases",
         "pairs": [
-          {"english": "Coffee", "target": "Kava"},
-          {"english": "Water", "target": "Voda"},
-          {"english": "Meat", "target": "Meso"},
-          {"english": "Salad", "target": "Salata"},
-          {"english": "Menu", "target": "Jelovnik"}
+          {
+            "english": "Coffee",
+            "target": "Kava"
+          },
+          {
+            "english": "Water",
+            "target": "Voda"
+          },
+          {
+            "english": "Meat",
+            "target": "Meso"
+          },
+          {
+            "english": "Salad",
+            "target": "Salata"
+          },
+          {
+            "english": "Menu",
+            "target": "Jelovnik"
+          }
         ]
       }
     ]

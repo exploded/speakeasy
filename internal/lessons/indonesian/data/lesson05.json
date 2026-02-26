@@ -179,74 +179,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Berapa harganya?' mean?",
-        "correct_answer": "How much does it cost?",
-        "options": ["Where is the store?", "How much does it cost?", "Do you have change?", "Can I have a discount?"]
+        "options": [
+          "Where is the store?",
+          "How much does it cost?",
+          "Do you have change?",
+          "Can I have a discount?"
+        ],
+        "question": "What does 'Berapa harganya?' mean?",
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What is the Indonesian word for 'expensive'?",
-        "correct_answer": "Mahal",
-        "options": ["Murah", "Mahal", "Besar", "Bagus"]
+        "options": [
+          "Murah",
+          "Mahal",
+          "Besar",
+          "Bagus"
+        ],
+        "question": "What is the Indonesian word for 'expensive'?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'cheap':",
-        "correct_answer": "Murah",
-        "accept_alternatives": ["murah"]
+        "correct_answers": [
+          "Murah",
+          "murah"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'market':",
-        "correct_answer": "Pasar",
-        "accept_alternatives": ["pasar"]
+        "correct_answers": [
+          "Pasar",
+          "pasar"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each shopping word with its English meaning:",
         "pairs": [
-          {"english": "Expensive", "target": "Mahal"},
-          {"english": "Cheap", "target": "Murah"},
-          {"english": "Shop", "target": "Toko"},
-          {"english": "Market", "target": "Pasar"},
-          {"english": "Money", "target": "Uang"}
+          {
+            "english": "Expensive",
+            "target": "Mahal"
+          },
+          {
+            "english": "Cheap",
+            "target": "Murah"
+          },
+          {
+            "english": "Shop",
+            "target": "Toko"
+          },
+          {
+            "english": "Market",
+            "target": "Pasar"
+          },
+          {
+            "english": "Money",
+            "target": "Uang"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "mahal",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Expensive",
-        "options": ["Cheap", "Expensive", "Discount"]
+        "options": [
+          "Cheap",
+          "Expensive",
+          "Discount"
+        ],
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Bisa kurang?' mean when bargaining?",
-        "correct_answer": "Can you lower the price?",
-        "options": ["Can I have more?", "Can you lower the price?", "Is this available?", "Do you accept cards?"]
+        "options": [
+          "Can I have more?",
+          "Can you lower the price?",
+          "Is this available?",
+          "Do you accept cards?"
+        ],
+        "question": "What does 'Bisa kurang?' mean when bargaining?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'to buy':",
-        "correct_answer": "Beli",
-        "accept_alternatives": ["beli"]
+        "correct_answers": [
+          "Beli",
+          "beli"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "pasar",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Market",
-        "options": ["Shop", "Market", "Mall"]
+        "options": [
+          "Shop",
+          "Market",
+          "Mall"
+        ],
+        "correct": 1
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each word with its English meaning:",
         "pairs": [
-          {"english": "To buy", "target": "Beli"},
-          {"english": "To pay", "target": "Bayar"},
-          {"english": "Discount", "target": "Diskon"},
-          {"english": "Rupiah", "target": "Rupiah"},
-          {"english": "How much does it cost?", "target": "Berapa harganya?"}
+          {
+            "english": "To buy",
+            "target": "Beli"
+          },
+          {
+            "english": "To pay",
+            "target": "Bayar"
+          },
+          {
+            "english": "Discount",
+            "target": "Diskon"
+          },
+          {
+            "english": "Rupiah",
+            "target": "Rupiah"
+          },
+          {
+            "english": "How much does it cost?",
+            "target": "Berapa harganya?"
+          }
         ]
       }
     ]

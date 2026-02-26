@@ -205,74 +205,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What does 'nasi' mean?",
-        "correct_answer": "Rice",
-        "options": ["Noodles", "Rice", "Bread", "Vegetables"]
+        "options": [
+          "Noodles",
+          "Rice",
+          "Bread",
+          "Vegetables"
+        ],
+        "question": "What does 'nasi' mean?",
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'delicious' in Indonesian?",
-        "correct_answer": "Enak",
-        "options": ["Pedas", "Manis", "Enak", "Baik"]
+        "options": [
+          "Pedas",
+          "Manis",
+          "Enak",
+          "Baik"
+        ],
+        "question": "How do you say 'delicious' in Indonesian?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'water':",
-        "correct_answer": "Air",
-        "accept_alternatives": ["air"]
+        "correct_answers": [
+          "Air",
+          "air"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'chicken':",
-        "correct_answer": "Ayam",
-        "accept_alternatives": ["ayam"]
+        "correct_answers": [
+          "Ayam",
+          "ayam"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each food word with its English meaning:",
         "pairs": [
-          {"english": "Rice", "target": "Nasi"},
-          {"english": "Coffee", "target": "Kopi"},
-          {"english": "Tea", "target": "Teh"},
-          {"english": "Fish", "target": "Ikan"},
-          {"english": "Vegetables", "target": "Sayur"}
+          {
+            "english": "Rice",
+            "target": "Nasi"
+          },
+          {
+            "english": "Coffee",
+            "target": "Kopi"
+          },
+          {
+            "english": "Tea",
+            "target": "Teh"
+          },
+          {
+            "english": "Fish",
+            "target": "Ikan"
+          },
+          {
+            "english": "Vegetables",
+            "target": "Sayur"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "kopi",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Coffee",
-        "options": ["Tea", "Coffee", "Water"]
+        "options": [
+          "Tea",
+          "Coffee",
+          "Water"
+        ],
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'pedas' mean?",
-        "correct_answer": "Spicy",
-        "options": ["Sweet", "Sour", "Spicy", "Salty"]
+        "options": [
+          "Sweet",
+          "Sour",
+          "Spicy",
+          "Salty"
+        ],
+        "question": "What does 'pedas' mean?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'to eat':",
-        "correct_answer": "Makan",
-        "accept_alternatives": ["makan"]
+        "correct_answers": [
+          "Makan",
+          "makan"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "enak",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Delicious",
-        "options": ["Spicy", "Delicious", "Sweet"]
+        "options": [
+          "Spicy",
+          "Delicious",
+          "Sweet"
+        ],
+        "correct": 1
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each word with its English meaning:",
         "pairs": [
-          {"english": "To eat", "target": "Makan"},
-          {"english": "To drink", "target": "Minum"},
-          {"english": "Sugar", "target": "Gula"},
-          {"english": "Spicy", "target": "Pedas"},
-          {"english": "Chicken", "target": "Ayam"}
+          {
+            "english": "To eat",
+            "target": "Makan"
+          },
+          {
+            "english": "To drink",
+            "target": "Minum"
+          },
+          {
+            "english": "Sugar",
+            "target": "Gula"
+          },
+          {
+            "english": "Spicy",
+            "target": "Pedas"
+          },
+          {
+            "english": "Chicken",
+            "target": "Ayam"
+          }
         ]
       }
     ]

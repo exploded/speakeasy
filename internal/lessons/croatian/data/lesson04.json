@@ -179,72 +179,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "How do you ask 'Where is...?' in Croatian?",
-        "correct_answer": "Gdje je...?",
-        "options": ["Gdje je...?", "Koliko je...?", "Kako je...?", "Što je...?"]
+        "options": [
+          "Gdje je...?",
+          "Koliko je...?",
+          "Kako je...?",
+          "Što je...?"
+        ],
+        "question": "How do you ask 'Where is...?' in Croatian?",
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "What is the Croatian word for 'train'?",
-        "correct_answer": "Vlak",
-        "options": ["Autobus", "Vlak", "Trajekt", "Kolodvor"]
+        "options": [
+          "Autobus",
+          "Vlak",
+          "Trajekt",
+          "Kolodvor"
+        ],
+        "question": "What is the Croatian word for 'train'?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'left'",
-        "correct_answer": "Lijevo",
-        "accept_alternatives": ["lijevo"]
+        "correct_answers": [
+          "Lijevo",
+          "lijevo"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'right'",
-        "correct_answer": "Desno",
-        "accept_alternatives": ["desno"]
+        "correct_answers": [
+          "Desno",
+          "desno"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the transportation words",
         "pairs": [
-          {"english": "Bus", "target": "Autobus"},
-          {"english": "Train", "target": "Vlak"},
-          {"english": "Ferry", "target": "Trajekt"},
-          {"english": "Train station", "target": "Kolodvor"},
-          {"english": "Near", "target": "Blizu"}
+          {
+            "english": "Bus",
+            "target": "Autobus"
+          },
+          {
+            "english": "Train",
+            "target": "Vlak"
+          },
+          {
+            "english": "Ferry",
+            "target": "Trajekt"
+          },
+          {
+            "english": "Train station",
+            "target": "Kolodvor"
+          },
+          {
+            "english": "Near",
+            "target": "Blizu"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "vlak",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Vlak", "Autobus", "Trajekt"]
+        "options": [
+          "Vlak",
+          "Autobus",
+          "Trajekt"
+        ],
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Ravno' mean?",
-        "correct_answer": "Straight ahead",
-        "options": ["Left", "Right", "Straight ahead", "Far"]
+        "options": [
+          "Left",
+          "Right",
+          "Straight ahead",
+          "Far"
+        ],
+        "question": "What does 'Ravno' mean?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'far'",
-        "correct_answer": "Daleko",
-        "accept_alternatives": ["daleko"]
+        "correct_answers": [
+          "Daleko",
+          "daleko"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "kolodvor",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Kolodvor", "Daleko", "Ravno"]
+        "options": [
+          "Kolodvor",
+          "Daleko",
+          "Ravno"
+        ],
+        "correct": 0
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the direction words",
         "pairs": [
-          {"english": "Left", "target": "Lijevo"},
-          {"english": "Right", "target": "Desno"},
-          {"english": "Straight ahead", "target": "Ravno"},
-          {"english": "Far", "target": "Daleko"},
-          {"english": "Where is...?", "target": "Gdje je...?"}
+          {
+            "english": "Left",
+            "target": "Lijevo"
+          },
+          {
+            "english": "Right",
+            "target": "Desno"
+          },
+          {
+            "english": "Straight ahead",
+            "target": "Ravno"
+          },
+          {
+            "english": "Far",
+            "target": "Daleko"
+          },
+          {
+            "english": "Where is...?",
+            "target": "Gdje je...?"
+          }
         ]
       }
     ]

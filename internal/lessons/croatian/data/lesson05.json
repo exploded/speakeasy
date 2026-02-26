@@ -179,72 +179,133 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "How do you ask 'How much does it cost?' in Croatian?",
-        "correct_answer": "Koliko košta?",
-        "options": ["Koliko košta?", "Gdje je?", "Što je to?", "Koliko je sati?"]
+        "options": [
+          "Koliko košta?",
+          "Gdje je?",
+          "Što je to?",
+          "Koliko je sati?"
+        ],
+        "question": "How do you ask 'How much does it cost?' in Croatian?",
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Skupo' mean?",
-        "correct_answer": "Expensive",
-        "options": ["Cheap", "Expensive", "Free", "Large"]
+        "options": [
+          "Cheap",
+          "Expensive",
+          "Free",
+          "Large"
+        ],
+        "question": "What does 'Skupo' mean?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'shop' or 'store'",
-        "correct_answer": "Dućan",
-        "accept_alternatives": ["dućan", "Ducan", "ducan"]
+        "correct_answers": [
+          "Dućan",
+          "dućan",
+          "Ducan",
+          "ducan"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'market'",
-        "correct_answer": "Tržnica",
-        "accept_alternatives": ["tržnica", "Trznica", "trznica"]
+        "correct_answers": [
+          "Tržnica",
+          "tržnica",
+          "Trznica",
+          "trznica"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the shopping vocabulary",
         "pairs": [
-          {"english": "Expensive", "target": "Skupo"},
-          {"english": "Cheap", "target": "Jeftino"},
-          {"english": "Shop", "target": "Dućan"},
-          {"english": "Market", "target": "Tržnica"},
-          {"english": "Receipt", "target": "Račun"}
+          {
+            "english": "Expensive",
+            "target": "Skupo"
+          },
+          {
+            "english": "Cheap",
+            "target": "Jeftino"
+          },
+          {
+            "english": "Shop",
+            "target": "Dućan"
+          },
+          {
+            "english": "Market",
+            "target": "Tržnica"
+          },
+          {
+            "english": "Receipt",
+            "target": "Račun"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "skupo",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Skupo", "Jeftino", "Popust"]
+        "options": [
+          "Skupo",
+          "Jeftino",
+          "Popust"
+        ],
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Platiti' mean?",
-        "correct_answer": "To pay",
-        "options": ["To buy", "To pay", "To sell", "To cost"]
+        "options": [
+          "To buy",
+          "To pay",
+          "To sell",
+          "To cost"
+        ],
+        "question": "What does 'Platiti' mean?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'discount'",
-        "correct_answer": "Popust",
-        "accept_alternatives": ["popust"]
+        "correct_answers": [
+          "Popust",
+          "popust"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "ducan",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Dućan", "Tržnica", "Račun"]
+        "options": [
+          "Dućan",
+          "Tržnica",
+          "Račun"
+        ],
+        "correct": 0
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the shopping phrases",
         "pairs": [
-          {"english": "How much does it cost?", "target": "Koliko košta?"},
-          {"english": "To pay", "target": "Platiti"},
-          {"english": "Discount", "target": "Popust"},
-          {"english": "Size", "target": "Veličina"},
-          {"english": "Euro", "target": "Euro"}
+          {
+            "english": "How much does it cost?",
+            "target": "Koliko košta?"
+          },
+          {
+            "english": "To pay",
+            "target": "Platiti"
+          },
+          {
+            "english": "Discount",
+            "target": "Popust"
+          },
+          {
+            "english": "Size",
+            "target": "Veličina"
+          },
+          {
+            "english": "Euro",
+            "target": "Euro"
+          }
         ]
       }
     ]

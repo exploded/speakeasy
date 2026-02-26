@@ -179,74 +179,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What does 'di mana' mean?",
-        "correct_answer": "Where",
-        "options": ["When", "Where", "Why", "How"]
+        "options": [
+          "When",
+          "Where",
+          "Why",
+          "How"
+        ],
+        "question": "What does 'di mana' mean?",
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'left' in Indonesian?",
-        "correct_answer": "Kiri",
-        "options": ["Kanan", "Lurus", "Kiri", "Dekat"]
+        "options": [
+          "Kanan",
+          "Lurus",
+          "Kiri",
+          "Dekat"
+        ],
+        "question": "How do you say 'left' in Indonesian?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'right' (direction):",
-        "correct_answer": "Kanan",
-        "accept_alternatives": ["kanan"]
+        "correct_answers": [
+          "Kanan",
+          "kanan"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'airport':",
-        "correct_answer": "Bandara",
-        "accept_alternatives": ["bandara"]
+        "correct_answers": [
+          "Bandara",
+          "bandara"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each direction word with its English meaning:",
         "pairs": [
-          {"english": "Left", "target": "Kiri"},
-          {"english": "Right", "target": "Kanan"},
-          {"english": "Straight", "target": "Lurus"},
-          {"english": "Near", "target": "Dekat"},
-          {"english": "Far", "target": "Jauh"}
+          {
+            "english": "Left",
+            "target": "Kiri"
+          },
+          {
+            "english": "Right",
+            "target": "Kanan"
+          },
+          {
+            "english": "Straight",
+            "target": "Lurus"
+          },
+          {
+            "english": "Near",
+            "target": "Dekat"
+          },
+          {
+            "english": "Far",
+            "target": "Jauh"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "bandara",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Airport",
-        "options": ["Bus stop", "Airport", "Train station"]
+        "options": [
+          "Bus stop",
+          "Airport",
+          "Train station"
+        ],
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'naik kereta' mean?",
-        "correct_answer": "Take a train",
-        "options": ["Take a bus", "Take a taxi", "Take a train", "Take a plane"]
+        "options": [
+          "Take a bus",
+          "Take a taxi",
+          "Take a train",
+          "Take a plane"
+        ],
+        "question": "What does 'naik kereta' mean?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'taxi':",
-        "correct_answer": "Taksi",
-        "accept_alternatives": ["taksi"]
+        "correct_answers": [
+          "Taksi",
+          "taksi"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "kiri",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Left",
-        "options": ["Left", "Right", "Straight"]
+        "options": [
+          "Left",
+          "Right",
+          "Straight"
+        ],
+        "correct": 0
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each transport word with its English meaning:",
         "pairs": [
-          {"english": "Bus", "target": "Bus"},
-          {"english": "Train", "target": "Kereta"},
-          {"english": "Taxi", "target": "Taksi"},
-          {"english": "Airport", "target": "Bandara"},
-          {"english": "Where", "target": "Di mana"}
+          {
+            "english": "Bus",
+            "target": "Bus"
+          },
+          {
+            "english": "Train",
+            "target": "Kereta"
+          },
+          {
+            "english": "Taxi",
+            "target": "Taksi"
+          },
+          {
+            "english": "Airport",
+            "target": "Bandara"
+          },
+          {
+            "english": "Where",
+            "target": "Di mana"
+          }
         ]
       }
     ]

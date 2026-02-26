@@ -210,72 +210,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What is the Croatian word for 'five'?",
-        "correct_answer": "Pet",
-        "options": ["Pet", "Šest", "Četiri", "Tri"]
+        "options": [
+          "Pet",
+          "Šest",
+          "Četiri",
+          "Tri"
+        ],
+        "question": "What is the Croatian word for 'five'?",
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'twenty' in Croatian?",
-        "correct_answer": "Dvadeset",
-        "options": ["Deset", "Dvanaest", "Dvadeset", "Devetnaest"]
+        "options": [
+          "Deset",
+          "Dvanaest",
+          "Dvadeset",
+          "Devetnaest"
+        ],
+        "question": "How do you say 'twenty' in Croatian?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'three'",
-        "correct_answer": "Tri",
-        "accept_alternatives": ["tri"]
+        "correct_answers": [
+          "Tri",
+          "tri"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'ten'",
-        "correct_answer": "Deset",
-        "accept_alternatives": ["deset"]
+        "correct_answers": [
+          "Deset",
+          "deset"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the numbers with their Croatian equivalents",
         "pairs": [
-          {"english": "One", "target": "Jedan"},
-          {"english": "Two", "target": "Dva"},
-          {"english": "Seven", "target": "Sedam"},
-          {"english": "Nine", "target": "Devet"},
-          {"english": "Ten", "target": "Deset"}
+          {
+            "english": "One",
+            "target": "Jedan"
+          },
+          {
+            "english": "Two",
+            "target": "Dva"
+          },
+          {
+            "english": "Seven",
+            "target": "Sedam"
+          },
+          {
+            "english": "Nine",
+            "target": "Devet"
+          },
+          {
+            "english": "Ten",
+            "target": "Deset"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "pet",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Pet", "Deset", "Šest"]
+        "options": [
+          "Pet",
+          "Deset",
+          "Šest"
+        ],
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Koliko' mean?",
-        "correct_answer": "How much / How many",
-        "options": ["How much / How many", "When", "Where", "Why"]
+        "options": [
+          "How much / How many",
+          "When",
+          "Where",
+          "Why"
+        ],
+        "question": "What does 'Koliko' mean?",
+        "correct": 0
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'eight'",
-        "correct_answer": "Osam",
-        "accept_alternatives": ["osam"]
+        "correct_answers": [
+          "Osam",
+          "osam"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "sedam",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Sedam", "Osam", "Devet"]
+        "options": [
+          "Sedam",
+          "Osam",
+          "Devet"
+        ],
+        "correct": 0
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the numbers with their Croatian equivalents",
         "pairs": [
-          {"english": "Four", "target": "Četiri"},
-          {"english": "Five", "target": "Pet"},
-          {"english": "Six", "target": "Šest"},
-          {"english": "Eight", "target": "Osam"},
-          {"english": "Twenty", "target": "Dvadeset"}
+          {
+            "english": "Four",
+            "target": "Četiri"
+          },
+          {
+            "english": "Five",
+            "target": "Pet"
+          },
+          {
+            "english": "Six",
+            "target": "Šest"
+          },
+          {
+            "english": "Eight",
+            "target": "Osam"
+          },
+          {
+            "english": "Twenty",
+            "target": "Dvadeset"
+          }
         ]
       }
     ]

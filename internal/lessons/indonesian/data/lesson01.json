@@ -205,74 +205,130 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Selamat pagi' mean?",
-        "correct_answer": "Good morning",
-        "options": ["Good morning", "Good evening", "Good night", "Goodbye"]
+        "options": [
+          "Good morning",
+          "Good evening",
+          "Good night",
+          "Goodbye"
+        ],
+        "question": "What does 'Selamat pagi' mean?",
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'Thank you' in Indonesian?",
-        "correct_answer": "Terima kasih",
-        "options": ["Sama-sama", "Terima kasih", "Permisi", "Maaf"]
+        "options": [
+          "Sama-sama",
+          "Terima kasih",
+          "Permisi",
+          "Maaf"
+        ],
+        "question": "How do you say 'Thank you' in Indonesian?",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'Yes':",
-        "correct_answer": "Ya",
-        "accept_alternatives": ["ya"]
+        "correct_answers": [
+          "Ya",
+          "ya"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian word for 'No':",
-        "correct_answer": "Tidak",
-        "accept_alternatives": ["tidak"]
+        "correct_answers": [
+          "Tidak",
+          "tidak"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each Indonesian word with its English meaning:",
         "pairs": [
-          {"english": "Good morning", "target": "Selamat pagi"},
-          {"english": "Thank you", "target": "Terima kasih"},
-          {"english": "Sorry", "target": "Maaf"},
-          {"english": "Excuse me", "target": "Permisi"},
-          {"english": "You're welcome", "target": "Sama-sama"}
+          {
+            "english": "Good morning",
+            "target": "Selamat pagi"
+          },
+          {
+            "english": "Thank you",
+            "target": "Terima kasih"
+          },
+          {
+            "english": "Sorry",
+            "target": "Maaf"
+          },
+          {
+            "english": "Excuse me",
+            "target": "Permisi"
+          },
+          {
+            "english": "You're welcome",
+            "target": "Sama-sama"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "terima_kasih",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Thank you",
-        "options": ["Sorry", "Thank you", "Excuse me"]
+        "options": [
+          "Sorry",
+          "Thank you",
+          "Excuse me"
+        ],
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What is the correct response to 'Terima kasih'?",
-        "correct_answer": "Sama-sama",
-        "options": ["Sama-sama", "Maaf", "Selamat pagi", "Tidak"]
+        "options": [
+          "Sama-sama",
+          "Maaf",
+          "Selamat pagi",
+          "Tidak"
+        ],
+        "question": "What is the correct response to 'Terima kasih'?",
+        "correct": 0
       },
       {
         "type": "type_answer",
         "prompt": "Type the Indonesian phrase for 'How are you?':",
-        "correct_answer": "Apa kabar?",
-        "accept_alternatives": ["apa kabar", "Apa kabar"]
+        "correct_answers": [
+          "Apa kabar?",
+          "apa kabar",
+          "Apa kabar"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "selamat_malam",
-        "prompt": "Listen and choose the correct meaning:",
-        "correct_answer": "Good evening / Good night",
-        "options": ["Good morning", "Good evening / Good night", "Good afternoon"]
+        "options": [
+          "Good morning",
+          "Good evening / Good night",
+          "Good afternoon"
+        ],
+        "correct": 1
       },
       {
         "type": "match_pairs",
-        "prompt": "Match each Indonesian expression with its English meaning:",
         "pairs": [
-          {"english": "Good evening", "target": "Selamat malam"},
-          {"english": "Good afternoon (midday)", "target": "Selamat siang"},
-          {"english": "Good / Fine", "target": "Baik"},
-          {"english": "Yes", "target": "Ya"},
-          {"english": "No", "target": "Tidak"}
+          {
+            "english": "Good evening",
+            "target": "Selamat malam"
+          },
+          {
+            "english": "Good afternoon (midday)",
+            "target": "Selamat siang"
+          },
+          {
+            "english": "Good / Fine",
+            "target": "Baik"
+          },
+          {
+            "english": "Yes",
+            "target": "Ya"
+          },
+          {
+            "english": "No",
+            "target": "Tidak"
+          }
         ]
       }
     ]

@@ -200,72 +200,129 @@
     "questions": [
       {
         "type": "multiple_choice",
-        "prompt": "How do you say 'Thank you' in Croatian?",
-        "correct_answer": "Hvala",
-        "options": ["Molim", "Hvala", "Bok", "Oprostite"]
+        "options": [
+          "Molim",
+          "Hvala",
+          "Bok",
+          "Oprostite"
+        ],
+        "question": "How do you say 'Thank you' in Croatian?",
+        "correct": 1
       },
       {
         "type": "multiple_choice",
-        "prompt": "What does 'Dobar dan' mean?",
-        "correct_answer": "Good day",
-        "options": ["Good morning", "Good evening", "Good day", "Goodbye"]
+        "options": [
+          "Good morning",
+          "Good evening",
+          "Good day",
+          "Goodbye"
+        ],
+        "question": "What does 'Dobar dan' mean?",
+        "correct": 2
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'Yes'",
-        "correct_answer": "Da",
-        "accept_alternatives": ["da"]
+        "correct_answers": [
+          "Da",
+          "da"
+        ]
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian word for 'No'",
-        "correct_answer": "Ne",
-        "accept_alternatives": ["ne"]
+        "correct_answers": [
+          "Ne",
+          "ne"
+        ]
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the Croatian words with their English meanings",
         "pairs": [
-          {"english": "Hi / Bye", "target": "Bok"},
-          {"english": "Thank you", "target": "Hvala"},
-          {"english": "Please", "target": "Molim"},
-          {"english": "Goodbye", "target": "Doviđenja"},
-          {"english": "Excuse me", "target": "Oprostite"}
+          {
+            "english": "Hi / Bye",
+            "target": "Bok"
+          },
+          {
+            "english": "Thank you",
+            "target": "Hvala"
+          },
+          {
+            "english": "Please",
+            "target": "Molim"
+          },
+          {
+            "english": "Goodbye",
+            "target": "Doviđenja"
+          },
+          {
+            "english": "Excuse me",
+            "target": "Oprostite"
+          }
         ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "hvala",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Hvala", "Molim", "Bok"]
+        "options": [
+          "Hvala",
+          "Molim",
+          "Bok"
+        ],
+        "correct": 0
       },
       {
         "type": "multiple_choice",
-        "prompt": "Which phrase is the FORMAL way to ask 'How are you?'",
-        "correct_answer": "Kako ste?",
-        "options": ["Kako si?", "Kako ste?", "Dobro sam", "Bok"]
+        "options": [
+          "Kako si?",
+          "Kako ste?",
+          "Dobro sam",
+          "Bok"
+        ],
+        "question": "Which phrase is the FORMAL way to ask 'How are you?'",
+        "correct": 1
       },
       {
         "type": "type_answer",
         "prompt": "Type the Croatian greeting for 'Good morning'",
-        "correct_answer": "Dobro jutro",
-        "accept_alternatives": ["dobro jutro"]
+        "correct_answers": [
+          "Dobro jutro",
+          "dobro jutro"
+        ]
       },
       {
         "type": "listen_and_choose",
         "word_id": "dovidenja",
-        "prompt": "Listen and choose the correct word",
-        "options": ["Doviđenja", "Dobro jutro", "Dobar dan"]
+        "options": [
+          "Doviđenja",
+          "Dobro jutro",
+          "Dobar dan"
+        ],
+        "correct": 0
       },
       {
         "type": "match_pairs",
-        "prompt": "Match the greetings with their meanings",
         "pairs": [
-          {"english": "Good morning", "target": "Dobro jutro"},
-          {"english": "Good evening", "target": "Dobra večer"},
-          {"english": "Good day", "target": "Dobar dan"},
-          {"english": "I'm fine", "target": "Dobro sam"},
-          {"english": "How are you? (formal)", "target": "Kako ste?"}
+          {
+            "english": "Good morning",
+            "target": "Dobro jutro"
+          },
+          {
+            "english": "Good evening",
+            "target": "Dobra večer"
+          },
+          {
+            "english": "Good day",
+            "target": "Dobar dan"
+          },
+          {
+            "english": "I'm fine",
+            "target": "Dobro sam"
+          },
+          {
+            "english": "How are you? (formal)",
+            "target": "Kako ste?"
+          }
         ]
       }
     ]
