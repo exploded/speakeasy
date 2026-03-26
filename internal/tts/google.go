@@ -34,8 +34,8 @@ func NewClient(cacheDir, audioDir string) *Client {
 	}
 }
 
-func (c *Client) cacheKey(text, lang string) string {
-	h := sha256.Sum256([]byte(lang + ":" + text))
+func (c *Client) cacheKey(text, lang, gender string) string {
+	h := sha256.Sum256([]byte(lang + ":" + gender + ":" + text))
 	return hex.EncodeToString(h[:16])
 }
 
@@ -44,9 +44,12 @@ func (c *Client) cacheKey(text, lang string) string {
 // 2. Cached TTS results
 // 3. Google Cloud TTS API (if key set)
 // 4. Returns error if nothing works
-func (c *Client) GetAudio(text, lang string) ([]byte, string, error) {
+func (c *Client) GetAudio(text, lang, gender string) ([]byte, string, error) {
+	if gender == "" {
+		gender = "FEMALE"
+	}
 	// Check for pre-recorded override
-	key := c.cacheKey(text, lang)
+	key := c.cacheKey(text, lang, gender)
 	overridePath := filepath.Join(c.audioDir, key+".mp3")
 	if data, err := os.ReadFile(overridePath); err == nil {
 		return data, "audio/mpeg", nil
@@ -69,7 +72,7 @@ func (c *Client) GetAudio(text, lang string) ([]byte, string, error) {
 	// Try Google Cloud TTS if API key is available
 	apiKey := os.Getenv("GOOGLE_TTS_API_KEY")
 	if apiKey != "" {
-		data, err := c.callGoogleTTS(text, lang, apiKey)
+		data, err := c.callGoogleTTS(text, lang, gender, apiKey)
 		if err != nil {
 			log.Printf("TTS API error for %q: %v", text, err)
 		} else {
@@ -82,7 +85,7 @@ func (c *Client) GetAudio(text, lang string) ([]byte, string, error) {
 	return nil, "", fmt.Errorf("TTS unavailable for %q", text)
 }
 
-func (c *Client) callGoogleTTS(text, lang, apiKey string) ([]byte, error) {
+func (c *Client) callGoogleTTS(text, lang, gender, apiKey string) ([]byte, error) {
 	url := "https://texttospeech.googleapis.com/v1/text:synthesize?key=" + apiKey
 
 	// Map short TTS codes to full BCP-47 language codes required by Google TTS
@@ -90,6 +93,7 @@ func (c *Client) callGoogleTTS(text, lang, apiKey string) ([]byte, error) {
 		"sr": "sr-RS",
 		"hr": "hr-HR",
 		"id": "id-ID",
+		"en": "en-US",
 	}
 	langCode := "sr-RS"
 	if full, ok := bcp47[lang]; ok {
@@ -104,7 +108,7 @@ func (c *Client) callGoogleTTS(text, lang, apiKey string) ([]byte, error) {
 		},
 		"voice": map[string]interface{}{
 			"languageCode": langCode,
-			"ssmlGender":   "FEMALE",
+			"ssmlGender":   gender,
 		},
 		"audioConfig": map[string]string{
 			"audioEncoding": "MP3",

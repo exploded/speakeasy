@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -19,6 +20,7 @@ import (
 	_ "speakeasy/internal/lessons/indonesian"
 	_ "speakeasy/internal/lessons/serbian"
 
+	"github.com/exploded/monitor/pkg/logship"
 	_ "modernc.org/sqlite"
 )
 
@@ -27,6 +29,28 @@ func main() {
 	dataDir := os.Getenv("SPEAKEASY_DATA_DIR")
 	if dataDir == "" {
 		dataDir = "."
+	}
+
+	// Set up logging — ship WARN+ to monitor portal if configured
+	monitorURL := os.Getenv("MONITOR_URL")
+	monitorKey := os.Getenv("MONITOR_API_KEY")
+
+	if monitorURL != "" && monitorKey != "" {
+		ship := logship.New(logship.Options{
+			Endpoint: monitorURL + "/api/logs",
+			APIKey:   monitorKey,
+			App:      "speakeasy",
+			Level:    slog.LevelWarn,
+		})
+		defer ship.Shutdown()
+
+		logger := slog.New(logship.Multi(
+			slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{Level: slog.LevelInfo}),
+			ship,
+		))
+		slog.SetDefault(logger)
+	} else {
+		slog.SetDefault(slog.New(slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{Level: slog.LevelInfo})))
 	}
 
 	// Open SQLite database (pure Go driver)
@@ -74,6 +98,7 @@ func main() {
 	quizHandler := handlers.NewQuizHandler(queries, tmpl)
 	progressHandler := handlers.NewProgressHandler(sessions)
 	ttsHandler := handlers.NewTTSHandler(ttsClient)
+	birthdayHandler := handlers.NewBirthdayHandler(tmpl)
 
 	// Mux
 	mux := http.NewServeMux()
@@ -98,6 +123,7 @@ func main() {
 		}
 	})
 	mux.HandleFunc("/logout", authHandler.Logout)
+	mux.HandleFunc("/birthday", birthdayHandler.Page)
 
 	// Protected lesson routes — dynamic language pattern
 	// Matches /lessons/{language} for lesson list

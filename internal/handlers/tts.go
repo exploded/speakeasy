@@ -17,6 +17,21 @@ func NewTTSHandler(c *tts.Client) *TTSHandler {
 func (h *TTSHandler) ServeAudio(w http.ResponseWriter, r *http.Request) {
 	text := r.URL.Query().Get("text")
 	lang := r.URL.Query().Get("lang")
+	gender := r.URL.Query().Get("gender")
+
+	// Support POST for long texts
+	if r.Method == http.MethodPost {
+		r.ParseForm()
+		if v := r.FormValue("text"); v != "" {
+			text = v
+		}
+		if v := r.FormValue("lang"); v != "" {
+			lang = v
+		}
+		if v := r.FormValue("gender"); v != "" {
+			gender = v
+		}
+	}
 
 	if text == "" {
 		http.Error(w, "text parameter required", http.StatusBadRequest)
@@ -26,7 +41,7 @@ func (h *TTSHandler) ServeAudio(w http.ResponseWriter, r *http.Request) {
 		lang = "sr"
 	}
 
-	data, contentType, err := h.client.GetAudio(text, lang)
+	data, contentType, err := h.client.GetAudio(text, lang, gender)
 	if err != nil {
 		http.Error(w, "TTS error", http.StatusInternalServerError)
 		return

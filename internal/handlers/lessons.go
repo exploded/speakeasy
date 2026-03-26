@@ -35,6 +35,7 @@ func NewTemplateRenderer(templatesDir string) *TemplateRenderer {
 		"lesson_list.html",
 		"quiz.html",
 		"results.html",
+		"birthday.html",
 	}
 
 	templates := make(map[string]*template.Template)
