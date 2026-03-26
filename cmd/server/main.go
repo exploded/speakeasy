@@ -1,14 +1,18 @@
 package main
 
 import (
+	"context"
 	"database/sql"
 	"fmt"
 	"log"
 	"log/slog"
 	"net/http"
 	"os"
+	"os/signal"
 	"path/filepath"
 	"strings"
+	"syscall"
+	"time"
 
 	"speakeasy/internal/db"
 	"speakeasy/internal/handlers"
@@ -89,11 +93,14 @@ func main() {
 	audioDir := filepath.Join(staticDir, "audio")
 	ttsClient := tts.NewClient(cacheDir, audioDir)
 
+	// Determine production mode
+	isProd := strings.EqualFold(os.Getenv("PROD"), "true")
+
 	// Template renderer
 	tmpl := handlers.NewTemplateRenderer(templatesDir)
 
 	// Handlers
-	authHandler := handlers.NewAuthHandler(queries, sessions, tmpl)
+	authHandler := handlers.NewAuthHandler(queries, sessions, tmpl, isProd)
 	lessonHandler := handlers.NewLessonHandler(queries, tmpl)
 	quizHandler := handlers.NewQuizHandler(queries, tmpl)
 	progressHandler := handlers.NewProgressHandler(sessions)
@@ -160,16 +167,41 @@ func main() {
 	mux.HandleFunc("/api/tts", ttsHandler.ServeAudio)
 	mux.HandleFunc("/api/preference/script", middleware.RequireAuth(progressHandler.SetScriptPreference))
 
-	// Wrap with auth middleware
-	handler := sessions.AuthMiddleware(mux)
+	// Middleware chain: security headers → request logging → auth → mux
+	handler := middleware.SecurityHeaders(isProd,
+		middleware.RequestLogger(
+			sessions.AuthMiddleware(mux),
+		),
+	)
 
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8282"
 	}
 
+	srv := &http.Server{
+		Addr:         ":" + port,
+		Handler:      handler,
+		ReadTimeout:  5 * time.Second,
+		WriteTimeout: 10 * time.Second,
+		IdleTimeout:  60 * time.Second,
+	}
+
+	// Graceful shutdown
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+	go func() {
+		<-quit
+		slog.Info("shutting down server...")
+		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+		defer cancel()
+		srv.Shutdown(ctx)
+	}()
+
 	fmt.Printf("SpeakEasy server starting on http://localhost:%s\n", port)
-	log.Fatal(http.ListenAndServe(":"+port, handler))
+	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
+		log.Fatal(err)
+	}
 }
 
 // splitPath splits a URL path into non-empty segments.

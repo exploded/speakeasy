@@ -1,70 +1,75 @@
-name: Deploy to Production
+name: Test and Deploy
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  deploy:
-    name: Build and Deploy
+  test:
+    name: Test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Set up Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version-file: go.mod
 
+      - name: Download dependencies
+        run: go mod download
+
+      - name: Run tests
+        run: go test -v ./...
+
+  deploy:
+    name: Deploy to Production
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+
+      - name: Download dependencies
+        run: go mod download
+
       - name: Build Linux binary
-        run: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o speakeasy ./cmd/server/
+        run: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o speakeasy ./cmd/server/
 
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
+      - name: Copy files to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || '22' }}
+          source: "speakeasy,web/,scripts/deploy-speakeasy"
+          target: "/tmp/speakeasy-deploy"
+          overwrite: true
 
-      - name: Copy binary to server
-        run: scp -i ~/.ssh/deploy_key speakeasy ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/speakeasy
+      - name: Stop service before deploy
+        continue-on-error: true
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || '22' }}
+          script: sudo systemctl stop speakeasy
 
-      - name: Copy web assets to server
-        run: scp -i ~/.ssh/deploy_key -r web ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/web
-
-      - name: Copy service file to server
-        run: scp -i ~/.ssh/deploy_key deploy/speakeasy.service ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/deploy/speakeasy.service
-
-      - name: Deploy on server
-        env:
-          TTS_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
-        run: |
-          ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} bash << ENDSSH
-            set -e
-            # Write env file with API key
-            echo "GOOGLE_TTS_API_KEY=$TTS_KEY" | sudo tee /var/www/speakeasy/.env > /dev/null
-            sudo chmod 600 /var/www/speakeasy/.env
-            sudo chown www-data /var/www/speakeasy/.env
-
-            # Install updated service file
-            sudo cp /home/deploy/speakeasy.service /lib/systemd/system/speakeasy.service
-            sudo systemctl daemon-reload
-
-            # Deploy binary and web assets
-            sudo systemctl stop speakeasy
-            sudo rm -f /var/www/speakeasy/speakeasy
-            sudo cp /home/deploy/speakeasy /var/www/speakeasy/speakeasy
-            sudo rm -rf /var/www/speakeasy/web
-            sudo cp -r /home/deploy/web /var/www/speakeasy/web
-            sudo chown -R www-data /var/www/speakeasy
-            sudo chmod 755 /var/www/speakeasy/speakeasy
-            sudo systemctl start speakeasy
-            sleep 2
-            sudo systemctl is-active --quiet speakeasy && echo "Service started OK" || (sudo journalctl -u speakeasy -n 20 --no-pager && exit 1)
-
-            # Cleanup
-            rm -f /home/deploy/speakeasy /home/deploy/speakeasy.service
-            rm -rf /home/deploy/web
-          ENDSSH
+      - name: Install and restart service
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || '22' }}
+          script: sudo /usr/local/bin/deploy-speakeasy /tmp/speakeasy-deploy

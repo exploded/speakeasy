@@ -14,10 +14,11 @@ type AuthHandler struct {
 	queries  *db.Queries
 	sessions *middleware.SessionStore
 	tmpl     *TemplateRenderer
+	isProd   bool
 }
 
-func NewAuthHandler(q *db.Queries, s *middleware.SessionStore, t *TemplateRenderer) *AuthHandler {
-	return &AuthHandler{queries: q, sessions: s, tmpl: t}
+func NewAuthHandler(q *db.Queries, s *middleware.SessionStore, t *TemplateRenderer, isProd bool) *AuthHandler {
+	return &AuthHandler{queries: q, sessions: s, tmpl: t, isProd: isProd}
 }
 
 func (h *AuthHandler) LoginPage(w http.ResponseWriter, r *http.Request) {
@@ -65,6 +66,7 @@ func (h *AuthHandler) Login(w http.ResponseWriter, r *http.Request) {
 		Path:     "/",
 		MaxAge:   7 * 24 * 60 * 60,
 		HttpOnly: true,
+		Secure:   h.isProd,
 		SameSite: http.SameSiteLaxMode,
 	})
 
@@ -130,6 +132,7 @@ func (h *AuthHandler) Register(w http.ResponseWriter, r *http.Request) {
 		Path:     "/",
 		MaxAge:   7 * 24 * 60 * 60,
 		HttpOnly: true,
+		Secure:   h.isProd,
 		SameSite: http.SameSiteLaxMode,
 	})
 

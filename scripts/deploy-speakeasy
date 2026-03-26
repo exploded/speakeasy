@@ -1,0 +1,51 @@
+#!/bin/bash
+set -e
+
+DEPLOY_SRC="${1:-/tmp/speakeasy-deploy}"
+DEPLOY_DIR=/var/www/speakeasy
+
+# Self-update: if the bundle contains a newer version, install and re-exec
+BUNDLE_SCRIPT="$DEPLOY_SRC/scripts/deploy-speakeasy"
+if [ -f "$BUNDLE_SCRIPT" ] && ! diff -q /usr/local/bin/deploy-speakeasy "$BUNDLE_SCRIPT" > /dev/null 2>&1; then
+    echo "[deploy] Updating deploy script from bundle..."
+    install -m 755 "$BUNDLE_SCRIPT" /usr/local/bin/deploy-speakeasy
+    exec /usr/local/bin/deploy-speakeasy "$@"
+fi
+
+# Read service user dynamically from systemd (never hardcode www-data)
+SERVICE_USER=$(systemctl show speakeasy --property=User --value)
+SERVICE_GROUP=$(systemctl show speakeasy --property=Group --value)
+
+if [ -z "$SERVICE_USER" ]; then
+    echo "[deploy] ERROR: Could not read User from speakeasy.service"
+    exit 1
+fi
+
+echo "[deploy] Stopping service..."
+systemctl stop speakeasy || true
+
+echo "[deploy] Installing binary..."
+rm -f "$DEPLOY_DIR/speakeasy"
+cp "$DEPLOY_SRC/speakeasy" "$DEPLOY_DIR/speakeasy"
+chmod +x "$DEPLOY_DIR/speakeasy"
+
+echo "[deploy] Updating web assets..."
+rm -rf "$DEPLOY_DIR/web"
+cp -r "$DEPLOY_SRC/web" "$DEPLOY_DIR/web"
+chown -R "$SERVICE_USER:$SERVICE_GROUP" "$DEPLOY_DIR"
+
+echo "[deploy] Starting service..."
+systemctl start speakeasy
+
+echo "[deploy] Verifying service is active..."
+sleep 2
+if ! systemctl is-active --quiet speakeasy; then
+    echo "[deploy] ERROR: Service failed to start. Status:"
+    systemctl status speakeasy --no-pager --lines=30
+    exit 1
+fi
+
+echo "[deploy] Cleaning up..."
+rm -rf "$DEPLOY_SRC"
+
+echo "[deploy] Done — speakeasy is running."
