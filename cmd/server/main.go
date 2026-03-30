@@ -65,6 +65,10 @@ func main() {
 	}
 	defer database.Close()
 
+	// SQLite is single-writer — limit the pool to avoid "database is locked" contention
+	// that can hang handlers and make the app unresponsive behind Caddy.
+	database.SetMaxOpenConns(1)
+
 	// Enable WAL mode for better concurrency
 	database.Exec("PRAGMA journal_mode=WAL")
 	database.Exec("PRAGMA foreign_keys=ON")
@@ -112,6 +116,16 @@ func main() {
 
 	// Static files
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticDir))))
+
+	// Health check for Caddy/monitoring
+	mux.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
+		if err := database.Ping(); err != nil {
+			http.Error(w, "db unhealthy", http.StatusServiceUnavailable)
+			return
+		}
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("ok"))
+	})
 
 	// Public routes
 	mux.HandleFunc("/", lessonHandler.Home)

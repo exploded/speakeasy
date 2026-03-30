@@ -26,8 +26,25 @@ type SessionStore struct {
 }
 
 func NewSessionStore() *SessionStore {
-	return &SessionStore{
+	ss := &SessionStore{
 		sessions: make(map[string]*Session),
+	}
+	go ss.cleanupLoop()
+	return ss
+}
+
+// cleanupLoop removes expired sessions every hour to prevent memory growth.
+func (s *SessionStore) cleanupLoop() {
+	ticker := time.NewTicker(1 * time.Hour)
+	for range ticker.C {
+		now := time.Now()
+		s.mu.Lock()
+		for token, sess := range s.sessions {
+			if now.After(sess.ExpiresAt) {
+				delete(s.sessions, token)
+			}
+		}
+		s.mu.Unlock()
 	}
 }
 
