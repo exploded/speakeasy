@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -74,7 +74,7 @@ func (c *Client) GetAudio(text, lang, gender string) ([]byte, string, error) {
 	if apiKey != "" {
 		data, err := c.callGoogleTTS(text, lang, gender, apiKey)
 		if err != nil {
-			log.Printf("TTS API error for %q: %v", text, err)
+			slog.Warn("TTS API error", "text", text, "error", err)
 		} else {
 			os.WriteFile(cachePath, data, 0o644)
 			return data, "audio/mpeg", nil
