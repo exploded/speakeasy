@@ -3,13 +3,13 @@ module speakeasy
 go 1.26.0
 
 require (
+	github.com/exploded/monitor v0.0.0-20260331015627-909d7b304ae3
 	golang.org/x/crypto v0.48.0
 	modernc.org/sqlite v1.47.0
 )
 
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
-	github.com/exploded/monitor v0.0.0-20260326133010-e5d47c4e4244 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/ncruces/go-strftime v1.0.0 // indirect
