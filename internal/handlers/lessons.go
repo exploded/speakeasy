@@ -92,6 +92,11 @@ type LanguageSummary struct {
 }
 
 func (h *LessonHandler) Home(w http.ResponseWriter, r *http.Request) {
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
+
 	userID := middleware.GetUserID(r.Context())
 
 	if userID == 0 {
