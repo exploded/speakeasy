@@ -265,6 +265,48 @@ func (q *Queries) GetVocabProgressByWord(ctx context.Context, arg GetVocabProgre
 	return i, err
 }
 
+const listAllUsers = `-- name: ListAllUsers :many
+SELECT id, username, email, display_name, created_at FROM users
+ORDER BY created_at DESC
+`
+
+type ListAllUsersRow struct {
+	ID          int64
+	Username    string
+	Email       string
+	DisplayName string
+	CreatedAt   sql.NullTime
+}
+
+func (q *Queries) ListAllUsers(ctx context.Context) ([]ListAllUsersRow, error) {
+	rows, err := q.db.QueryContext(ctx, listAllUsers)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []ListAllUsersRow
+	for rows.Next() {
+		var i ListAllUsersRow
+		if err := rows.Scan(
+			&i.ID,
+			&i.Username,
+			&i.Email,
+			&i.DisplayName,
+			&i.CreatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Close(); err != nil {
+		return nil, err
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const listLessonProgress = `-- name: ListLessonProgress :many
 SELECT id, user_id, language, lesson_id, status, best_score, attempts, last_accessed, completed_at FROM lesson_progress
 WHERE user_id = ? AND language = ?

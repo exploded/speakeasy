@@ -972,3 +972,26 @@ body.show-both .script-cyrillic { display: inline; }
 body.show-both .script-latin { display: inline; }
 body.show-latin .script-cyrillic { display: none; }
 body.show-latin .script-latin { display: inline; }
+
+/* Admin table */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.admin-table th,
+.admin-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-200);
+}
+.admin-table th {
+    background: var(--gray-50);
+    font-weight: 600;
+    color: var(--gray-700);
+}
+.admin-table tr:last-child td { border-bottom: none; }

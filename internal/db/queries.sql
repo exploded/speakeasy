@@ -69,3 +69,7 @@ WHERE user_id = ? AND language = ? AND status = 'completed';
 -- name: GetTotalScore :one
 SELECT COALESCE(SUM(best_score), 0) FROM lesson_progress
 WHERE user_id = ? AND language = ?;
+
+-- name: ListAllUsers :many
+SELECT id, username, email, display_name, created_at FROM users
+ORDER BY created_at DESC;

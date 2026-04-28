@@ -1,0 +1,25 @@
+{{define "content"}}
+<h1>All Users</h1>
+<table class="admin-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Display Name</th>
+            <th>Email</th>
+            <th>Joined</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{range .Users}}
+        <tr>
+            <td>{{.ID}}</td>
+            <td>{{.Username}}</td>
+            <td>{{.DisplayName}}</td>
+            <td>{{.Email}}</td>
+            <td>{{if .CreatedAt.Valid}}{{.CreatedAt.Time.Format "2006-01-02 15:04"}}{{else}}-{{end}}</td>
+        </tr>
+        {{end}}
+    </tbody>
+</table>
+{{end}}

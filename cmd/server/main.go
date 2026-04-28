@@ -111,6 +111,7 @@ func main() {
 	progressHandler := handlers.NewProgressHandler(sessions)
 	ttsHandler := handlers.NewTTSHandler(ttsClient)
 	birthdayHandler := handlers.NewBirthdayHandler(tmpl)
+	adminHandler := handlers.NewAdminHandler(queries, tmpl)
 
 	// Mux
 	mux := http.NewServeMux()
@@ -146,6 +147,7 @@ func main() {
 	})
 	mux.HandleFunc("/logout", authHandler.Logout)
 	mux.HandleFunc("/birthday", birthdayHandler.Page)
+	mux.HandleFunc("/admin/users", adminHandler.Users)
 
 	// Protected lesson routes — dynamic language pattern
 	// Matches /lessons/{language} for lesson list
