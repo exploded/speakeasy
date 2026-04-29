@@ -26,7 +26,7 @@
         <ul class="navbar-links">
             {{if .User}}
                 <li><a href="/">Dashboard</a></li>
-                <li><a href="/">Languages</a></li>
+                {{if eq .User.Username "james"}}<li><a href="/admin/users">Admin</a></li>{{end}}
                 <li class="navbar-user">
                     {{.User.DisplayName}}
                     <a href="/logout">Logout</a>
