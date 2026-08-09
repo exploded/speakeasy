@@ -119,15 +119,20 @@ func main() {
 	// Static files
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticDir))))
 
-	// Health check for Caddy/monitoring
-	mux.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
+	// Health check for Caddy/monitoring. Registered at both paths: /healthz is
+	// the original, /health is what the uptime monitor checks across every app.
+	health := func(w http.ResponseWriter, r *http.Request) {
 		if err := database.Ping(); err != nil {
 			http.Error(w, "db unhealthy", http.StatusServiceUnavailable)
 			return
 		}
+		w.Header().Set("Content-Type", "text/plain")
+		w.Header().Set("Cache-Control", "no-store")
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("ok"))
-	})
+	}
+	mux.HandleFunc("/healthz", health)
+	mux.HandleFunc("/health", health)
 
 	// Public routes
 	mux.HandleFunc("/", lessonHandler.Home)
